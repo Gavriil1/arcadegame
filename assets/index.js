@@ -4,7 +4,7 @@ const c = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
+// payer script
 class Player {
     constructor(){
        
@@ -43,7 +43,7 @@ class Player {
         }
     }
 }
-
+// projectie script
 class Projectile {
     constructor({position, velocity}){
         this.position = position
@@ -66,9 +66,79 @@ class Projectile {
     }
 
 }
+// invaders
+class Invader {
+    constructor( ) {
+      this.velocity = {
+        x: 0,
+        y: 0
+      }
+  
+      const image = new Image()
+      image.src = 'assets/images/invader.png'
+      image.onload = () => {
+        const scale = 1
+        this.image = image
+        this.width = image.width * scale
+        this.height = image.height * scale
+        this.position = {
+          x: 0,
+          y: 0
+        }
+      }
+    }
+    draw(){
+        // c.fillStyle = 'red'
+        // c.fillRect(this.position.x, this.position.y, this.width, this.height)
+        
+        c.drawImage(this.image,
+             this.position.x,
+              this.position.y,
+               this.width,
+                this.height)
+    }
+
+    update() {
+        if (this.image){
+         this.draw()
+         this.position.x += this.velocity.x
+         this.position.y += this.velocity.y
+        }
+    }
+}
+// Creating couds of invaders everywhere
+class Grid {
+    constructor(){
+        this.position = {
+            x: 0,
+            y: 0
+        }
+        this.velocity = {
+            x: 0,
+            y: 0
+        }
+
+        this.invaders = [ new Invader()]
+
+        for(let i = 0; i < 10; i++){
+            this.invaders.push(new Invader({
+                position: {
+                    x: 0,
+                    y: 0
+                }
+            }
+            ))
+        }
+        console.log(this.invaders)
+    }
+    update(){
+
+    }
+}
 
 const player = new Player()
-const projectiles = [  ]
+const projectiles = []
+const grids = [new Grid()]
 const keys = {
     a: {
         pressed: false
@@ -86,7 +156,9 @@ function animate() {
     requestAnimationFrame(animate)
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
+    
     player.update()
+    // animation of projecties
     projectiles.forEach((projectile, index) => {
         if(projectile.position.y + projectile.radius <=0){
             projectiles.splice(index, 1)
@@ -94,6 +166,15 @@ function animate() {
             projectile.update()
         }
     })
+    //creating grid of invaders
+//creating grid of invaders
+    grids.forEach(grid => {
+        grid.update()
+        grid.invaders.forEach(invader => {
+        invader.update()
+        })
+    })
+
     if(keys.a.pressed && player.position.x >= 0){
         //console.log('a option in animate')
         player.velocity.x = -5
