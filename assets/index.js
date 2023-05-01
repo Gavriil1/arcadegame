@@ -68,77 +68,48 @@ class Projectile {
 }
 // invaders
 class Invader {
-    constructor( ) {
+    constructor(x, y) {
       this.velocity = {
         x: 0,
         y: 0
-      }
+      };
+      this.rotation = 0;
   
-      const image = new Image()
-      image.src = 'assets/images/invader.png'
+      const image = new Image();
+      image.src = "assets/images/spaceship.png";
       image.onload = () => {
-        const scale = 1
-        this.image = image
-        this.width = image.width * scale
-        this.height = image.height * scale
+        const scale = 0.15;
+        this.image = image;
+        this.width = image.width * scale;
+        this.height = image.height * scale;
         this.position = {
-          x: 0,
-          y: 0
-        }
+          x: x * this.width, // set initial x position based on x parameter
+          y: y * this.height // set initial y position based on y parameter
+        };
+      };
+    }
+  
+    draw() {
+      c.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+    }
+  
+    update() {
+      if (this.image) {
+        this.draw();
+        this.position.x += this.velocity.x;
+        this.position.y += this.velocity.y;
       }
     }
-    draw(){
-        // c.fillStyle = 'red'
-        // c.fillRect(this.position.x, this.position.y, this.width, this.height)
-        
-        c.drawImage(this.image,
-             this.position.x,
-              this.position.y,
-               this.width,
-                this.height)
-    }
+  }
+  
 
-    update() {
-        if (this.image){
-         this.draw()
-         this.position.x += this.velocity.x
-         this.position.y += this.velocity.y
-        }
-    }
-}
 // Creating couds of invaders everywhere
-class Grid {
-    constructor(){
-        this.position = {
-            x: 0,
-            y: 0
-        }
-        this.velocity = {
-            x: 0,
-            y: 0
-        }
-
-        this.invaders = [ new Invader()]
-
-        for(let i = 0; i < 10; i++){
-            this.invaders.push(new Invader({
-                position: {
-                    x: 0,
-                    y: 0
-                }
-            }
-            ))
-        }
-        console.log(this.invaders)
-    }
-    update(){
-
-    }
-}
-
+//constsant variabes of the game
 const player = new Player()
 const projectiles = []
-const grids = [new Grid()]
+const invader1 = new Invader(0, 0); // (0, 0) position
+const invader2 = new Invader(0, 2); // (0, 2) position
+//const grids = [new Grid()]
 const keys = {
     a: {
         pressed: false
@@ -152,11 +123,14 @@ const keys = {
 }
 
 
+
+
 function animate() {
     requestAnimationFrame(animate)
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
-    
+    invader1.update();
+    invader2.update();
     player.update()
     // animation of projecties
     projectiles.forEach((projectile, index) => {
@@ -166,14 +140,18 @@ function animate() {
             projectile.update()
         }
     })
+
+   
+
+
     //creating grid of invaders
 //creating grid of invaders
-    grids.forEach(grid => {
-        grid.update()
-        grid.invaders.forEach(invader => {
-        invader.update()
-        })
-    })
+   // grids.forEach(grid => {
+     //   grid.update()
+       // grid.invaders.forEach(invader => {
+        //invader.update()
+        //})
+    //})
 
     if(keys.a.pressed && player.position.x >= 0){
         //console.log('a option in animate')
