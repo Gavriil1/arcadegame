@@ -76,9 +76,9 @@ class Invader {
       this.rotation = 0;
   
       const image = new Image();
-      image.src = "assets/images/spaceship.png";
+      image.src = "assets/images/invader.png";
       image.onload = () => {
-        const scale = 0.15;
+        const scale = 2;
         this.image = image;
         this.width = image.width * scale;
         this.height = image.height * scale;
@@ -107,20 +107,20 @@ class Invader {
 //constsant variabes of the game
 const player = new Player()
 const projectiles = []
-const invader1 = new Invader(0, 0); // (0, 0) position
-const invader2 = new Invader(1, 0); // (0, 2) position
-const invader3 = new Invader(2, 0); // (0, 0) position
-const invader4 = new Invader(3, 2); // (0, 2) position
-const invader5 = new Invader(4, 0); // (0, 0) position
-const invader6 = new Invader(5, 2); // (0, 2) position
-const invader7 = new Invader(6, 0); // (0, 0) position
-const invader8 = new Invader(0, 1); // (0, 2) position
-const invader9 = new Invader(1, 1); // (0, 0) position
-const invader10 = new Invader(2, 1); // (0, 2) position
-const invader11 = new Invader(3, 1); // (0, 0) position
-const invader12 = new Invader(4, 1); // (0, 2) position
-const invader13 = new Invader(5, 1); // (0, 0) position
-const invader14 = new Invader(6, 1); // (0, 2) position
+//const invader1 = new Invader(0, 0); // (0, 0) position
+//const invader2 = new Invader(1, 0); // (0, 2) position
+//const invader3 = new Invader(2, 0); // (0, 0) position
+//const invader4 = new Invader(3, 2); // (0, 2) position
+//const invader5 = new Invader(4, 0); // (0, 0) position
+//const invader6 = new Invader(5, 2); // (0, 2) position
+//const invader7 = new Invader(6, 0); // (0, 0) position
+//const invader8 = new Invader(0, 1); // (0, 2) position
+//const invader9 = new Invader(1, 1); // (0, 0) position
+//const invader10 = new Invader(2, 1); // (0, 2) position
+//const invader11 = new Invader(3, 1); // (0, 0) position
+//const invader12 = new Invader(4, 1); // (0, 2) position
+//const invader13 = new Invader(5, 1); // (0, 0) position
+//const invader14 = new Invader(6, 1); // (0, 2) position
 // here I work on grids
 let myInvaderArray = []
 
@@ -173,9 +173,7 @@ function animate() {
     //invader12.update();
     //invader13.update();
     //invader14.update();
-    //try to type objects in the array
-    myInvaderArray.forEach((invad) => { invad.update(); }
-        )
+ 
 
     
     player.update()
@@ -198,7 +196,19 @@ function animate() {
         player.velocity.x = 0
     }
 
-
+   //try to type objects in the array
+   myInvaderArray.forEach((invad, i) => { invad.update();
+    
+    projectiles.forEach((projectile,j) => {
+        if(projectile.position.y - projectile.radius <= invad.position.y + invad.height){
+            setTimeout(() => {
+                myInvaderArray.splice(i, j)
+                projectiles.splice(i, j)
+            }, 0 )
+        }
+    })
+    }
+   )
         //creating grid of invaders
     //grids.forEach((grid) => {
     //    grid.update();
