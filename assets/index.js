@@ -159,22 +159,22 @@ function animate() {
     requestAnimationFrame(animate)
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
-    invader1.update();
-    invader2.update();
-    invader3.update();
-    invader4.update();
-    invader5.update();
-    invader6.update();
-    invader7.update();
-    invader8.update();
-    invader9.update();
-    invader10.update();
-    invader11.update();
-    invader12.update();
-    invader13.update();
-    invader14.update();
+    // invader1.update();
+    //invader2.update();
+    //invader3.update();
+    //invader4.update();
+    //invader5.update();
+    //invader6.update();
+    //invader7.update();
+    //invader8.update();
+    //invader9.update();
+    //invader10.update();
+    //invader11.update();
+    //invader12.update();
+    //invader13.update();
+    //invader14.update();
     //try to type objects in the array
-    myInvaderArray.forEach((invad) => { invader.update(); }
+    myInvaderArray.forEach((invad) => { invad.update(); }
         )
 
     
