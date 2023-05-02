@@ -106,6 +106,16 @@ class Invader {
     }
 }
 
+// creating grid of invaders
+    //creating grid of invaders
+//creating grid of invaders
+   // grids.forEach(grid => {
+     //   grid.update()
+       // grid.invaders.forEach(invader => {
+        //invader.update()
+        //})
+    //})
+
 // Creating couds of invaders everywhere
 //constsant variabes of the game
 const player = new Player()
@@ -134,25 +144,15 @@ function animate() {
     invader.update()
     player.update()
     // animation of projecties
-    projectiles.forEach((projectile, index) => {
-        if(projectile.position.y + projectile.radius <=0){
-            projectiles.splice(index, 1)
-        } else {
-            projectile.update()
-        }
-    })
+    // projectiles.forEach((projectile, index) => {
+    //    if(projectile.position.y + projectile.radius <=0){
+    //        projectiles.splice(index, 1)
+    //    } else {
+    //        projectile.update()
+    //    }
+    // })
 
    
-
-
-    //creating grid of invaders
-//creating grid of invaders
-   // grids.forEach(grid => {
-     //   grid.update()
-       // grid.invaders.forEach(invader => {
-        //invader.update()
-        //})
-    //})
 
     if(keys.a.pressed && player.position.x >= 0){
         //console.log('a option in animate')
@@ -172,15 +172,15 @@ window.addEventListener('keydown', ({ key }) => {
     
     switch (key) {
         case 'a':
-            //console.log('left down')      
+            console.log('left down')      
             keys.a.pressed = true
             break
         case 'd':
-            //console.log('right down')
+            console.log('right down')
             keys.d.pressed = true
             break
         case ' ':
-            //console.log('space')
+            console.log('space')
             projectiles.push(new Projectile({
                 position: {
                     x:player.position.x + player.width/2,
@@ -202,16 +202,16 @@ window.addEventListener('keyup', ({ key }) => {
     
     switch (key) {
         case 'a':
-            //console.log('left up')
+            console.log('left up')
             
             keys.a.pressed = false
             break
         case 'd':
-            //console.log('right up')
+            console.log('right up')
             keys.d.pressed = false
             break
         case ' ':
-            //console.log('space')
+            console.log('space')
             
             break
     }

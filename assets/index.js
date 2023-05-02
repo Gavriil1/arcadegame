@@ -101,17 +101,31 @@ class Invader {
       }
     }
   }
-  
-
 // Creating couds of invaders everywhere
+class Grid {
+    constructor() {
+        this.position={
+            x: 0,
+            y: 0
+        }
+      this.velocity = {
+        x: 0,
+        y: 0
+      };
+
+      this.invdaders = [new Invader()]
+    }
+    update(){}
+}
 //constsant variabes of the game
 const player = new Player()
 const projectiles = []
-const invader1 = new Invader(0, 0); // (0, 0) position
-const invader2 = new Invader(0, 2); // (0, 2) position
-//const grids = [new Grid()]
+const invader1 = new Invader(2, 0); // (0, 0) position
+const invader2 = new Invader(2, 2); // (0, 2) position
+// here I work on grids
+const grids = [new Grid()];
 const keys = {
-    a: {
+    'a': {
         pressed: false
     },
     d: {
@@ -140,19 +154,16 @@ function animate() {
             projectile.update()
         }
     })
-
-   
-
-
     //creating grid of invaders
-//creating grid of invaders
-   // grids.forEach(grid => {
-     //   grid.update()
-       // grid.invaders.forEach(invader => {
-        //invader.update()
-        //})
-    //})
+    grids.forEach((grid) => {
+        grid.update();
+        grid.invaders.forEach((invader) => {
+          invader.update();
+        });
+      });
+      
 
+    //payer veocity
     if(keys.a.pressed && player.position.x >= 0){
         //console.log('a option in animate')
         player.velocity.x = -5
