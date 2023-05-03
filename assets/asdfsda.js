@@ -1,3 +1,12 @@
+// how to check if the array is 0 to finish the game
+https://www.freecodecamp.org/news/check-if-javascript-array-is-empty-or-not-with-length/
+
+if (arr.length === 0)
+ { console.log("Array is empty!") }
+
+ console.log(myInvaderArraymyArray.length)
+
+
 //Creating Invaders in a signe script
 
 const invader1 = new Invader(0, 0); // (0, 0) position

@@ -1,5 +1,5 @@
 const canvas = document.querySelector('canvas');
-console.log(canvas);
+//console.log(canvas);
 const c = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
@@ -48,7 +48,7 @@ class Projectile {
     constructor({position, velocity}){
         this.position = position
         this.velocity = velocity
-        this.radius = 3
+        this.radius = 7
     }
 
     draw() {
@@ -70,7 +70,7 @@ class Projectile {
 class Invader {
     constructor(x, y) {
       this.velocity = {
-        x: 0,
+        x: 3,
         y: 0
       };
       this.rotation = 0;
@@ -78,7 +78,7 @@ class Invader {
       const image = new Image();
       image.src = "assets/images/invader.png";
       image.onload = () => {
-        const scale = 2;
+        const scale = 3;
         this.image = image;
         this.width = image.width * scale;
         this.height = image.height * scale;
@@ -98,6 +98,10 @@ class Invader {
         this.draw();
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
+
+        if(this.position.x + this.width >= canvas.width || this.position.x  <= 0 ){
+            this.velocity.x = -this.velocity.x;
+        }
       }
     }
   }
@@ -108,23 +112,11 @@ class Invader {
 const player = new Player()
 const projectiles = []
 //const invader1 = new Invader(0, 0); // (0, 0) position
-//const invader2 = new Invader(1, 0); // (0, 2) position
-//const invader3 = new Invader(2, 0); // (0, 0) position
-//const invader4 = new Invader(3, 2); // (0, 2) position
-//const invader5 = new Invader(4, 0); // (0, 0) position
-//const invader6 = new Invader(5, 2); // (0, 2) position
-//const invader7 = new Invader(6, 0); // (0, 0) position
-//const invader8 = new Invader(0, 1); // (0, 2) position
-//const invader9 = new Invader(1, 1); // (0, 0) position
-//const invader10 = new Invader(2, 1); // (0, 2) position
-//const invader11 = new Invader(3, 1); // (0, 0) position
-//const invader12 = new Invader(4, 1); // (0, 2) position
-//const invader13 = new Invader(5, 1); // (0, 0) position
-//const invader14 = new Invader(6, 1); // (0, 2) position
-// here I work on grids
+
+// here I work on grid
 let myInvaderArray = []
 
-for (let x = 0; x < 10; x++){
+for (let x = 1; x < 11; x++){
     for (let y = 0; y < 2; y++){
         myInvaderArray.push(
             new Invader(        
@@ -132,16 +124,16 @@ for (let x = 0; x < 10; x++){
                 y
             )
         )
-        console.log(myInvaderArray)
+        //console.log(myInvaderArray)
     }
 }
   
-console.log(myInvaderArray)
+// console.log(myInvaderArray)
 
 
 //key isteners
 const keys = {
-    'a': {
+    a: {
         pressed: false
     },
     d: {
@@ -159,6 +151,7 @@ function animate() {
     requestAnimationFrame(animate)
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
+    c.fillText('Cick A D and space to start a game', 100, 100)
     // invader1.update();
     //invader2.update();
     //invader3.update();
@@ -200,10 +193,27 @@ function animate() {
    myInvaderArray.forEach((invad, i) => { invad.update();
     
     projectiles.forEach((projectile,j) => {
-        if(projectile.position.y - projectile.radius <= invad.position.y + invad.height){
+        if(
+            projectile.position.y - projectile.radius <=
+            invad.position.y + invad.height &&
+          projectile.position.x + projectile.radius >= invad.position.x &&
+          projectile.position.x - projectile.radius <=
+            invad.position.x + invad.width &&
+          projectile.position.y + projectile.radius >= invad.position.y
+        ){
             setTimeout(() => {
+
+                const invaderFound = myInvaderArray.find(
+                    (invader2) => invader2 === invad
+                  )
+                  const projectileFound = projectiles.find(
+                    (projectile2) => projectile2 === projectile
+                  )
+      
+
                 myInvaderArray.splice(i, j)
                 projectiles.splice(i, j)
+                console.log(myInvaderArray.length)
             }, 0 )
         }
     })
@@ -246,7 +256,7 @@ window.addEventListener('keydown', ({ key }) => {
                 }
             }
             ))
-            console.log(projectiles)
+            //console.log(projectiles)
             break
     }
 })
