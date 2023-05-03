@@ -45,3 +45,22 @@ for (let x = 0; x < 10; x++){
 }
   
 console.log(myInvaderArray)
+
+
+// text changer 
+if (projectile == 0){
+    c.font = '30px Arial';
+    c.fillStyle = 'white';
+    c.textAlign = 'center';
+    c.fillText('To play a game use "A" and "D" to move and "Space" to fire', 
+    canvas.width/2, canvas.height/2);
+} else if (projectie is !=0)  {
+show any text"
+}
+
+if(myInvaderArray. length ===0){
+     c.font = '30px Arial';
+     c.fillStyle = 'black';
+     c.textAlign = 'center';
+     c.fillText('Congrats You Won. Refrash the page to play again', canvas.width/2, canvas.height/2);
+}
