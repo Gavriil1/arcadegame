@@ -19,9 +19,9 @@ class Player {
         this.rotation = 0
 
         const image = new Image()
-        image.src = "assets/images/spaceship.png"
+        image.src = "assets/images/cartoon-martial-arts-character-archery_4042629.png"
         image.onload = () => {
-            const scale = 0.15
+            const scale = 0.05
             this.image = image
             this.width = image.width * scale
             this.height = image.height * scale
@@ -78,9 +78,9 @@ class Invader {
       this.rotation = 0;
   
       const image = new Image();
-      image.src = "assets/images/invader.png";
+      image.src = "assets/images/ancient-greek-spartan-warrior-6839912.png";
       image.onload = () => {
-        const scale = 3;
+        const scale = 0.1;
         this.image = image;
         this.width = image.width * scale;
         this.height = image.height * scale;
@@ -151,24 +151,18 @@ const keys = {
 
 function animate() {
     requestAnimationFrame(animate)
-    c.fillStyle = 'yellow'
+    c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
     c.fillText('Cick A D and space to start a game', canvas.width/2, canvas.height/2)
-    // invader1.update();
-    //invader2.update();
-    //invader3.update();
-    //invader4.update();
-    //invader5.update();
-    //invader6.update();
-    //invader7.update();
-    //invader8.update();
-    //invader9.update();
-    //invader10.update();
-    //invader11.update();
-    //invader12.update();
-    //invader13.update();
-    //invader14.update();
- 
+
+    //text in the center of the screen: 
+    c.font = '30px Arial';
+    c.fillStyle = 'white';
+    c.textAlign = 'center';
+    c.fillText('To play a game use "A" and "D" to move and "Space" to fire', 
+    canvas.width/2, canvas.height/2);
+
+
 
     
     player.update()
@@ -221,13 +215,6 @@ function animate() {
     })
     }
    )
-        //creating grid of invaders
-    //grids.forEach((grid) => {
-    //    grid.update();
-    //    grid.invaders.forEach((invader) => {
-    //      invader.update();
-    //    });
-    //  });
 
 }
 
