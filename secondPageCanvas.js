@@ -1,9 +1,14 @@
 const canvas = document.querySelector('canvas');
-//console.log(canvas);
+console.log('Yes I can connect to canvas')
+console.log(canvas);
 const c = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+//od  vaue  
+//canvas.width = window.innerWidth;
+//canvas.height = window.innerHeight;
+
+canvas.width = 1024;
+canvas.height = 576;
 
 
 // payer script
@@ -304,4 +309,4 @@ window.addEventListener('keyup', ({ key }) => {
     }
 })
 
-
+//buttons on the screen

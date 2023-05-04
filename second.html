@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spartan Invader</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+			width: 80%;   
+			height: 30%;
+		}
+		button {
+			width: 165px;
+			height: 50px;
+			font-size: 20px;
+			margin-right: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Spartan Invader</h1>
+	</header>
+
+	<main>
+		<div>
+			<canvas id="myCanvas"></canvas>
+		</div>
+		 <div>
+			<button id="leftBtn" onclick="sendKey('a')">Left</button>
+			<button id="rightBtn" onclick="sendKey('d')">Right</button>
+			<button id="fireBtn" onclick="sendKey(' ')">Fire</button>
+		</div>
+	
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Canvas Game</p>
+	</footer>
+
+	<script src="secondPageCanvas.js"></script>
+	<script>
+		function sendKey(key) {
+		var canvas = document.getElementById("myCanvas");
+		canvas.focus();
+		var event = new KeyboardEvent("keydown", {"key": key});
+		canvas.dispatchEvent(event);
+		 }
+	</script>
+</body>
+</html>
