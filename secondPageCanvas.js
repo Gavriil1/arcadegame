@@ -152,6 +152,12 @@ const keys = {
 }
 // variabe to disapear text
 let spacepress = 0
+// Send buttons events to KeyboardEvent
+function sendKey(key) {
+    const event = new KeyboardEvent('keydown', { key })
+    window.dispatchEvent(event)
+  }
+
 
 
 function animate() {
@@ -250,6 +256,21 @@ function animate() {
 
 animate()
 
+
+// Trying to activate browser keys
+//function sendKey(key) {
+    //console.log('send key triggered succesfuy and pressed key is : ')
+    //console.log(key)
+//    console.log("html listener " + key);
+//    var canvas = document.getElementById("myCanvas");
+    //console.log(canvas)
+// canvas.focus();
+//    var event = new KeyboardEvent("keydown", {"key": key});
+  //   canvas.dispatchEvent(event);
+ //   console.log("event variable is :"+ event)
+ //}
+
+
 //event istener when we press the buttons
 window.addEventListener('keydown', ({ key }) => {
     
@@ -265,7 +286,7 @@ window.addEventListener('keydown', ({ key }) => {
             spacepress = spacepress +1
             keys.d.pressed = true
             break
-        case ' ':
+        case 's':
             //console.log('space')
             spacepress = spacepress +1
             //console.log('the vaue of spacetress is ')
@@ -290,6 +311,7 @@ window.addEventListener('keydown', ({ key }) => {
     }
 })
 
+
 // event istener when we unpress the button
 window.addEventListener('keyup', ({ key }) => {
     
@@ -303,7 +325,7 @@ window.addEventListener('keyup', ({ key }) => {
             //console.log('right up')
             keys.d.pressed = false
             break
-        case ' ':
+        case 's':
             //console.log('space')
             
             break

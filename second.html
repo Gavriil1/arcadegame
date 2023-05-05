@@ -45,7 +45,7 @@
 		 <div>
 			<button id="leftBtn" onclick="sendKey('a')">Left</button>
 			<button id="rightBtn" onclick="sendKey('d')">Right</button>
-			<button id="fireBtn" onclick="sendKey(' ')">Fire</button>
+			<button id="fireBtn" onclick="sendKey('s')">Fire</button>
 		</div>
 	
 	</main>
@@ -56,16 +56,16 @@
 
 	<script src="secondPageCanvas.js"></script>
 	<script>
-		function sendKey(key) {
-			//console.log('send key triggered succesfuy and pressed key is : ')
-			//console.log(key)
-			console.log("html listener " + key);
-			var canvas = document.getElementById("myCanvas");
-			//console.log(canvas)
-			canvas.focus();
-			var event = new KeyboardEvent("keydown", {"key": key});
-			canvas.dispatchEvent(event);
-		 }
+		//function sendKey(key) {
+		//	//console.log('send key triggered succesfuy and pressed key is : ')
+		//	//console.log(key)
+		//	console.log("html listener " + key);
+		//	var canvas = document.getElementById("myCanvas");
+		//	//console.log(canvas)
+		//	canvas.focus();
+		//	var event = new KeyboardEvent("keydown", {"key": key});
+		//	canvas.dispatchEvent(event);
+		// }
 	</script>
 </body>
 </html>

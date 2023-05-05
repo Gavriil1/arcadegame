@@ -259,7 +259,7 @@ window.addEventListener('keydown', ({ key }) => {
             spacepress = spacepress +1
             keys.d.pressed = true
             break
-        case ' ':
+        case 's':
             //console.log('space')
             spacepress = spacepress +1
             //console.log('the vaue of spacetress is ')
@@ -297,7 +297,7 @@ window.addEventListener('keyup', ({ key }) => {
             //console.log('right up')
             keys.d.pressed = false
             break
-        case ' ':
+        case 's':
             //console.log('space')
             
             break
