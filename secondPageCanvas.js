@@ -158,6 +158,20 @@ function sendKey(key) {
     window.dispatchEvent(event)
   }
 
+// adding on mouse up function 
+function unSendKey(key) {
+    const event = new KeyboardEvent('keyup', { key })
+    window.dispatchEvent(event)
+  }
+
+  function unSendKey(key) {
+    // do nothing
+    const event1 = new KeyboardEvent('keyup', { key })
+    window.dispatchEvent(event1)
+    console.log('I am here and I am happy ')
+  }
+
+
 function animate() {
     requestAnimationFrame(animate)
     c.fillStyle = 'black'
@@ -177,7 +191,7 @@ function animate() {
     c.font = '30px Arial';
     c.fillStyle = 'white';
     c.textAlign = 'center';
-    c.fillText('To play a game use "A" and "D" to move and "Space" to fire', 
+    c.fillText('To play a game use "A" and "D" to move and "S" to fire', 
     canvas.width/2, canvas.height/2);
     } 
     //else {
@@ -275,17 +289,17 @@ window.addEventListener('keydown', ({ key }) => {
     console.log("Js listener " + key);
     switch (key) {
         case 'a':
-            //console.log('left down')
+            console.log('left down')
             spacepress = spacepress +1      
             keys.a.pressed = true
             break
         case 'd':
-            //console.log('right down')
+            console.log('right down')
             spacepress = spacepress +1
             keys.d.pressed = true
             break
         case 's':
-            //console.log('space')
+            console.log('space')
             spacepress = spacepress +1
             //console.log('the vaue of spacetress is ')
             //console.log(spacepress)
@@ -310,21 +324,22 @@ window.addEventListener('keydown', ({ key }) => {
 })
 
 
+
 // event istener when we unpress the button
 window.addEventListener('keyup', ({ key }) => {
     
     switch (key) {
         case 'a':
-            //console.log('left up')
+            console.log('left up')
             
             keys.a.pressed = false
             break
         case 'd':
-            //console.log('right up')
+            console.log('right up')
             keys.d.pressed = false
             break
         case 's':
-            //console.log('space')
+            console.log('space up')
             
             break
     }
