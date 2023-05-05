@@ -253,6 +253,7 @@ animate()
 //event istener when we press the buttons
 window.addEventListener('keydown', ({ key }) => {
     
+    console.log("Js listener " + key);
     switch (key) {
         case 'a':
             //console.log('left down')

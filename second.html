@@ -17,6 +17,20 @@
 			font-size: 20px;
 			margin-right: 5px;
 		}
+		.footer {
+   			/*position: fixed; /* - This property sets the position of the element to be fixed,
+			 meaning it will be positioned relative to the viewport (the visible area of the browser window)
+			  and will not move even if the user scrolls the page. */
+   			left: 0; /*  This property sets the distance between the left edge of the
+			 element and the left edge of its containing element to 0. */
+  			bottom: 0; /* This property sets the distance between the bottom edge of the
+			 element and the bottom edge of its containing element to 0. */
+   			width: 100%; /*  */
+			height: 100%; 
+   			background-color: red; /*  */
+   			color: white; /*  This property sets the color of the text within the footer to white. */
+   			text-align: center; /*  */
+		}
 	</style>
 </head>
 <body>
@@ -36,17 +50,21 @@
 	
 	</main>
 
-	<footer>
-		<p>&copy; 2023 Canvas Game</p>
+	<footer class="footer">
+		<p>&copy; 2023 Gabriel's JS Project</p>
 	</footer>
 
 	<script src="secondPageCanvas.js"></script>
 	<script>
 		function sendKey(key) {
-		var canvas = document.getElementById("myCanvas");
-		canvas.focus();
-		var event = new KeyboardEvent("keydown", {"key": key});
-		canvas.dispatchEvent(event);
+			//console.log('send key triggered succesfuy and pressed key is : ')
+			//console.log(key)
+			console.log("html listener " + key);
+			var canvas = document.getElementById("myCanvas");
+			//console.log(canvas)
+			canvas.focus();
+			var event = new KeyboardEvent("keydown", {"key": key});
+			canvas.dispatchEvent(event);
 		 }
 	</script>
 </body>
