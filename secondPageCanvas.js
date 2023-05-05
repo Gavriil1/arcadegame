@@ -158,8 +158,6 @@ function sendKey(key) {
     window.dispatchEvent(event)
   }
 
-
-
 function animate() {
     requestAnimationFrame(animate)
     c.fillStyle = 'black'
