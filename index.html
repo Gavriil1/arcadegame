@@ -55,12 +55,18 @@
 		<div>
 			<canvas id="myCanvas"></canvas>
 		</div>
-		 <div>
+		<!-- <div>
 			<button id="leftBtn" onclick="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
 			<button id="rightBtn" onclick="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
 			<button id="fireBtn" onclick="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
-		</div>
+		</div> -->
 	
+		<div>
+			<button id="leftBtn" onmousedown="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
+			<button id="rightBtn" onmousedown="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
+			<button id="fireBtn" onmousedown="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
+		</div>
+
 	</main>
 
 	<footer class="footer">
@@ -71,12 +77,13 @@
 	<script>
 	
 		function sendKey(key) {
+			console.log("sendKey function received a key for key down")
 			let event = new KeyboardEvent('keydown', { key })
 			window.dispatchEvent(event)
 		}
 
 		function unSendKey(key) {
-			console.log("upkey works")
+			console.log("unSend fuction receives the key for key up")
 			let event1 = new KeyboardEvent('keyup', { key })
 			window.dispatchEvent(event1)
 		}

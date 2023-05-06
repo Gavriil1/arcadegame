@@ -1,6 +1,6 @@
 const canvas = document.querySelector('canvas');
-console.log('Yes I can connect to canvas')
-console.log(canvas);
+// console.log('Yes I can connect to canvas')
+// AA     console.log(canvas);
 const c = canvas.getContext('2d');
 
 //od  vaue  
@@ -317,7 +317,7 @@ window.addEventListener('keydown', ({ key }) => {
 
 // event istener when we unpress the button
 window.addEventListener('keyup', ({ key }) => {
-    
+    console.log('keyup event listener received key from unsendKey Function')
     switch (key) {
         case 'a':
             console.log('left up')
