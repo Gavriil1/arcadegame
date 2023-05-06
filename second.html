@@ -69,16 +69,18 @@
 
 	<script src="secondPageCanvas.js"></script>
 	<script>
-		//function sendKey(key) {
-		//	//console.log('send key triggered succesfuy and pressed key is : ')
-		//	//console.log(key)
-		//	console.log("html listener " + key);
-		//	var canvas = document.getElementById("myCanvas");
-		//	//console.log(canvas)
-		//	canvas.focus();
-		//	var event = new KeyboardEvent("keydown", {"key": key});
-		//	canvas.dispatchEvent(event);
-		// }
+	
+		function sendKey(key) {
+			let event = new KeyboardEvent('keydown', { key })
+			window.dispatchEvent(event)
+		}
+
+		function unSendKey(key) {
+			console.log("upkey works")
+			let event1 = new KeyboardEvent('keyup', { key })
+			window.dispatchEvent(event1)
+		}
+
 	</script>
 </body>
 </html>

@@ -80,7 +80,7 @@ class Invader {
         x: 3,
         y: 0
       };
-      this.rotation = 0;
+      
   
       const image = new Image();
       image.src = "assets/images/ancient-greek-spartan-warrior-6839912.png";
@@ -152,24 +152,7 @@ const keys = {
 }
 // variabe to disapear text
 let spacepress = 0
-// Send buttons events to KeyboardEvent
-function sendKey(key) {
-    const event = new KeyboardEvent('keydown', { key })
-    window.dispatchEvent(event)
-  }
 
-// adding on mouse up function 
-function unSendKey(key) {
-    const event = new KeyboardEvent('keyup', { key })
-    window.dispatchEvent(event)
-  }
-
-  function unSendKey(key) {
-    // do nothing
-    const event1 = new KeyboardEvent('keyup', { key })
-    window.dispatchEvent(event1)
-    console.log('I am here and I am happy ')
-  }
 
 
 function animate() {
@@ -282,6 +265,12 @@ animate()
  //   console.log("event variable is :"+ event)
  //}
 
+ // Send buttons events to KeyboardEvent
+
+
+
+
+
 
 //event istener when we press the buttons
 window.addEventListener('keydown', ({ key }) => {
@@ -322,6 +311,7 @@ window.addEventListener('keydown', ({ key }) => {
             break
     }
 })
+
 
 
 
