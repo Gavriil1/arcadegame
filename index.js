@@ -293,7 +293,18 @@ animate()
 
  // Send buttons events to KeyboardEvent
 
-
+ function sendKey(key) {
+    console.log("sendKey function received a key for key down");
+    let event = new KeyboardEvent('keydown', { key });
+    window.dispatchEvent(event);
+  }
+  
+  function unSendKey(key) {
+    console.log("unSend function received the key for key up");
+    let event1 = new KeyboardEvent('keyup', { key });
+    setTimeout(function(){window.dispatchEvent(event1);}, 100);
+  }
+  
 
 
 

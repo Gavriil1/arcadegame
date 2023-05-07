@@ -1,21 +1,27 @@
+/* css for the page  of Spartan Invader*/
 body {
 	text-align: center;
 	justify-content: center;
 }
+
+/* Header CSS */
 h1 {
 	font-size: 60px ;
 }
+/* HTML canvas CSS */
 canvas {
 	border: 1px solid black;
 	width: 80%;   
 	height: 35%;
 }
+/* Left Right Fire buttons' css */
 button {
 	width: 26%;
 	height: 100%;
 	font-size: 20px;
 	margin-right: 5px;
 }
+/* footer css*/
 .footer {
 	background-color: red;
 	width: 80%;
