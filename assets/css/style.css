@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+	justify-content: center;
+}
+h1 {
+	font-size: 60px ;
+}
+canvas {
+	border: 1px solid black;
+	width: 80%;   
+	height: 35%;
+}
+button {
+	width: 26%;
+	height: 100%;
+	font-size: 20px;
+	margin-right: 5px;
+}
+.footer {
+	background-color: red;
+	width: 80%;
+	margin: auto;
+}
