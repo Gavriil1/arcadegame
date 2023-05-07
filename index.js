@@ -194,15 +194,41 @@ function animate() {
         }
     })
     //payer veocity
-    if(keys.a.pressed && player.position.x >= 0){
-        //console.log('a option in animate')
+    // if(keys.a.pressed && player.position.x >= 0){
+    //    console.log('a option in animate')
+    //    player.velocity.x = -5
+   // } else if (keys.d.pressed && player.position.x + player.width <= canvas.width ){
+    //    console.log('d option in animate')
+    //    player.velocity.x = 5
+    //} else {
+    //    console.log('a or d received but there is no move')
+    //    player.velocity.x = 0
+    //}
+
+    //if(keys.a.pressed){
+    //    console.log('keys.a.pressed is true')
+    //}
+
+    //console.log(keys.a.pressed)
+
+    //if(keys.a.pressed && player.position.x >= 0){
+    //    console.log('keys.a.pressed && player.position.x >= 0 is true')
+    //}
+
+     //payer veocity
+     if(keys.a.pressed && player.position.x >= 0){
+        console.log('a option in animate')
         player.velocity.x = -5
     } else if (keys.d.pressed && player.position.x + player.width <= canvas.width ){
-        //console.log('d option in animate')
+        console.log('d option in animate')
         player.velocity.x = 5
     } else {
+        //console.log('a or d received but there is no move')
         player.velocity.x = 0
     }
+
+
+
 
    //try to type objects in the array
    myInvaderArray.forEach((invad, i) => { invad.update();
@@ -278,9 +304,12 @@ window.addEventListener('keydown', ({ key }) => {
     console.log("Js listener " + key);
     switch (key) {
         case 'a':
+            
             console.log('left down')
-            spacepress = spacepress +1      
+            spacepress = spacepress +1
+            console.log('keydown keys.a.pressed before' +  keys.a.pressed)     
             keys.a.pressed = true
+            console.log('keydown keys.a.pressed after' +  keys.a.pressed)  
             break
         case 'd':
             console.log('right down')
@@ -320,9 +349,12 @@ window.addEventListener('keyup', ({ key }) => {
     console.log('keyup event listener received key from unsendKey Function')
     switch (key) {
         case 'a':
-            console.log('left up')
             
+            onsole.log('the delay is' + mouseUpTime);
+            console.log('left up')
+            console.log('keyup keys.a.pressed before' +  keys.a.pressed)  
             keys.a.pressed = false
+            console.log('keyup keys.a.pressed before' +  keys.a.pressed)  
             break
         case 'd':
             console.log('right up')

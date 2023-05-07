@@ -62,10 +62,11 @@
 		</div> -->
 	
 		<div>
-			<button id="leftBtn" onmousedown="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
-			<button id="rightBtn" onmousedown="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
-			<button id="fireBtn" onmousedown="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
-		</div>
+			<button id="leftBtn" onmousedown="sendKeyDelayed('a')" onmouseup="unSendKeyDelayed('a')">Left</button>
+			<button id="rightBtn" onmousedown="sendKeyDelayed('d')" onmouseup="unSendKeyDelayed('d')">Right</button>
+			<button id="fireBtn" onmousedown="sendKeyDelayed('s')" onmouseup="unSendKeyDelayed('s')">Fire</button>
+		  </div>
+		  
 
 	</main>
 
@@ -76,17 +77,42 @@
 	<script src="index.js"></script>
 	<script>
 	
-		function sendKey(key) {
-			console.log("sendKey function received a key for key down")
-			let event = new KeyboardEvent('keydown', { key })
-			window.dispatchEvent(event)
-		}
+	let delay = 500; // set delay time in milliseconds
 
-		function unSendKey(key) {
-			console.log("unSend fuction receives the key for key up")
-			let event1 = new KeyboardEvent('keyup', { key })
-			window.dispatchEvent(event1)
-		}
+let mouseDownTime;
+
+function sendKeyDelayed(key) {
+  mouseDownTime = new Date().getTime();
+  setTimeout(function() {
+    sendKey(key);
+  }, delay);
+}
+
+function unSendKeyDelayed(key) {
+  let mouseUpTime = new Date().getTime();
+  //console.log('the delay is' + mmouseUpTime - mouseDownTime);
+  
+  if (mouseUpTime - mouseDownTime < delay) {
+    setTimeout(function() {
+      unSendKey(key);
+    }, delay);
+  } else {
+    unSendKey(key);
+  }
+}
+
+function sendKey(key) {
+  console.log("sendKey function received a key for key down");
+  let event = new KeyboardEvent('keydown', { key });
+  window.dispatchEvent(event);
+}
+
+function unSendKey(key) {
+  console.log("unSend function received the key for key up");
+  let event1 = new KeyboardEvent('keyup', { key });
+  window.dispatchEvent(event1);
+}
+
 
 	</script>
 </body>
