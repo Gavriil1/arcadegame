@@ -307,9 +307,9 @@ window.addEventListener('keydown', ({ key }) => {
             
             console.log('left down')
             spacepress = spacepress +1
-            console.log('keydown keys.a.pressed before' +  keys.a.pressed)     
+            // console.log('keydown keys.a.pressed before' +  keys.a.pressed)     
             keys.a.pressed = true
-            console.log('keydown keys.a.pressed after' +  keys.a.pressed)  
+           // console.log('keydown keys.a.pressed after' +  keys.a.pressed)  
             break
         case 'd':
             console.log('right down')
@@ -345,12 +345,14 @@ window.addEventListener('keydown', ({ key }) => {
 
 
 // event istener when we unpress the button
+
+//buttons on the screen
 window.addEventListener('keyup', ({ key }) => {
     console.log('keyup event listener received key from unsendKey Function')
     switch (key) {
         case 'a':
             
-            onsole.log('the delay is' + mouseUpTime);
+       
             console.log('left up')
             console.log('keyup keys.a.pressed before' +  keys.a.pressed)  
             keys.a.pressed = false
@@ -366,5 +368,3 @@ window.addEventListener('keyup', ({ key }) => {
             break
     }
 })
-
-//buttons on the screen

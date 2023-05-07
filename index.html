@@ -55,17 +55,18 @@
 		<div>
 			<canvas id="myCanvas"></canvas>
 		</div>
-		<!-- <div>
+		 <div>
 			<button id="leftBtn" onclick="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
 			<button id="rightBtn" onclick="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
 			<button id="fireBtn" onclick="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
-		</div> -->
-	
+		</div> 
+	<!-- 
 		<div>
 			<button id="leftBtn" onmousedown="sendKeyDelayed('a')" onmouseup="unSendKeyDelayed('a')">Left</button>
 			<button id="rightBtn" onmousedown="sendKeyDelayed('d')" onmouseup="unSendKeyDelayed('d')">Right</button>
 			<button id="fireBtn" onmousedown="sendKeyDelayed('s')" onmouseup="unSendKeyDelayed('s')">Fire</button>
-		  </div>
+		  </div> 
+		  -->
 		  
 
 	</main>
@@ -77,29 +78,9 @@
 	<script src="index.js"></script>
 	<script>
 	
-	let delay = 500; // set delay time in milliseconds
+	let delay = 100; // set delay time in milliseconds
 
 let mouseDownTime;
-
-function sendKeyDelayed(key) {
-  mouseDownTime = new Date().getTime();
-  setTimeout(function() {
-    sendKey(key);
-  }, delay);
-}
-
-function unSendKeyDelayed(key) {
-  let mouseUpTime = new Date().getTime();
-  //console.log('the delay is' + mmouseUpTime - mouseDownTime);
-  
-  if (mouseUpTime - mouseDownTime < delay) {
-    setTimeout(function() {
-      unSendKey(key);
-    }, delay);
-  } else {
-    unSendKey(key);
-  }
-}
 
 function sendKey(key) {
   console.log("sendKey function received a key for key down");
@@ -110,7 +91,8 @@ function sendKey(key) {
 function unSendKey(key) {
   console.log("unSend function received the key for key up");
   let event1 = new KeyboardEvent('keyup', { key });
-  window.dispatchEvent(event1);
+  setTimeout(function(){window.dispatchEvent(event1);}, 100);
+  
 }
 
 
