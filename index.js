@@ -7,8 +7,8 @@ const c = canvas.getContext('2d');
 //canvas.width = window.innerWidth;
 //canvas.height = window.innerHeight;
 
-canvas.width = 1024;
-canvas.height = 576;
+ canvas.width = 1024;
+ canvas.height = 576;
 
 
 // payer script
