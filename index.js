@@ -1,3 +1,5 @@
+// The inspiration for this code was taken from: https://www.udemy.com/course/space-invaders-with-javascript-and-html-canvas/
+
 const kanhtml = document.querySelector('canvas');
 // console.log('Yes I can connect to kanhtml')
 // AA     console.log(kanhtml);
