@@ -93,6 +93,20 @@ button {
 
 /* Code of 404 page */
 .bodyfof {
-	background-color: rgb(212, 44, 170);
+	background-color: rgb(208, 238, 196);
 }
   
+.hfof{
+	font-size: 40px ; 
+	/* border-style: dotted */
+	margin-top: 0px;
+  	margin-bottom: 0px;
+	padding-bottom:0px;
+}
+
+.pfof {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+	/* border-style: dotted */
+}
