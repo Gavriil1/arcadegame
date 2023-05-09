@@ -1,113 +1,113 @@
-const canvas = document.querySelector('canvas');
-// console.log('Yes I can connect to canvas')
-// AA     console.log(canvas);
-const c = canvas.getContext('2d');
+const kanhtml = document.querySelector('canvas');
+// console.log('Yes I can connect to kanhtml')
+// AA     console.log(kanhtml);
+const d = kanhtml.getContext('2d');
 
 //od  vaue  
-//canvas.width = window.innerWidth;
-//canvas.height = window.innerHeight;
+//kanhtml.width = window.innerWidth;
+//kanhtml.height = window.innerHeight;
 
- canvas.width = 1024;
- canvas.height = 576;
+ kanhtml.width = 1024;
+ kanhtml.height = 576;
 
 
 // payer script
-class Player {
+class Archer {
     constructor(){
        
 
-        this.velocity = {
+        this.celerity = {
             x:0,
             y:0
         }
 
-        this.rotation = 0
+  
 
-        const image = new Image()
-        image.src = "assets/images/cartoon-martial-arts-character-archery_4042629.png"
-        image.onload = () => {
+        const picture = new Image()
+        picture.src = "assets/images/cartoon-martial-arts-character-archery_4042629.png"
+        picture.onload = () => {
             const scale = 0.05
-            this.image = image
-            this.width = image.width * scale
-            this.height = image.height * scale
-            this.position = {
-                x: canvas.width/2 - this.width/2,
-                y: canvas.height - this.height - 20
+            this.picture = picture
+            this.width = picture.width * scale
+            this.height = picture.height * scale
+            this.placement = {
+                x: kanhtml.width/2 - this.width/2,
+                y: kanhtml.height - this.height - 20
             }
         }
     }
     draw(){
-        // c.fillStyle = 'red'
-        // c.fillRect(this.position.x, this.position.y, this.width, this.height)
+        // d.fillStyle = 'red'
+        // d.fillRect(this.placement.x, this.placement.y, this.width, this.height)
         
-        c.drawImage(this.image, this.position.x, this.position.y, this.width, this.height)
+        d.drawImage(this.picture, this.placement.x, this.placement.y, this.width, this.height)
     }
 
     update() {
-        if (this.image){
+        if (this.picture){
          this.draw()
-         this.position.x += this.velocity.x
+         this.placement.x += this.celerity.x
         }
     }
 }
 // projectie script
-class Projectile {
-    constructor({position, velocity}){
-        this.position = position
-        this.velocity = velocity
+class Arrow {
+    constructor({placement, celerity}){
+        this.placement = placement
+        this.celerity = celerity
         this.radius = 7
     }
 
     draw() {
-        c.beginPath()
-        c.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2)
-        c.fillStyle = 'red'
-        c.fill()
-        c.closePath()
+        d.beginPath()
+        d.arc(this.placement.x, this.placement.y, this.radius, 0, Math.PI * 2)
+        d.fillStyle = 'red'
+        d.fill()
+        d.closePath()
     }
 
     update() {
         this.draw()
-        this.position.x += this.velocity.x
-        this.position.y += this.velocity.y
+        this.placement.x += this.celerity.x
+        this.placement.y += this.celerity.y
     }
 
 }
 // invaders
-class Invader {
+class Spartan {
     constructor(x, y) {
-      this.velocity = {
+      this.celerity = {
         x: 3,
         y: 0
       };
       
   
-      const image = new Image();
-      image.src = "assets/images/ancient-greek-spartan-warrior-6839912.png";
-      image.onload = () => {
+      const picture = new Image();
+      picture.src = "assets/images/ancient-greek-spartan-warrior-6839912.png";
+      picture.onload = () => {
         const scale = 0.1;
-        this.image = image;
-        this.width = image.width * scale;
-        this.height = image.height * scale;
-        this.position = {
-          x: x * this.width, // set initial x position based on x parameter
-          y: y * this.height // set initial y position based on y parameter
+        this.picture = picture;
+        this.width = picture.width * scale;
+        this.height = picture.height * scale;
+        this.placement = {
+          x: x * this.width, // set initial x placement based on x parameter
+          y: y * this.height // set initial y placement based on y parameter
         };
       };
     }
   
     draw() {
-      c.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+      d.drawImage(this.picture, this.placement.x, this.placement.y, this.width, this.height);
     }
   
     update() {
-      if (this.image) {
+      if (this.picture) {
         this.draw();
-        this.position.x += this.velocity.x;
-        this.position.y += this.velocity.y;
+        this.placement.x += this.celerity.x;
+        this.placement.y += this.celerity.y;
 
-        if(this.position.x + this.width >= canvas.width || this.position.x  <= 0 ){
-            this.velocity.x = -this.velocity.x;
+        if(this.placement.x + this.width >= kanhtml.width || this.placement.x  <= 0 ){
+            this.celerity.x = -this.celerity.x;
         }
       }
     }
@@ -115,10 +115,10 @@ class Invader {
 // Creating couds of invaders everywhere
 
 
-//constsant variabes of the game
-const player = new Player()
-const projectiles = []
-//const invader1 = new Invader(0, 0); // (0, 0) position
+//constsant variabes of the gameaaa
+const archer = new Archer ()
+const arrows = []
+//const invader1 = new Spartan(0, 0); // (0, 0) placement
 
 // here I work on grid
 let myInvaderArray = []
@@ -126,7 +126,7 @@ let myInvaderArray = []
 for (let x = 1; x < 6; x++){
     for (let y = 0; y < 2; y++){
         myInvaderArray.push(
-            new Invader(        
+            new Spartan(        
                 x,
                 y
             )
@@ -139,7 +139,7 @@ for (let x = 1; x < 6; x++){
 
 
 //key isteners
-const keys = {
+const keycodes = {
     a: {
         pressed: false
     },
@@ -157,12 +157,12 @@ let spacepress = 0
 
 function animate() {
     requestAnimationFrame(animate)
-    c.fillStyle = 'black'
-    c.fillRect(0, 0, canvas.width, canvas.height)
+    d.fillStyle = 'black'
+    d.fillRect(0, 0, kanhtml.width, kanhtml.height)
     // Game manual text
     
     //console.log('before spacepressed is 0')
-    // if(keys.space.pressed){
+    // if(keycodes.space.pressed){
     //    console.log('space for text pressed')
     //     spacepress = spacepress +1
     //   console.log(spacepress)
@@ -171,11 +171,11 @@ function animate() {
 
     if(spacepress === 0){
     //text in the center of the screen: 
-    c.font = '30px Arial';
-    c.fillStyle = 'white';
-    c.textAlign = 'center';
-    c.fillText('To play a game use "A" and "D" to move and "S" to fire', 
-    canvas.width/2, canvas.height/2);
+    d.font = '30px Arial';
+    d.fillStyle = 'white';
+    d.textAlign = 'center';
+    d.fillText('To play a game use "A" and "D" to move and "S" to fire', 
+    kanhtml.width/2, kanhtml.height/2);
     } 
     //else {
     //    console.log('nothing to see here')
@@ -184,47 +184,47 @@ function animate() {
 
 
     
-    player.update()
+    archer.update()
     // animation of projecties
-    projectiles.forEach((projectile, index) => {
-        if(projectile.position.y + projectile.radius <=0){
-            projectiles.splice(index, 1)
+    arrows.forEach((projectile, index) => {
+        if(projectile.placement.y + projectile.radius <=0){
+            arrows.splice(index, 1)
         } else {
             projectile.update()
         }
     })
     //payer veocity
-    // if(keys.a.pressed && player.position.x >= 0){
+    // if(keycodes.a.pressed && archer.placement.x >= 0){
     //    console.log('a option in animate')
-    //    player.velocity.x = -5
-   // } else if (keys.d.pressed && player.position.x + player.width <= canvas.width ){
+    //    archer.celerity.x = -5
+   // } else if (keycodes.d.pressed && archer.placement.x + archer.width <= kanhtml.width ){
     //    console.log('d option in animate')
-    //    player.velocity.x = 5
+    //    archer.celerity.x = 5
     //} else {
     //    console.log('a or d received but there is no move')
-    //    player.velocity.x = 0
+    //    archer.celerity.x = 0
     //}
 
-    //if(keys.a.pressed){
-    //    console.log('keys.a.pressed is true')
+    //if(keycodes.a.pressed){
+    //    console.log('keycodes.a.pressed is true')
     //}
 
-    //console.log(keys.a.pressed)
+    //console.log(keycodes.a.pressed)
 
-    //if(keys.a.pressed && player.position.x >= 0){
-    //    console.log('keys.a.pressed && player.position.x >= 0 is true')
+    //if(keycodes.a.pressed && archer.placement.x >= 0){
+    //    console.log('keycodes.a.pressed && archer.placement.x >= 0 is true')
     //}
 
      //payer veocity
-     if(keys.a.pressed && player.position.x >= 0){
+     if(keycodes.a.pressed && archer.placement.x >= 0){
         console.log('a option in animate')
-        player.velocity.x = -5
-    } else if (keys.d.pressed && player.position.x + player.width <= canvas.width ){
+        archer.celerity.x = -5
+    } else if (keycodes.d.pressed && archer.placement.x + archer.width <= kanhtml.width ){
         console.log('d option in animate')
-        player.velocity.x = 5
+        archer.celerity.x = 5
     } else {
         //console.log('a or d received but there is no move')
-        player.velocity.x = 0
+        archer.celerity.x = 0
     }
 
 
@@ -233,27 +233,27 @@ function animate() {
    //try to type objects in the array
    myInvaderArray.forEach((invad, i) => { invad.update();
     
-    projectiles.forEach((projectile,j) => {
+    arrows.forEach((projectile,j) => {
         if(
-            projectile.position.y - projectile.radius <=
-            invad.position.y + invad.height &&
-          projectile.position.x + projectile.radius >= invad.position.x &&
-          projectile.position.x - projectile.radius <=
-            invad.position.x + invad.width &&
-          projectile.position.y + projectile.radius >= invad.position.y
+            projectile.placement.y - projectile.radius <=
+            invad.placement.y + invad.height &&
+          projectile.placement.x + projectile.radius >= invad.placement.x &&
+          projectile.placement.x - projectile.radius <=
+            invad.placement.x + invad.width &&
+          projectile.placement.y + projectile.radius >= invad.placement.y
         ){
             setTimeout(() => {
 
                 const invaderFound = myInvaderArray.find(
                     (invader2) => invader2 === invad
                   )
-                  const projectileFound = projectiles.find(
+                  const projectileFound = arrows.find(
                     (projectile2) => projectile2 === projectile
                   )
       
 
                 myInvaderArray.splice(i, j)
-                projectiles.splice(i, j)
+                arrows.splice(i, j)
                 console.log(myInvaderArray.length)
             }, 0 )
         }
@@ -267,27 +267,27 @@ function animate() {
    if(myInvaderArray.length === 0){
         //console.log('congrats you won')
         //text which informs user that he won and how to pay again 
-        c.font = '30px Arial';
-        c.fillStyle = 'white';
-        c.textAlign = 'center';
-        c.fillText('Congrats, You won! To play again please refresh browser page.', 
-        canvas.width/2, canvas.height/2);
+        d.font = '30px Arial';
+        d.fillStyle = 'white';
+        d.textAlign = 'center';
+        d.fillText('Congrats, You won! To play again please refresh browser page.', 
+        kanhtml.width/2, kanhtml.height/2);
    }
 }
 
 animate()
 
 
-// Trying to activate browser keys
+// Trying to activate browser keycodes
 //function sendKey(key) {
     //console.log('send key triggered succesfuy and pressed key is : ')
     //console.log(key)
 //    console.log("html listener " + key);
-//    var canvas = document.getElementById("myCanvas");
-    //console.log(canvas)
-// canvas.focus();
+//    var kanhtml = document.getElementById("myCanvas");
+    //console.log(kanhtml)
+// kanhtml.focus();
 //    var event = new KeyboardEvent("keydown", {"key": key});
-  //   canvas.dispatchEvent(event);
+  //   kanhtml.dispatchEvent(event);
  //   console.log("event variable is :"+ event)
  //}
 
@@ -318,14 +318,14 @@ window.addEventListener('keydown', ({ key }) => {
             
             console.log('left down')
             spacepress = spacepress +1
-            // console.log('keydown keys.a.pressed before' +  keys.a.pressed)     
-            keys.a.pressed = true
-           // console.log('keydown keys.a.pressed after' +  keys.a.pressed)  
+            // console.log('keydown keycodes.a.pressed before' +  keycodes.a.pressed)     
+            keycodes.a.pressed = true
+           // console.log('keydown keycodes.a.pressed after' +  keycodes.a.pressed)  
             break
         case 'd':
             console.log('right down')
             spacepress = spacepress +1
-            keys.d.pressed = true
+            keycodes.d.pressed = true
             break
         case 's':
             console.log('space')
@@ -336,18 +336,18 @@ window.addEventListener('keydown', ({ key }) => {
 
 
             //projecti work
-            projectiles.push(new Projectile({
-                position: {
-                    x:player.position.x + player.width/2,
-                    y:player.position.y
+            arrows.push(new Arrow({
+                placement: {
+                    x:archer.placement.x + archer.width/2,
+                    y:archer.placement.y
                 },
-                velocity: {
+                celerity: {
                     x:0,
                     y:-10
                 }
             }
             ))
-            //console.log(projectiles)
+            //console.log(arrows)
             break
     }
 })
@@ -365,13 +365,13 @@ window.addEventListener('keyup', ({ key }) => {
             
        
             console.log('left up')
-            console.log('keyup keys.a.pressed before' +  keys.a.pressed)  
-            keys.a.pressed = false
-            console.log('keyup keys.a.pressed before' +  keys.a.pressed)  
+            console.log('keyup keycodes.a.pressed before' +  keycodes.a.pressed)  
+            keycodes.a.pressed = false
+            console.log('keyup keycodes.a.pressed before' +  keycodes.a.pressed)  
             break
         case 'd':
             console.log('right up')
-            keys.d.pressed = false
+            keycodes.d.pressed = false
             break
         case 's':
             console.log('space up')
