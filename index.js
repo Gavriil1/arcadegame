@@ -121,21 +121,21 @@ const arrows = []
 //const invader1 = new Spartan(0, 0); // (0, 0) placement
 
 // here I work on grid
-let myInvaderArray = []
+let spartanArray = []
 
 for (let x = 1; x < 6; x++){
     for (let y = 0; y < 2; y++){
-        myInvaderArray.push(
+        spartanArray.push(
             new Spartan(        
                 x,
                 y
             )
         )
-        //console.log(myInvaderArray)
+        //console.log(spartanArray)
     }
 }
   
-// console.log(myInvaderArray)
+// console.log(spartanArray)
 
 
 //key isteners
@@ -231,7 +231,7 @@ function animate() {
 
 
    //try to type objects in the array
-   myInvaderArray.forEach((invad, i) => { invad.update();
+   spartanArray.forEach((invad, i) => { invad.update();
     
     arrows.forEach((projectile,j) => {
         if(
@@ -244,7 +244,7 @@ function animate() {
         ){
             setTimeout(() => {
 
-                const invaderFound = myInvaderArray.find(
+                const invaderFound = spartanArray.find(
                     (invader2) => invader2 === invad
                   )
                   const projectileFound = arrows.find(
@@ -252,9 +252,9 @@ function animate() {
                   )
       
 
-                myInvaderArray.splice(i, j)
+                spartanArray.splice(i, j)
                 arrows.splice(i, j)
-                console.log(myInvaderArray.length)
+                console.log(spartanArray.length)
             }, 0 )
         }
     })
@@ -262,9 +262,9 @@ function animate() {
 
     }
    )
-   //console.log('out of the oop enth of myInvaderArray')
-   //console.log(myInvaderArray.length)
-   if(myInvaderArray.length === 0){
+   //console.log('out of the oop enth of spartanArray')
+   //console.log(spartanArray.length)
+   if(spartanArray.length === 0){
         //console.log('congrats you won')
         //text which informs user that he won and how to pay again 
         d.font = '30px Arial';

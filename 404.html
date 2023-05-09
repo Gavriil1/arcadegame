@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets\css\style.css">
+	<title>Spartan Invader</title>
+</head>
+<body class="bodyfof">
+	<header>
+		<h1>404 Spartan Invader</h1>
+	</header>
+	<main>
+        <p><strong><strong>The page you entered does not exists but you still may play your game. Yay! </strong><a href="index.html">Click here</a> here to visit homepage</p>
+		<div>
+			<canvas id="myCanvas"></canvas>
+		</div>
+		 <div>
+			<button id="leftBtn" onclick="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
+			<button id="rightBtn" onclick="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
+			<button id="fireBtn" onclick="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
+		</div> 
+	</main>
+	<footer class="footer">
+		<p>&copy; 2023 Gabriel's JS Project</p>
+	</footer>
+	<script src="index.js"></script>
+</body>
+</html>
