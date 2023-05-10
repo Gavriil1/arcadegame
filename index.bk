@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets\css\style.css">
+	<title>Spartan Invader</title>
+	<style>
+		.custom-button{
+			background: #dae956;
+			color: rgb(10, 10, 10);
+			left: 0;
+			/* position:absolute; */
+      		/* display: inline-block; */
+      		padding: 0px 0px;
+      		border: 2px solid #3609a0; 
+		}
+
+		.custom-button:hover {
+      		background: #1594bb;
+      		color: #5023f3;
+		}
+		.footer p, .footer a {
+      display: inline-block;
+     
+    
+
+	</style>
+</head>
+<body>
+	<header>
+		
+		<h1>Spartan Invader</h1>
+	</header>
+	<main>
+		<div>
+			<canvas id="myCanvas"></canvas>
+		</div>
+		 <div>
+			<button id="leftBtn" onclick="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
+			<button id="rightBtn" onclick="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
+			<button id="fireBtn" onclick="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
+		</div> 
+	</main>
+	<footer class="footer">
+	<div>
+		<p>&copy; 2023 Gabriel's JS Project</p>
+	</div>
+	<div>
+		<a class="custom-button" href="feedback.html">Leave Feedback</a>
+	</div>
+	</footer>
+	<script src="index.js"></script>
+</body>
+</html>
