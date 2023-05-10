@@ -138,7 +138,7 @@ The structure of the website was designed to be easy to learn and navigate. Each
 <img src="docs/wireframes/wireframes-mobile.jpg">
 </details>
 
-## Technologies Used
+## Technologies Used 
 
 ### Languages
 
