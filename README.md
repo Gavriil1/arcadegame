@@ -359,13 +359,7 @@ The CSS of the website was validated using the W3C Jigsaw CSS Validation Service
 <details><summary>whole page</summary>
 
 CSS Home page validation: No Errors
-<img src="docs/validation/css-home.png">
-CSS Menu page validation: No Errors
-<img src="docs/validation/css-menu.png">
-CSS Gallery page validation: No Errors
-<img src="docs/validation/css-gallery.png">
-CSS Contact page validation: No Errors
-<img src="docs/validation/css-contact.png">
+<img src="assets\readmemddocs\css-validation\css-validation-home-page.png">
 
 </details>
 
@@ -373,7 +367,7 @@ CSS Contact page validation: No Errors
 
 Upon examination, no CSS errors were detected in the CSS.style document.
 
-<img src="docs/validation/css-style-validation.png">
+<img src="assets\readmemddocs\css-validation\css-validation-style.css.png">
 
 </details>
 
@@ -383,51 +377,24 @@ To ensure the website met high accessibility standards, the WAVE WebAIM web acce
 
 <details><summary>Home</summary>
 
-On this page, we have identified 5 errors and 1 alert. 
+On this page, we have identified 0 errors and 1 alert. 
 
-The first error is "Empty Form Label." However, this is a false positive error since the form is not visible to the user. The form is actually added to create a hamburger menu. Therefore, "Empty Form Label" is a false positive error.
-
-We have also identified 4 "Contrast Errors," but the content of the site navigation bar is actually quite visible. For this reason, these errors are also false positives.
-
-Finally, we have identified 1 "Redundancy Link" alert. This is because the logo of the page and the home page have exactly the same hyperlink. However, this is part of the initial website design, so it is also a false positive error.
-
-<img src="docs/accessibility/home-accessibility-test.png">
+<img src="assets\readmemddocs\accessiblity-validation\home-page-accessibility-evaluation.png">
 </details>
 
-<details><summary>Menu</summary>
+<details><summary>Feedback</summary>
 
-We have identified the presence of similar errors on the Menu page as those found on the Home page. As a result, we recommend accessing the Home Accessibility section to review any notes or information pertaining to these errors
+On this page, we have identified 0 errors and 1 alert. 
 
-<img src="docs/accessibility/menu-accessibility-test.png">
-
-</details>
-
-
-<details><summary>Gallery</summary>
-
-We have identified the presence of similar errors on the Gallery page as those found on the Home page. As a result, we recommend accessing the Home Accessibility section to review any notes or information pertaining to these errors
-
-<img src="docs/accessibility/gallery-accessibility-test.png">
-
-</details>
-
-
-<details><summary>Contact</summary>
-
-While reviewing this particular page, we have identified a newly surfaced error that was not present on the Home, Menu, or Gallery pages. Specifically, there appears to be a 'Contrast Error' that pertains to the 'Submit' button located within the Contact Form.
-
- It should be noted, however, that upon further examination, this appears to be a false positive as the button and accompanying text are clearly visible.
-
-
-<img src="docs/accessibility/contact-accessibility-test.png">
+<img src="assets\readmemddocs\accessiblity-validation\feedback-pabe-accessiblity-eval.png">
 
 </details>
 
 <details><summary>404 Page</summary>
 
-There is a new warning on this page concerning the "Click here" text, but it has been identified as a false positive. Although a tool flagged it as not making sense, the text is actually meaningful within the context of the webpage.
+TOn this page, we have identified 0 errors and 3 alert. 
 
-<img src="docs/accessibility/404-accessability-test.png">
+<img src="assets\readmemddocs\accessiblity-validation\404-accessiblity-validation.png">
 
 </details>
 
