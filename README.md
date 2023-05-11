@@ -2,7 +2,7 @@
 
 (Developer: Gabriel SP)
 
-![Mockup image](assets\readmemddocs\amiresponsive.png
+![Mockup image](assets\readmemddocs\amIresponsive\amiresponsive.png)
 
 [Live webpage](https://gavriil1.github.io/arcadegame/index.html)
 
@@ -151,70 +151,47 @@
 ###  Design Choices
 
 
--   Since Tavern is located on a sea coast, I added a lot of blue to the website.
+-   Since the game is related to war, I selected red colors for Spartan Warior, Archer and arrow. 
 
--   I tried to show how easy, calm, and relaxed the experience at Rhodes Restaurant is.
+- Selected black color for canvas because it is also heavy color related to war.
 
--   I made the page simple for the user, so the user could take action by contacting the restaurant to book a table.
+
+-   I selected calm backround colour outside of canvas, to balance red and black colour of a game.
 
 ###  Fonts
 
-During the design development, I used the following list of fonts: Lato, Oswald, sans-serif, Arial.
-
-<br>
-
--   I use Lato as the default font for the **body** on all pages.
-
--   Oswald is used for the logo.
-
--   Arial font was used for **h2**, **p**, and **body** of the booking page.
-
--    Sans-serif is used as a backup.
+During the design development, I used the the following font-family: Times New Roman
 
 
 ###  Structure
 
-The page is organized in a way that is familiar to the end user. When a user opens a landing page, they can see a classical navigation bar with the logo on the left-hand side and the navigation links on the right-hand side.
+The page is organized in a way that is familiar to the end user. When a user opens a landing page, they can see a classical arcade game in HTML cancas. We have quick tutorial in HTML cancas how to play a game. In addition to it we have 3 self explainatory buttons which will help user to play a game on small screens: left, right, fire.  Finaly we have footer, which give an option to a user to leave a feedback
 
 The website is composed of four distinct pages:
 
--   A homepage containing a description of the restaurant and showcasing its beautiful surroundings.
+-   A homepage containing a game.
 
--   A menu page.
+-   Feedback page. This page has a form for a user to leave a feedback.
 
--   A gallery page displaying images that capture the overall atmosphere of the restaurant.
-
--   A contact page that includes a Google Map, contact details of the restaurant, and a contact form.
+-  404 page, which helps user to navigate back to home page, in the case he entered the wrong url.
 
 ###  Wireframes
 
 <details><summary>Home</summary>
 
-<img src="docs/wireframes/HomePageWireframe.png">
+<img src="assets\readmemddocs\wireframes\home-spartan-invader.png">
 
 </details>
 
-<details><summary>Menu</summary>
+<details><summary>Feedback</summary>
 
-<img src="docs/wireframes/MenuWireframe.png">
-
-</details>
-
-<details><summary>Gallery</summary>
-
-<img src="docs/wireframes/GalleryWireFrame.png">
-
-</details>
-
-<details><summary>Contact</summary>
-
-<img src="docs/wireframes/ContactPageWireFrame.png">
+<img src="assets\readmemddocs\wireframes\feedback.png">
 
 </details>
 
 <details><summary>404 Page</summary>
 
-<img src="docs/wireframes/404.png">
+<img src="assets\readmemddocs\wireframes\404.png">
 
 </details>
 
@@ -226,6 +203,8 @@ The website is composed of four distinct pages:
 
 - CSS
 
+- JavaScript
+
 ###  Frameworks & Tools
 
 - Git
@@ -234,13 +213,12 @@ The website is composed of four distinct pages:
 
 - Gitpod
 
-- convert (Linux Bash script)
+- viSual Studio Cod
 
 - Balsamiq
 
-- Google Fonts
+- HTML Canvas
 
-- Font Awsome 
 
 ##  Features
 <!-- the last save -->
@@ -732,10 +710,9 @@ The following browsers were used to test the website:
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | Up/Down buttoms did not work | Fixed it by changing onClick to onmousedown|
-| After going to inspect mode bottoms stopped working again | Fixed it, by adding 
-settimeout function to unSendKey function
-| Pictures from the gallery and home page were not displayed on the Edge browser. | The grammar in the sentence is correct. It is in the past tense and it appears to be a complete thought.|
-| The footer was not at the bottom when viewed on phones. | Deleted the css attribute from body which was causing an issue. |
+| After going to inspect bottoms stopped working again | Fixed it, by adding settimeout function to unSendKey function |
+|  Spartans was moving out of the screen. |  Fixed the issue by adding Canvas width condiation keycodes.a.pressed && archer.placement.x >= 0 |
+
 
 
 ##  Deployment
