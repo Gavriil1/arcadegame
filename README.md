@@ -1,619 +1,785 @@
-# Spartan Invader <img src="assets\images\ancient-greek-spartan-warrior-6839912.png" style="width: 40px;height:40px;">
+#  RHODES RESTAURANT
 
-**Developer: Gavriil Spyropoulos**
+(Developer: Gabriel SP)
 
-[Visit live website](https://gavriil1.github.io/arcadegame/)
+![Mockup image](assets\readmemddocs\amiresponsive.png
 
-![Mockup image](assets\readmemddocs\amiresponsive\amiresponsive.png)
+[Live webpage](https://gavriil1.github.io/arcadegame/index.html)
 
-## Table of Content
-  - [Project Goals](#project-goals)
-    - [User Goals](#user-goals)
-    - [Site Owner Goals](#site-owner-goals)
-  - [User Experience](#user-experience)
-    - [Target Audience](#target-audience)
-    - [User Requirements and Expectations](#user-requirements-and-expectations)
-  - [User Stories](#user-stories)
-    - [Site User](#site-user)
-    - [Site Owner](#site-owner)
-  - [Design](#design)
-    - [Colour Scheme](#colour-scheme)
-    - [Fonts](#fonts)
-    - [Structure](#structure)
-    - [Wireframes](#wireframes)
-  - [Technologies Used](#technologies-used)
-    - [Languages](#languages)
-    - [Frameworks, Libraries & Tools](#frameworks-libraries--tools)
-  - [Features](#features)
-  - [Validation](#validation)
-    - [HTML Validation](#html-validation)
-    - [CSS Validation](#css-validation)
-    - [JavaScript Validation](#javascript-validation)
-    - [Accessibility](#accessibility)
-    - [Performance](#performance)
-  - [Testing](#testing)
-    - [Performing tests on various devices](#performing-tests-on-various-devices)
-    - [Browser compatibility](#browser-compatibility)
-    - [Testing user stories](#testing-user-stories)
-  - [Bugs](#bugs)
-  - [Deployment](#deployment)
-  - [Credits](#credits)
-  - [Acknowledgements](#acknowledgements)
+##  Table of Content
 
-## Project Goals
+1. [Project Goals](#project-goals)
 
-The objective of this project was to develop a game similar to 'Space Invaders'.
+    1. [User Goals](#user-goals)
 
-### User Goals
+    2. [Site Owner Goals](#site-owner-goals)
 
-- Play a game with simple rules that is fun and engaging
-- Challenge themselves on different words and phrases
+2. [User Experience](#user-experience)
 
-### Site Owner Goals
+    1. [Target Audience](#target-audience)
 
-- Create a game which is entertaining and engaging
-- Create visually appealing design
-- Create a simple navigation around website
-- Provide fully responsive and accessible website
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
 
-## User Experience
+    3. [User Stories](#user-stories)
 
-### Target Audience
+3. [Design](#design)
 
-- The game can be played by anyone who likes word guessing games
-- Anyone who wants to have fun playing a game with simple and clear rules
+    1. [Design Choices](#design-choices)
 
-### User Requirements and Expectations
+    2. [Colour](#colours)
 
-- Easy to understand game rules
-- Simple navigation
-- Simple presentation of content on the page that makes logical sense
-- A responsive wesite that allows the user to play the game on any devise
-- Links and functions that work as expected
-- An easy way to contact the developer and leave feedback
-- Accessibility
+    3. [Fonts](#fonts)
 
-## User Stories
+    4. [Structure](#structure)
 
-### Site User
+    5. [Wireframes](#wireframes)
 
-1. I want to easily understand the rules of the game
-2. I want to enter my name and have it visible on screen while the game is played
-3. I want to be able to choose a difficulty level for the game
-4. I want to have different categories of phrases to guess from
-5. I want to be able to play the game both by clicking the mouse and by using the keyboard
-6. I want to be able to see which letters I have already guessed and the number of guesses I have left in the round
-7. I want to see my result after I guessed the phrase
-8. I want to see the phrase I didn’t manage to guess
-9. I want to be able to play the game on desktop, tablet and mobile devices
-10. I want to be able to get in touch with the developer
-11. I want to be sure that my message has been sent
+4. [Technologies Used](#technologies-used)
 
-### Site Owner
+    1. [Languages](#languages)
 
-12. I want user to easily understand the game
-13. I want the user to be able to challenge themselves
-14. I want my game to be fully responsive
-15. I want the user to come to a 404 error page instead of having to use the browser back button if they enter a url that does not exist
-16. I want user to be able to contact me and provide their feedback
+    2. [Frameworks & Tools](#frameworks-&-tools)
 
-## Design
+5. [Features](#features)
 
-### Colour Scheme
+6. [Testing](#validation)
 
-The colour scheme across the screens was kept simple and consistent and was inspired by the colours of the sky and sun.
-- For the contrast, the shade of the pink was used for error message and unguessed phrase
-- Game title and game navigation buttons are orange
+    1. [HTML Validation](#HTML-validation)
 
-The pallet used was found on [Colormind.io](http://colormind.io/)
-<img src="docs/colour-pallet-sgg.JPG">
+    2. [CSS Validation](#CSS-validation)
 
-### Fonts
+    3. [Accessibility](#accessibility)
 
-Google Fonts were implemented on the website. Nunito with sans-serif fallback was used across all screens as I found it highly readable and clear. To reflect the fun aspect of the game, the Rammetto One with a cursive fallback was used for the game title and instructions heading.
+    4. [Performance](#performance)
 
-### Structure
+    5. [Device testing](#performing-tests-on-various-devices)
 
-The structure of the website was designed to be easy to learn and navigate. Each screen of the game appears in the same container with maintained harmony of all elements within.
+    6. [Browser compatibility](#browser-compatability)
 
-- The game consist of the following screens:
-  - A home page / start screen with instructions icon in the top line, game title and user login
-  - Choose game difficulty level screen
-  - Main game screen - it contains the category of the phrase, number of guesses remaining in the round, hidden phrase with underscores for each letter, alphabet letters to click, current score and high score
-  - Screen shown when the phrase has been guessed - the number of points gained in the round and overall scoring are displayed
-  - Screen shown when the phrase has not been guessed within specific number of guesses. The correct phrase and options to either restart the game on same level or select other game level are shown
-- A modal with game instructions which pops up when the instructions icon is clicked, available on all game screens
-- The contact page with contact form which allows users to send an email to the developer and provide their feedback
-- A separate 404 error page
+    7. [Testing user stories](#testing-user-stories)
 
-### Wireframes
+7. [Bugs](#Bugs)
 
-<details><summary>Big screens - laptop & desktop</summary>
-<img src="docs/wireframes/wireframes-laptop.jpg">
+8. [Deployment](#deployment)
+
+    1. [Media](#media)
+    2. [Code](#code)
+
+9. [Credits](#credits)
+
+
+
+
+
+##  Project Goals
+
+###  User Goals
+
+-   Discovering a restaurant that provides both a pleasant ambiance and delicious cuisine..
+
+-   Accessing a comprehensive menu that displays pricing in a clear and concise manner.
+
+-   Obtaining details about the restaurant Email, Phone, Google Map Location.
+
+
+###  Site Owner Goals
+
+-   Increase the client base.
+
+-   Advertise the business to tourists and locals.
+
+-   Offer a means for new and current customers to reach out to the restaurant.
+
+##  User Experience
+
+###  Target Audience
+
+- Individuals who are searching for a dining venue.
+
+- Individuals who are interested in a take-away option.
+
+- Groups who are seeking a location to host a small event
+
+###  User Requrements and Expectations
+
+- A well-designed website where everything feels intuitive.
+
+- Content that is easy to read and understand.
+
+- Modern design and layout that works on different devices.
+
+- Possibility to easily locate contact information of the business, such as email, phone, and Google Maps.
+
+- Opportunity to read the menu and pricing of the restaurant.
+
+###  User Stories
+
+####  First-time User
+
+1.  As a new visitor, I would like to easily find the restaurant's location.
+
+2.  As a first-time customer, I want to know the pricing options available at the restaurant.
+
+3.  As a first time user, I want to know more about the restaurant
+
+4.  As a first-time visitor, I want to have an idea of what to expect during my visit to the restaurant.
+
+####  Returning User
+ 
+5.  I want to be informed about the opening hours as a returning user.
+    
+6.  As a returning user, I want to find a phone number to call for reservation
+    
+7.  As a returning user, I want to see the menu
+    
+8.  I want to provide feedback, suggestions, or a message to the restaurant's staff as a returning user.
+    
+9.  I want to find the restaurant on social media.
+    
+10.  As a returning user, I want to get directions to the restaurant.
+
+####  Site Owner
+  
+11.  As the site owner, I want users to access the site and learn more about the restaurant 
+    
+12.  As the site owner, I want users to find our contact details to contact us .
+
+13. As the site owner, I want users to be redirected to the 404 page so that they can navigate back to the pages shown in the navigation bar
+
+##  Design
+
+###  Design Choices
+
+
+-   Since Tavern is located on a sea coast, I added a lot of blue to the website.
+
+-   I tried to show how easy, calm, and relaxed the experience at Rhodes Restaurant is.
+
+-   I made the page simple for the user, so the user could take action by contacting the restaurant to book a table.
+
+###  Fonts
+
+During the design development, I used the following list of fonts: Lato, Oswald, sans-serif, Arial.
+
+<br>
+
+-   I use Lato as the default font for the **body** on all pages.
+
+-   Oswald is used for the logo.
+
+-   Arial font was used for **h2**, **p**, and **body** of the booking page.
+
+-    Sans-serif is used as a backup.
+
+
+###  Structure
+
+The page is organized in a way that is familiar to the end user. When a user opens a landing page, they can see a classical navigation bar with the logo on the left-hand side and the navigation links on the right-hand side.
+
+The website is composed of four distinct pages:
+
+-   A homepage containing a description of the restaurant and showcasing its beautiful surroundings.
+
+-   A menu page.
+
+-   A gallery page displaying images that capture the overall atmosphere of the restaurant.
+
+-   A contact page that includes a Google Map, contact details of the restaurant, and a contact form.
+
+###  Wireframes
+
+<details><summary>Home</summary>
+
+<img src="docs/wireframes/HomePageWireframe.png">
+
 </details>
-<details><summary>Medium screens - tablets</summary>
-<img src="docs/wireframes/wireframes-tablet.jpg">
-</details>
-<details><summary>Small screens - mobile</summary>
-<img src="docs/wireframes/wireframes-mobile.jpg">
+
+<details><summary>Menu</summary>
+
+<img src="docs/wireframes/MenuWireframe.png">
+
 </details>
 
-## Technologies Used 
+<details><summary>Gallery</summary>
 
-### Languages
+<img src="docs/wireframes/GalleryWireFrame.png">
+
+</details>
+
+<details><summary>Contact</summary>
+
+<img src="docs/wireframes/ContactPageWireFrame.png">
+
+</details>
+
+<details><summary>404 Page</summary>
+
+<img src="docs/wireframes/404.png">
+
+</details>
+
+##  Technologies Used
+
+###  Languages
 
 - HTML
+
 - CSS
-- JavaScript
 
-### Frameworks, Libraries & Tools
+###  Frameworks & Tools
 
-- [Am I Responsive](http://ami.responsivedesign.is/) was used to create the multi-device mock-up you can see at the start of this README.md file.
-- [Balsamiq](https://balsamiq.com/) to create the wireframes for the project
-- [Bootstrap v5.1.3](https://getbootstrap.com/)
-- [EmailJS](https://www.emailjs.com) used to send email from the contact form
-- [Favicon.io](https://favicon.io) for making the site favicon
-- [Font Awesome](https://fontawesome.com/) - Icons from Font Awesome were used throughout the site
-- Gimp and Microsoft Paint were used to create game pictures and resize background image
-- [Git](https://git-scm.com/) was used for version control within VSCode to push the code to GitHub
-- [GitHub](https://github.com/) was used as a remote repository to store project code
-- [Google Fonts](https://fonts.google.com/)
-- [Remove.bg](https://www.remove.bg/) was used to remove background on logos
-- [This source](https://chir.ag/projects/name-that-color) was used to initially name root colors from the colour pallet. I have removed unwanted colors and renamed all during the development of the project.
-- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools) were used for debugging of the code and check site for responsiveness
-- [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/), [JShint](https://jshint.com/), [Wave Validator](https://wave.webaim.org/), [Lighthouse](https://developers.google.com/web/tools/lighthouse/) and [Am I Responsive](http://ami.responsivedesign.is/) were all used to validate the website
+- Git
 
-## Features
+- GitHub
 
-The website has 3 webpages consisting of 11 distinct features described below.
+- Gitpod
 
-### Home screen
+- convert (Linux Bash script)
 
-#### Title animation
-- When the page is loaded the game title fades-in
+- Balsamiq
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-game-title.JPG">
-</details>
+- Google Fonts
 
-#### Username input
-- User is asked to enter their name in the input field. The username needs to be between 1 and 12 characters long. The are no restrictions on characters type. However, if the input field is left blank, then a feedback message is displayed for user to try again. Once a valid username has been provided, the name is displayed next to the user icon on the next screen and user is able to select the difficulty level of the game.
-- Username remains displayed on all game screens
-- User stories covered: 2
+- Font Awsome 
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-username-input.JPG">
-</details>
+##  Features
+<!-- the last save -->
+The website comprises four pages and <NUMBER> functionalities.
 
-### Instructions Modal
-- A modal with game instructions which pops up when the instructions icon is clicked
-- Available on all game screens
-- Background color is set slightly darker than on the game screen
-- User stories covered: 1, 12
+###  Logo and Navigation Bar
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-instructions.JPG">
-</details>
+- Displayed on each of the five pages.
 
-### Footer
-- Featured on all pages
-- Contains link to contact form (opening in the same window), github page and social media (opening in a separate window)
-- User stories covered: 10
+- The navigation bar is completely adaptable and transforms into a hamburger menu on smaller displays.
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-footer.JPG">
-</details>
+- The hyperlink for the current page the user is viewing is emphasized.
 
-### Difficulty level screen
-- User can choose difficulty level of the game they wish to play
-- User stories covered: 3, 13
+![Logo and navbar](docs/features/logo-menu.png)
+![Logo and small navbar](docs/features/hamburger-menu.png)
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-choose-difficulty-level-screen.JPG">
-</details>
+###  Footer
 
-### Game screen
-- The below elements are displayed on the screen:
-  - Username
-  - Selected difficulty level of the game
-  - Number of guesses left in the round
-  - Game instructions icon
-  - Category of the phrase to be guessed
-  - Image representing how many guesses were made
-  - Underscores for each letter of the hidden phrase
-  - Alphabet buttons which work on mouse click or keyboard press
-  - High score and current user score
-- User stories covered: 4, 5, 6
+- Displayed on each of the five pages.
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-game-screen.JPG">
-</details>
+- Consists of four icons: Facebook, Twitter, YouTube, Instagram. Each icon is linked to a hyperlink.
 
-### Correct Guess Screen
-- The below elements are displayed on the screen:
-  - Username
-  - Difficulty level of the game that is being played
-  - Number of guesses that were left in the round - number of points scored
-  - Complimentary message to the user
-  - Number of points scored in the round
-  - Picture of smiley sun
-  - Button to start a new round
-  - High score and current user score
-- User stories covered: 7
+User story: 9
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-game-correct-guess.JPG">
-</details>
+![Footer](docs/features/footer.png)
 
-### Wrong Guess Screen
-- The below elements are displayed on the screen:
-  - Username
-  - Difficulty level of the game that was played
-  - Cloud icon with 0 guesses remaining
-  - Phrase which has not been guessed
-  - Picture of sad rainy cloud
-  - Buttons to restart the game on same level or change the level
-  - High score and current user score
-- User stories covered: 8
+<!-- the last save -->
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-game-wrong-guess.JPG">
-</details>
+###  Home Page
 
-### Contact Form
-- User is able to provide feedback about the game
-- EmailJS has been used to send an email to developer with user's data and message
-- User stories covered: 10
+- Gives a description of the restaurant with a image of the dining area next to the sea. 
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-contact-form.JPG">
-</details>
+User stories: 3, 11
 
-### Contact Form confirmation screen
-- Thank you message is displayed
-- Contains return to the main screen button
-- User stories covered: 11
+![Home Page](docs/features/home-page.png)
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-contact-form-sent.JPG">
-</details>
+###  Menu
 
-### 404 error page
-- The site has been given a 404 error page which is displayed if the user enters a url that does not exist.
-- Contains return to the main screen button
-- User stories covered: 15
+- The menu is divided into three sections: Starters, Main Courses, and Desserts.
 
-<details><summary>See feature</summary>
-<img src="docs/features/feature-404-error-page.JPG">
-</details>
+- Each showcasing a picture of one of the items on offer. 
 
-## Validation
+- Additionally, the menu includes pricing information for each item.
 
-### HTML Validation
+User stories: 2, 7
 
-The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
+![Menu](docs/features/menu-of-the-restaurant.png)
+
+###  Image Gallery
+
+- Gallery section shows dishes, great view of the restaurant and user experience.
+
+- The pictures of the restaurant are presented in a grid layout.
+
+User Stories: 4
+
+![Gallery](docs/features/gallery-page.png)
+
+
+###  Contact Page
+
+Contact page has three section:
+
+a) Info Box.
+
+b) Google Map.
+
+c) Contact Form.
+
+User stories: 1, 5, 6, 8, 10, 12
+
+###  Info Box
+
+The user is furnished with details about the restaurant such as its address, phone number, email, and the name of its proprietor.
+
+User stories: 5, 6, 12
+
+![Info Box](docs/features/info-box.png)
+
+
+
+
+###  Contact Form
+
+A way for users to send an email to a restaurant to book a table or leave feedback.
+
+User stories: 8, 12
+
+![Contact Form](docs/features/contact-form.png)
+
+###  Map
+
+Displays the restaurant's location using an embedded Google Map.
+
+User stories: 1, 10
+
+![Map](docs/features/map.png)
+
+###  404 Page
+
+This page helps the user navigate to the home, menu, gallery, and contact pages when the user mistakenly enters the wrong URL.
+
+User story: 13
+
+![page404](docs/features/404page.png)
+
+##  Validation
+
+###  HTML Validation
+
+We utilized the W3C Markup Validation Service to validate the HTML of our website. The Home and Menu pages passed without errors; however, the Gallery and Contact pages returned warnings and errors. Based on my assessment, I deem these errors to be false positives. I have added comments to each section to provide justification for my conclusion.
+
 <details><summary>Home</summary>
-<img src="docs/validation/validation-html-game.JPG">
-</details>
 
-<details><summary>Contact form page</summary>
-<img src="docs/validation/validation-html-contact.JPG">
-</details>
+<img src="docs/validation/home_page_validation.png">
 
-<details><summary>404 error page</summary>
-<img src="docs/validation/validation-html-404page.JPG">
-</details>
-
-### CSS Validation
-
-The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
-When validating all website, it passes with no errors. However, some warning are identified linked to Bootstrap v5.1.3.
-When validating my own internal CSS, the validator shows no errors and four warning associated with vendor extension (-webkit-appearance).
-
-<details><summary>All site</summary>
-<img src="docs/validation/validation-css-site.JPG">
-</details>
-<details><summary>Style.css</summary>
-<img src="docs/validation/validation-css-style.JPG">
-<img src="docs/validation/validation-css-style2.JPG">
-</details>
-
-### JavaScript Validation
-
-JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found.
-
-<details><summary>game.js</summary>
-<img src="docs/validation/validation-js-game.JPG">
-</details>
-<details><summary>game-data.js</summary>
-<img src="docs/validation/validation-js-game-data.JPG">
-</details>
-<details><summary>contact-form.js</summary>
-<img src="docs/validation/validation-js-contact.JPG">
-</details>
-
-### Accessibility
-
-The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards.
-All site pass with 0 errors.
-
-<details><summary>Home page</summary><img src="docs/validation/validation-accessibility-all-site.JPG">
-</details>
-<details><summary>Contact form page</summary><img src="docs/validation/validation-accessibility-contact-form.JPG">
-</details>
-<details><summary>404 page</summary><img src="docs/validation/validation-accessibility-404-page.JPG">
-</details>
-
-### Performance
-
-Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
-<details><summary>Home page</summary><img src="docs/validation/validation-lighthouse-performance-home.JPG">
-</details>
-<details><summary>Contact form page</summary><img src="docs/validation/validation-lighthouse-performance-contact.JPG">
-</details>
-<details><summary>404 page</summary><img src="docs/validation/validation-lighthouse-performance-404-page.JPG">
-</details>
-
-## Testing
-
-### Performing tests on various devices
-
-The website was tested using Google Chrome Developer Tools Toggle Device Toolbar to simulate viewports of different devices.
-
-The website was tested on the following devices:
-- Lenovo B590 (laptop screen size)
-- Samsung Galaxy Tab A (tablet screen)
-- Samsung S7 (mobile screen)
-- Huawei P10 Lite (mobile screen)
-
-### Browser compatibility
-
-- Testing has been carried out on the following browsers:
-  - Googe Chrome Version 96.0.4664.110 (Official Build) (64-bit)
-  - Firefox Browser 95.0.2 (64-bit)
-
-### Testing user stories
-
-1. I want to easily understand the rules of the game
-
-| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
-| ----------------- | ----------------- | ------------------------------------ | ----------------- |
-| Instructions Icon | Click on the icon | Modal with game instructions pops up | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-1-a.JPG">
-<img src="docs/user-story-testing/user-story-1-b.JPG">
-</details>
-
-2. I want to enter my name and have it visible on screen while the game is played
-
-| **Feature**    | **Action**                                                           | **Expected Result**                               | **Actual Result** |
-| -------------- | -------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
-| Username input | Type user name (1-12 characters) and click button or press Enter key | User log in and name displayed in top left corner | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-2-a.JPG">
-<img src="docs/user-story-testing/user-story-2-b.JPG">
-<img src="docs/user-story-testing/user-story-2-c.JPG">
-</details>
-
-3. I want to be able to choose a difficulty level for the game
-
-| **Feature**             | **Action**                                                             | **Expected Result**                                                                                     | **Actual Result** |
-| ----------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------- |
-| Difficulty level screen | Click one of the three buttons on the screen to play the relevant game | The chosen game level screen loads. Game level and number of guesses are displayed on top right corner. | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-3-a.JPG">
-<img src="docs/user-story-testing/user-story-3-b.JPG">
-<img src="docs/user-story-testing/user-story-3-c.JPG">
-<img src="docs/user-story-testing/user-story-3-d.JPG">
-</details>
-
-4. I want to have different categories of phrases to guess from
-
-| **Feature**                           | **Action**                               | **Expected Result**                                                       | **Actual Result** |
-| ------------------------------------- | ---------------------------------------- | ------------------------------------------------------------------------- | ----------------- |
-| Difficulty level screen & Game screen | Select the level of desired game to play | The phrase category is displayed on the game screen above the sun picture | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-4-a.JPG">
-<img src="docs/user-story-testing/user-story-4-b.JPG">
-</details>
-
-5. I want to be able to play the game both by clicking the mouse and by using the keyboard
-
-| **Feature** | **Action**                                                               | **Expected Result**                                                                        | **Actual Result** |
-| ----------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ----------------- |
-| Game screen | Click on the displayed alphabet buttons or press the key on the keyboard | The letter which have already been clicked/pressed changes color and cannot be used again. | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-5-a.JPG">
-<img src="docs/user-story-testing/user-story-5-b.JPG">
 </details>
 
 
-6. I want to be able to see which letters I have already guessed and the number of guesses I have left in the round
+<details><summary>Menu</summary>
 
-| **Feature** | **Action**                                                               | **Expected Result**                                                                                              | **Actual Result** |
-| ----------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Game screen | Click on the displayed alphabet buttons or press the key on the keyboard | Used letters change color and cannot be used again. Number of remaining guesses is displayed in top right corner | Works as expected |
+<img src="docs/validation/menu-page-validation.png">
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-6-a.JPG">
-<img src="docs/user-story-testing/user-story-6-b.JPG">
 </details>
 
-7. I want to see my result after I guessed the phrase
+<details><summary>Gallery</summary>
 
-| **Feature**          | **Action**                                                                            | **Expected Result**                                             | **Actual Result** |
-| -------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------- |
-| Correct Guess Screen | Guess the hidden phrase within specific number of guesses for the game level selected | The message and number of points scored in the round displayed. | Works as expected |
+An error was detected on the 'Gallery' page, which has been attributed to the methodology utilized by the lecturer in the CodeInstitute example. Despite the warning, we have opted to retain the existing structure, and therefore, we will not convert the section to a div
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-7.JPG">
+<img src="docs/validation/gallery_page_validation.png">
+
 </details>
 
-8. I want to see the phrase I didn’t manage to guess
+<details><summary>Contact</summary>
+Two errors have been identified on this page; however, after thorough investigation, we believe that both are false positives. It is not feasible to modify the '100%' value to '100' as it would cause page breakage. Additionally, the use of 'px' in height is an acceptable CSS method, as outlined by the W3C CSS specification (https://developer.mozilla.org/en-US/docs/Web/CSS/height). Consequently, we have made a decision to disregard these errors and consider them as false positives.
 
-| **Feature**        | **Action**                                                  | **Expected Result**             | **Actual Result** |
-| ------------------ | ----------------------------------------------------------- | ------------------------------- | ----------------- |
-| Wrong Guess Screen | All guesses were used and the hidden phrase was not guessed | The correct phrase is displayed | Works as expected |
+<img src="docs/validation/contact-page-validation.png">
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-8.JPG">
 </details>
 
-9. I want to be able to play the game on desktop, tablet and mobile devices
-
-| **Feature**                                   | **Action**                | **Expected Result**                      | **Actual Result** |
-| --------------------------------------------- | ------------------------- | ---------------------------------------- | ----------------- |
-| Every page has been designed to be responsive | Change device screen size | The site works on different screen sizes | Works as expected |
-
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-9-a.JPG">
-<img src="docs/user-story-testing/user-story-9-b.JPG">
-<img src="docs/user-story-testing/user-story-9-c.JPG">
-<img src="docs/user-story-testing/user-story-9-d.JPG">
 </details>
 
-10. I want to be able to get in touch with the developer
+<details><summary>404-Page</summary>
 
-| **Feature**  | **Action**                               | **Expected Result**       | **Actual Result** |
-| ------------ | ---------------------------------------- | ------------------------- | ----------------- |
-| Contact Form | Click on the envelope icon in the footer | Displays the contact form | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-10-a.JPG">
-<img src="docs/user-story-testing/user-story-10-b.JPG">
+<img src="docs/validation/404-page-validation.png">
+
 </details>
 
-11. I want to be sure that my message has been sent
+###  CSS Validation
 
-| **Feature**                      | **Action**                                           | **Expected Result**                        | **Actual Result** |
-| -------------------------------- | ---------------------------------------------------- | ------------------------------------------ | ----------------- |
-| Contact Form confirmation screen | Fill in the contact form and click the submit button | The contact form confirmation is displayed | Works as expected |
+The CSS of the website was validated using the W3C Jigsaw CSS Validation Service, which yielded no errors.
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-11-a.JPG">
-<img src="docs/user-story-testing/user-story-11-b.JPG">
+<details><summary>whole page</summary>
+
+CSS Home page validation: No Errors
+<img src="docs/validation/css-home.png">
+CSS Menu page validation: No Errors
+<img src="docs/validation/css-menu.png">
+CSS Gallery page validation: No Errors
+<img src="docs/validation/css-gallery.png">
+CSS Contact page validation: No Errors
+<img src="docs/validation/css-contact.png">
+
 </details>
 
-12. I want user to easily understand the game
+<details><summary>style.css</summary>
 
-| **Feature**       | **Action**                      | **Expected Result**                  | **Actual Result** |
-| ----------------- | ------------------------------- | ------------------------------------ | ----------------- |
-| Instructions Icon | Click on the icon on any screen | Modal with game instructions pops up | Works as expected |
+Upon examination, no CSS errors were detected in the CSS.style document.
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-12-a.JPG">
-<img src="docs/user-story-testing/user-story-12-b.JPG">
+<img src="docs/validation/css-style-validation.png">
+
 </details>
 
-13.  I want the user to be able to challenge themselves
+###  Accessibility
 
-| **Feature**             | **Action**                                                                                                                  | **Expected Result**                             | **Actual Result** |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ----------------- |
-| Difficulty level screen | User selects on of the three available levels of the game which includes the hard version with only a few available guesses | The game level screen loads of the chosen game. | Works as expected |
+To ensure the website met high accessibility standards, the WAVE WebAIM web accessibility evaluation tool was utilized.
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-13.JPG">
+<details><summary>Home</summary>
+
+On this page, we have identified 5 errors and 1 alert. 
+
+The first error is "Empty Form Label." However, this is a false positive error since the form is not visible to the user. The form is actually added to create a hamburger menu. Therefore, "Empty Form Label" is a false positive error.
+
+We have also identified 4 "Contrast Errors," but the content of the site navigation bar is actually quite visible. For this reason, these errors are also false positives.
+
+Finally, we have identified 1 "Redundancy Link" alert. This is because the logo of the page and the home page have exactly the same hyperlink. However, this is part of the initial website design, so it is also a false positive error.
+
+<img src="docs/accessibility/home-accessibility-test.png">
 </details>
 
-14. I want my game to be fully responsive
+<details><summary>Menu</summary>
 
-| **Feature**                                   | **Action**                | **Expected Result**                      | **Actual Result** |
-| --------------------------------------------- | ------------------------- | ---------------------------------------- | ----------------- |
-| Every page has been designed to be responsive | Change device screen size | The site works on different screen sizes | Works as expected |
+We have identified the presence of similar errors on the Menu page as those found on the Home page. As a result, we recommend accessing the Home Accessibility section to review any notes or information pertaining to these errors
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-14-a.JPG">
-<img src="docs/user-story-testing/user-story-14-b.JPG">
-<img src="docs/user-story-testing/user-story-14-c.JPG">
-<img src="docs/user-story-testing/user-story-14-d.JPG">
+<img src="docs/accessibility/menu-accessibility-test.png">
+
 </details>
 
-15.  I want the user to come to a 404 error page instead of having to use the browser back button if they enter a url that does not exist
 
-| **Feature**    | **Action**           | **Expected Result**                                                                       | **Actual Result** |
-| -------------- | -------------------- | ----------------------------------------------------------------------------------------- | ----------------- |
-| 404 error page | Page cannot be found | When a user types the wrong address or cannot find a page they are rerouted to a 404 page | Works as expected |
+<details><summary>Gallery</summary>
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-15.JPG">
+We have identified the presence of similar errors on the Gallery page as those found on the Home page. As a result, we recommend accessing the Home Accessibility section to review any notes or information pertaining to these errors
+
+<img src="docs/accessibility/gallery-accessibility-test.png">
+
 </details>
 
-16. I want user to be able to contact me and provide their feedback
 
-| **Feature**  | **Action**                                                  | **Expected Result**                                              | **Actual Result** |
-| ------------ | ----------------------------------------------------------- | ---------------------------------------------------------------- | ----------------- |
-| Contact Form | User fills in the contact form and clicks the submit button | Developer receives email with user's contact details and message | Works as expected |
+<details><summary>Contact</summary>
 
-<details><summary>Screenshot</summary>
-<img src="docs/user-story-testing/user-story-16-a.JPG">
-<img src="docs/user-story-testing/user-story-16-b.JPG">
+While reviewing this particular page, we have identified a newly surfaced error that was not present on the Home, Menu, or Gallery pages. Specifically, there appears to be a 'Contrast Error' that pertains to the 'Submit' button located within the Contact Form.
+
+ It should be noted, however, that upon further examination, this appears to be a false positive as the button and accompanying text are clearly visible.
+
+
+<img src="docs/accessibility/contact-accessibility-test.png">
+
+</details>
+
+<details><summary>404 Page</summary>
+
+There is a new warning on this page concerning the "Click here" text, but it has been identified as a false positive. Although a tool flagged it as not making sense, the text is actually meaningful within the context of the webpage.
+
+<img src="docs/accessibility/404-accessability-test.png">
+
+</details>
+
+
+###  Performance
+
+The performance of the website was tested using Google Lighthouse.
+
+<details><summary>Home</summary>
+
+
+
+Screenshot of Desktop performance of Home page in Google Lighthouse.
+
+<img src="docs/performance/desktop-home-performance.png">
+
+Screenshot of Mobile performance of Home page in Google Lighthouse.
+
+<img src="docs/performance/mobile-home-performance.png">
+
+</details>
+
+<details><summary>Menu</summary>
+
+
+Screenshot of Desktop performance of Menu page in Google Lighthouse.
+
+<img src="docs/performance/desktop-menu-performance.png">
+
+Screenshot of Mobile performance of Menu page in Google Lighthouse.
+
+<img src="docs/performance/mobile-menu-performance.png">
+
+</details>
+
+<details><summary>Gallery</summary>
+
+Screenshot of Desktop performance of Gallery page in Google Lighthouse.
+
+<img src="docs/performance/desktop-gallery-performance.png">
+
+Screenshot of Mobile performance of Gallery page in Google Lighthouse.
+
+<img src="docs/performance/mobile-gallery-performance.png">
+
+</details>
+
+<details><summary>Contact</summary>
+
+Screenshot of Desktop performance of Contact page in Google Lighthouse.
+
+<img src="docs/performance/dekstop-contact-performance.png">
+
+Screenshot of Mobile performance of Contact page in Google Lighthouse.
+
+<img src="docs/performance/mobile-contact-performance.png">
+
+</details>
+
+<details><summary>404 Page</summary>
+
+Screenshot of Desktop performance of 404 page in Google Lighthouse.
+
+<img src="docs/performance/dekstop-404-performance.png">
+
+Screenshot of Mobile performance of 404 page in Google Lighthouse.
+
+<img src="docs/performance/mobile-404-performance.png">
+
+</details>
+
+###  Performing tests on various devices
+
+Testing of the website was conducted on the following devices:
+
+- Latitude 5520
+
+- Redmi Note 10
+
+- Samsung Tablet A10.1
+
+Furthermore, the website underwent testing using the Device Toggling feature of Google Chrome Developer Tools, which includes all available device options.
+
+###  Browser compatability
+
+The following browsers were used to test the website:
+
+- Google Chrome
+
+- Mozilla Firefox
+
+- Microsoft Egde
+
+###  Testing user stories
+
+1. As a new visitor, I would like to easily find the restaurant's location.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Map | Navigate to the Contact Us page, locate the Google Map | Finding a map that displays the whereabouts of the restaurant. | Works as expected |
+
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-1-1.png">
+
+
+</details>
+
+2. As a first-time customer, I want to know the pricing options available at the restaurant.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Menu | Navigate to the Menu page | See the prices for each menu option | Works as expected |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-1-2.png">
+
+</details>
+
+3. As a first time user, I want to know more about the restaurant
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home | Navigate to the Home page and locate restaurant descprition | Find view of the restaurant and its description | Works as expected |
+
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-1-3.png">
+
+</details>
+
+4. As a first-time visitor, I want to have an idea of what to expect during my visit to the restaurant.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Gallery | Navigate to the Gallery page | Find pictures of the food, beautiful panoramas, and customer experiences. | Works as expected |
+
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-1-4.png">
+
+</details>
+
+
+
+5. I want to be informed about the opening hours as a returning user.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Info Box| Contact page -> Infor Box -> Opening hours  | See opening hours | Works as expected |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-1.png">
+
+</details>
+
+6. As a returning user, I want to find a phone number to call for reservation
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Info Box | Contact Page -> Info Box-> Search for Phone number | See phone number | Works as expected |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-2.png">
+
+</details>
+
+7. As a returning user, I want to see the menu
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Menu | Navigate to the menu page | Read the menu | Works as expected |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-3.png">
+
+</details>
+
+8. I want to provide feedback, suggestions, or a message to the restaurant's staff as a returning user.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact Form | Please go to the Contact Us Page and find the contact form. Complete the form with your information and send it.| Data submited via contact form | Works as expectd |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-4.png">
+
+</details>
+
+9. I want to find the restaurant on social media .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer  | On any page scroll to the bottom | Click on social media links | Works as expected |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-5.png">
+
+</details>
+
+10. As a returning user, I want to get directions to the restaurant
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Map | Contact Page -> Google Map ->  click on directions link | View the restaurant's directions on Google Maps.| Works as expected |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-6.png">
+
+</details>
+
+
+11. As the site owner, I want users to access the site and learn more about the restaurant nt
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home Page| Navigate to Home Page | View the restaurant's panorama and read its description. | Works as expected |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-7.png">
+
+</details>
+
+12. As the site owner, I want users to find our contact details to contact us .
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact Form | Contact Page -> Contact Form -> Enter text -> Submit | Data submited via contact form | Works as expectd |
+| Info Box | Contact page -> Infor Box -> Find Phone and Email | Find the phone number, Email  | Works as expected |
+
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-8.png">
+
+<img src="docs/user-story-testing/US-2-9.png">
+</details>
+
+13. As the site owner, I want users to be redirected to the 404 page so that they can navigate back to the pages shown in the navigation bar
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| 404 Page | user Enters wrong URL | User sees 404 page. On it he sees navigation bar on website and select the page he needs. | Works as expectd |
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/user-story-testing/US-2-10.png">
+
 </details>
 
 ## Bugs
 
-| Bug                                                                                                                                         | Fix                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| All div with difficulty level buttons was responsive to click event and game level which appeared on the game screen was 'null'             | Added code for click event to only respond on elements with specific class (buttons)   |
-| W3C Markup Validation Service highlighted that heading was not closed                                                                       | Corrected the error by closing the h1 tag                                              |
-| Number of remaining guesses displayed on the cloud icon went below 0                                                                        | Amended code to display 0 when there were no guesses left                              |
-| Images for medium & hard level game were not showing on the game screen                                                                     | There was an error in image path in game-data.js file which I corrected                |
-| Game container was going off the screen for iPhone 5/ SE when tested with Chrome DevTools                                                   | Changed offset of game container for screens max-width: 390px                          |
-| When added footer to the game screen it was located at the top of the screen                                                                | Set footer with position fixed                                                         |
-| Whilst the contact form was validated, no data was sent to email                                                                            | Set up an email template and amended code with specific contact_service & contact_form |
-| Game container was going off the background leaving a white space below the background image on mobile and tablet screen in horizontal view | Changed background image position from absolute to fixed                               |
-| Contact form username input was pushed off the screen when user clicked on the element, making the input invisible to the user              | Add contact form container offset on username input focus                              |
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| Up/Down buttoms did not work | Fixed it by changing onClick to onmousedown|
+| After going to inspect mode bottoms stopped working again | Fixed it, by adding 
+settimeout function to unSendKey function
+| Pictures from the gallery and home page were not displayed on the Edge browser. | The grammar in the sentence is correct. It is in the past tense and it appears to be a complete thought.|
+| The footer was not at the bottom when viewed on phones. | Deleted the css attribute from body which was causing an issue. |
+
+
+##  Deployment
 
 ## Deployment
+These steps were followed to deploy the website using GitHub Pages:
+1. Go to the Settings tab within the GitHub repository.
+2. Choose Pages from the menu located on the left hand side.
+3. Under "Build and deployment", under "Source", select GitHub Actions.
+4. After the webpage refreshes automaticaly you will see text: "Your site is live at https://gavriil1.github.io/CI_PP1_GR/"
 
-### GitHub Pages
-The website was deployed using GitHub Pages by following these steps:
-1. In the GitHub repository navigate to the Settings tab
-2. On the left hand menu select Pages
-3. For the source select Branch: main
-4. Once saved, GitHub will refresh and your website will be publishd from GitHub repository
-5. The link to your published website will appear: "Your site is published at https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/"
+    Please check the following link for more information: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-### Forking the GitHub Repository
-1. Go to the GitHub repository
-2. Click on Fork button in top right corner
+Follow these steps to fork the repository:
+1. Visit the GitHub repository.
+2. Click on "Fork button" in upper right hand corner
 
-### Making a Local Clone
+    Please check the following link for more information: https://docs.github.com/en/get-started/quickstart/fork-a-repo
+
+Follow these steps to clone the repository:
 1. Go to the GitHub repository 
-2. Locate the Code button above the list of files and click it
-3. Highlight the "HTTPS" button to clone with HTTPS and copy the link
+2. Find the "Code" button located above the file list and click on it.
+3. Choose whether you prefer to clone via HTTPS, SSH, or Github CLI, and then click on the copy button to copy the URL to your clipboard.
 4. Open Git Bash
-5. Change the current working directory to the one where you want the cloned directory
+5. Navigate to the directory where you would like to clone the directory and set it as the current working directory.
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
-7. Press Enter to create your local clone
+7. Hit the Enter key to create your local clone.
+
+    Please check the following link for more information: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
 ## Credits
 
-### Images
+###  Media
 
-- Site icons in top line of game container and footer were taken from [Fontawesome](https://fontawesome.com/)
-- Sun & cloud clipart in the main game screen was taken from [clipartmax](https://www.clipartmax.com/middle/m2i8m2m2d3G6Z5d3_sun-clouds-cloud/) and amended with Microsoft Paint.
-- Sad cloud and smiley sun cliparts for the result screens were taken from [pinclipart](https://www.pinclipart.com/pindetail/iToJibw_cloud-with-rain-emoji-clipart-cartoon-cloud-gif/) & [clipartbest](http://www.clipartbest.com/clipart-xcg6L7Moi)
-- Background image: photo found on [unsplash](https://unsplash.com/photos/lR96g3H5VmA)
-- Image for contact form confirmation was used from [shutterstock](https://www.shutterstock.com/es/search/thank+you+sun)
-- 404 error page image was taken from [dreamstime](https://www.dreamstime.com/stock-illustration-vector-thunder-cloud-storm-tornado-mascot-lightning-bolts-cartoon-clip-art-illustration-tough-thundercloud-image77616772)
+I have two images: 
+1. ancient-greek-spartan-warrior-6839912.png
+2. cartoon-martial-arts-character-archery_4042629.png
 
-### Code
-- [Instructions Modal](https://getbootstrap.com/docs/5.1/components/modal) was built using the Bootstrap v5.1.3 documentation
-- [EmailJS](https://www.emailjs.com/docs/tutorial/creating-contact-form) official tutorial & playground environment within EmailJS Email Templates were used to create a contact form with email being sent to desired address
-- Front page with login input element was inspired by [The Anagram Game](https://elainebroche-dev.github.io/ms2-anagram/) by Elainebroche
-- Game title with a gradient was created with [CSS Text Gradient Generator](https://www.cssportal.com/css-text-gradient-generator/)
-- Fade-in effect for game title was made using [this source](https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/)
-- [w3schools](https://www.w3schools.com/js/js_timing.asp) was checked to set a time delay for wrong guess screen
-- [Fontawesome documentation](https://fontawesome.com/v4.7/examples/) was reviewed to implement a cloud icon with number of remaining guesses over it
--  [w3schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_form_focus2) was reviewed to change input focus color
--  Fixed contact form container going off mobile screen when clicking on input field with use of [this](https://brightwhiz.com/running-javascript-based-on-screen-size/) source
+Both of them are downloaded from https://id.pngtree.com/
 
-## Acknowledgements
-Many thanks to everyone who supported me in the development of the website:
-- Most importantly, to my mentor Mo Shami for professional guidance and making me think outside of the box
-- Friends and family who played the game on their tablets and mobiles and provided feedback on responsiveness
+###  Code
+
+In order of apearance:
+
+- Spartan Invader: [Udemy Course](https://www.udemy.com/course/space-invaders-with-javascript-and-html-canvas/)
+- Contact/Feedback Form: [w3schools](https://www.w3schools.com/howto/howto_css_contact_form.asp) 
+- API and JS function Sending Email from Contatct Form: [EmailJs](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
