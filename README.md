@@ -2,7 +2,7 @@
 
 (Developer: Gabriel SP)
 
-![Mockup image](assets\readmemddocs\amIresponsive\amiresponsive.png)
+![Mockup image](assets/readmemddocs/amIresponsive/amiresponsive.png)
 
 [Live webpage](https://gavriil1.github.io/arcadegame/index.html)
 
@@ -222,7 +222,7 @@ The website is composed of four distinct pages:
 
 ##  Features
 <!-- the last save -->
-The website comprises four pages and <NUMBER> functionalities.
+The website comprises three pages and number of  functionalities.
 
 ###  Logo and Navigation Bar
 
