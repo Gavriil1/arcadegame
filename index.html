@@ -9,19 +9,21 @@
 </head>
 <body>
 	<header>
-		
 		<h1>Spartan Invader</h1>
 	</header>
 	<main>
+		<!-- HTML Canvas which plays the game-->
 		<div>
 			<canvas id="myCanvas"></canvas>
 		</div>
+		<!-- 3 buttons which connected to a game. THey help players to play a game on mobile devices-->
 		 <div>
 			<button id="leftBtn" onclick="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
 			<button id="rightBtn" onclick="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
 			<button id="fireBtn" onclick="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
 		</div> 
 	</main>
+	<!-- footer -->
 	<footer>
 		<div class="left-box">
 		  <p>© 2023 Gabriel Js</p>
@@ -31,7 +33,7 @@
 		  <a href="feedback.html">Feedback</a>
 		</div>
 	  </footer>
-
+	  <!-- Link to Javascript Code -->
 	<script src="index.js"></script>
 </body>
 </html>
