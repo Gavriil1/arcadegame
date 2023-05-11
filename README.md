@@ -329,42 +329,26 @@ User story: 13
 
 ###  HTML Validation
 
-We utilized the W3C Markup Validation Service to validate the HTML of our website. The Home and Menu pages passed without errors; however, the Gallery and Contact pages returned warnings and errors. Based on my assessment, I deem these errors to be false positives. I have added comments to each section to provide justification for my conclusion.
+We utilized the W3C Markup Validation Service to validate the HTML of our website. The Home and 404 pages passed validation with no errors. However, the
+feedback page shows a warning. Since this line of code  is taken from EmailJs API for a form to work, I leave everything as it is
 
 <details><summary>Home</summary>
 
-<img src="docs/validation/home_page_validation.png">
+<img src="assets\readmemddocs\html-validator\html-validation-home-page.png">
 
 </details>
 
+<details><summary>Feedback</summary>
 
-<details><summary>Menu</summary>
-
-<img src="docs/validation/menu-page-validation.png">
-
-</details>
-
-<details><summary>Gallery</summary>
-
-An error was detected on the 'Gallery' page, which has been attributed to the methodology utilized by the lecturer in the CodeInstitute example. Despite the warning, we have opted to retain the existing structure, and therefore, we will not convert the section to a div
-
-<img src="docs/validation/gallery_page_validation.png">
+<img src="assets\readmemddocs\html-validator\html-feedback-validator.png">
 
 </details>
 
-<details><summary>Contact</summary>
-Two errors have been identified on this page; however, after thorough investigation, we believe that both are false positives. It is not feasible to modify the '100%' value to '100' as it would cause page breakage. Additionally, the use of 'px' in height is an acceptable CSS method, as outlined by the W3C CSS specification (https://developer.mozilla.org/en-US/docs/Web/CSS/height). Consequently, we have made a decision to disregard these errors and consider them as false positives.
-
-<img src="docs/validation/contact-page-validation.png">
-
-</details>
-
-</details>
 
 <details><summary>404-Page</summary>
 
 
-<img src="docs/validation/404-page-validation.png">
+<img src="assets\readmemddocs\html-validator\html-404-validator.png">
 
 </details>
 
