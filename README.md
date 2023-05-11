@@ -213,7 +213,7 @@ The website is composed of four distinct pages:
 
 - Gitpod
 
-- viSual Studio Cod
+- Visual Studio Code
 
 - Balsamiq
 
