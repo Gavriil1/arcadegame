@@ -5,15 +5,12 @@ body {
 	background-color: aquamarine;
 	margin:0;
 }
-
 /* Header CSS */
 h1 {
 	font-size: 40px ; 
-	/* border-style: dotted; */ 
 	margin-top: 0px;
   	margin-bottom: 0px;
 	padding-bottom: 10px;
-	
 }
 /* HTML canvas CSS */
 canvas {
@@ -21,7 +18,7 @@ canvas {
 	width: 80%;   
 	height: 35%;
 }
-/* Left Right Fire buttons' css */
+/* Left, Right, Fire buttons' css */
 button {
 	width: 26%;
 	height: 100%;
@@ -32,7 +29,7 @@ button {
 footer {
 	width: 100%;
 	margin: auto;
-	padding: 20 px;
+	padding: 20px;
 	
 	text-align: center;
 	display:flex;
@@ -40,7 +37,6 @@ footer {
 
   .left-box {
 	width: 50%;
-	
 	font-size: 200%;
 	float: left;
 	padding: 10px;
@@ -56,6 +52,70 @@ footer {
 	box-sizing: border-box;
 	justify-content: space-evenly;
   }
+
+/* feedback form */
+
+
+/*feedback button */
+/* Form code is taken from here https://www.w3schools.com/howto/howto_css_contact_form.asp */
+* {box-sizing: border-box;}
+/* should be text area */
+input[type=text], select, textarea {
+  
+  border: 3px solid #942424;
+  margin-bottom: 15px;
+  resize:  vertical;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+}
+/* button */
+
+.container {
+  
+  text-align: center;
+  font-size: 150%;
+  background-color: #c9c5c2;
+  padding: 25px;
+  text-align: center;
+  font-size: 150%;
+  width: 80%;
+  margin: auto;
+
+}
+input[type=submit] {
+  background-color: #c20d2b;
+  color: white;
+  padding: 12px 60px;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #72072a;
+}
+
+/* Code of 404 page */
+.bodyfof {
+	background-color: rgb(208, 238, 196);
+}
+  
+.hfof{
+	font-size: 40px ; 
+	/* border-style: dotted */
+	margin-top: 0px;
+  	margin-bottom: 0px;
+	padding-bottom:0px;
+}
+
+.pfof {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+	/* border-style: dotted */
+}
+
+
 
 @media only screen and (max-width: 1500px) {
 	h1 {
@@ -99,7 +159,7 @@ footer {
 	button {
 		width: 30%;
 		height: 100%;
-		font-size: font-size: 200%;;
+		font-size: 200%;
 
 	}
 	/* footer css*/
@@ -112,26 +172,6 @@ footer {
 	}
 
   }
-
-/* Code of 404 page */
-.bodyfof {
-	background-color: rgb(208, 238, 196);
-}
-  
-.hfof{
-	font-size: 40px ; 
-	/* border-style: dotted */
-	margin-top: 0px;
-  	margin-bottom: 0px;
-	padding-bottom:0px;
-}
-
-.pfof {
-	margin-top: 0px;
-	margin-bottom: 5px;
-	padding-bottom: 0px;
-	/* border-style: dotted */
-}
 
 
 
