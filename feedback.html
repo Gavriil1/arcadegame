@@ -1,8 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Form</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets\css\style.css">
+	<title>Spartan Invader</title>
+	<style>
+
+
+/*feedback button */
+/* Form code is taken from here https://www.w3schools.com/howto/howto_css_contact_form.asp */
+* {box-sizing: border-box;}
+/* should be text area */
+input[type=text], select, textarea {
+  
+  border: 3px solid #942424;
+  margin-bottom: 15px;
+  resize:  vertical;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+}
+/* button */
+
+.container {
+  
+  text-align: center;
+  font-size: 150%;
+  background-color: #c9c5c2;
+  padding: 25px;
+  text-align: center;
+  font-size: 150%;
+  width: 80%;
+  margin: auto;
+
+}
+input[type=submit] {
+  background-color: #c20d2b;
+  color: white;
+  padding: 12px 60px;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #72072a;
+}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		
+		<h1>Rate Spartan Invader</h1>
+	</header>
+	<main>
+
+
+<div class="container">
+  <form id="contact-form">
+    <label for="subject">Review Form</label>
+    <textarea id="subject" name="subject" placeholder="Leave a Feedback to help us to make Spartan Invader better" style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+	</main>
+	<footer>
+		<div class="left-box">
+		  <p>© 2023 Gavriil Spyropoulos</p>
+		</div>
+		<div class="right-box">
+			<br>
+		  <a href="index.html">Home Page</a>
+		</div>
+	  </footer>
+
+	
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="form.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
@@ -14,29 +92,21 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
+            
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(function() {
                         console.log('SUCCESS!');
+                        document.location.href="/";
+                        window.alert("Your Feedback was received. Thank you")
                     }, function(error) {
                         console.log('FAILED...', error);
+                        window.alert( "Unfortunately, your feedback was not submitted successfully. Please try again later.")
                     });
             });
         }
     </script>
-</head>
-<body>
-    <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
-
 </body>
 </html>
+
+
