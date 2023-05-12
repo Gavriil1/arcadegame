@@ -75,76 +75,41 @@
 
 ###  User Goals
 
--   Discovering a restaurant that provides both a pleasant ambiance and delicious cuisine..
+-   To relax after stresfull day by playing the game.
 
--   Accessing a comprehensive menu that displays pricing in a clear and concise manner.
+-   To challenage themselves and have fun.
 
--   Obtaining details about the restaurant Email, Phone, Google Map Location.
+-   Do something interesting on their free time
 
 
 ###  Site Owner Goals
 
--   Increase the client base.
+-   Create high quality game to atract new customers/players
 
--   Advertise the business to tourists and locals.
+-   Create simple navigation around website to create great user experience
 
--   Offer a means for new and current customers to reach out to the restaurant.
+-   Create a game which can be played on all devices: computer, phone.
 
 ##  User Experience
 
 ###  Target Audience
 
-- Individuals who are searching for a dining venue.
-
-- Individuals who are interested in a take-away option.
-
-- Groups who are seeking a location to host a small event
-
-###  User Requrements and Expectations
-
-- A well-designed website where everything feels intuitive.
-
-- Content that is easy to read and understand.
-
-- Modern design and layout that works on different devices.
-
-- Possibility to easily locate contact information of the business, such as email, phone, and Google Maps.
-
-- Opportunity to read the menu and pricing of the restaurant.
+- Main target audience is kids and teenagers age 8-23 years old.
 
 ###  User Stories
 
-####  First-time User
-
-1.  As a new visitor, I would like to easily find the restaurant's location.
-
-2.  As a first-time customer, I want to know the pricing options available at the restaurant.
-
-3.  As a first time user, I want to know more about the restaurant
-
-4.  As a first-time visitor, I want to have an idea of what to expect during my visit to the restaurant.
-
-####  Returning User
- 
-5.  I want to be informed about the opening hours as a returning user.
-    
-6.  As a returning user, I want to find a phone number to call for reservation
-    
-7.  As a returning user, I want to see the menu
-    
-8.  I want to provide feedback, suggestions, or a message to the restaurant's staff as a returning user.
-    
-9.  I want to find the restaurant on social media.
-    
-10.  As a returning user, I want to get directions to the restaurant.
-
+1. User needs to understand the rule of the game quickly 
+2. User needs to have choice to play a game on keyboard or mouse.
+3. User needs to have access on the game on desktop or mobile devices.
+4. User needs to have an option to leave feedback to help developer to improve the game.
+5. User needs to be sure that his feedback was sent.
 ####  Site Owner
   
-11.  As the site owner, I want users to access the site and learn more about the restaurant 
-    
-12.  As the site owner, I want users to find our contact details to contact us .
+1. The owner needs to create easy and ituitive interface to help user to understand quickly the rules of the game.
+2. The owner needs to create a game which responsive, to help user to access it on all possible devices.
+3. 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
+4. Contact form should be added to the website for users to send feedback.
 
-13. As the site owner, I want users to be redirected to the 404 page so that they can navigate back to the pages shown in the navigation bar
 
 ##  Design
 
@@ -164,6 +129,8 @@ During the design development, I used the the following font-family: Times New R
 
 
 ###  Structure
+
+<!--here is the last stop.-->
 
 The page is organized in a way that is familiar to the end user. When a user opens a landing page, they can see a classical arcade game in HTML cancas. We have quick tutorial in HTML cancas how to play a game. In addition to it we have 3 self explainatory buttons which will help user to play a game on small screens: left, right, fire.  Finaly we have footer, which give an option to a user to leave a feedback
 
@@ -227,8 +194,6 @@ The website comprises three pages and number of  functionalities.
 ###  Logo and Navigation Bar
 
 - Displayed on each of the five pages.
-
-- The navigation bar is completely adaptable and transforms into a hamburger menu on smaller displays.
 
 - The hyperlink for the current page the user is viewing is emphasized.
 
@@ -402,6 +367,7 @@ TOn this page, we have identified 0 errors and 3 alert.
 ###  Performance
 
 The performance of the website was tested using Google Lighthouse.
+The site received high score for Performance, Accessibility and Best Practices
 
 <details><summary>Home</summary>
 
@@ -409,48 +375,25 @@ The performance of the website was tested using Google Lighthouse.
 
 Screenshot of Desktop performance of Home page in Google Lighthouse.
 
-<img src="docs/performance/desktop-home-performance.png">
+<img src="assets\readmemddocs\performance\home-desktop-Perfm.png">
 
 Screenshot of Mobile performance of Home page in Google Lighthouse.
 
-<img src="docs/performance/mobile-home-performance.png">
+<img src="assets\readmemddocs\performance\home-mobile-perf.png">
 
 </details>
 
-<details><summary>Menu</summary>
 
 
-Screenshot of Desktop performance of Menu page in Google Lighthouse.
-
-<img src="docs/performance/desktop-menu-performance.png">
-
-Screenshot of Mobile performance of Menu page in Google Lighthouse.
-
-<img src="docs/performance/mobile-menu-performance.png">
-
-</details>
-
-<details><summary>Gallery</summary>
-
-Screenshot of Desktop performance of Gallery page in Google Lighthouse.
-
-<img src="docs/performance/desktop-gallery-performance.png">
-
-Screenshot of Mobile performance of Gallery page in Google Lighthouse.
-
-<img src="docs/performance/mobile-gallery-performance.png">
-
-</details>
-
-<details><summary>Contact</summary>
+<details><summary>Feedback</summary>
 
 Screenshot of Desktop performance of Contact page in Google Lighthouse.
 
-<img src="docs/performance/dekstop-contact-performance.png">
+<img src="assets\readmemddocs\performance\feedback-desktop-perf.png">
 
 Screenshot of Mobile performance of Contact page in Google Lighthouse.
 
-<img src="docs/performance/mobile-contact-performance.png">
+<img src="assets\readmemddocs\performance\feedback-mobile-perf.png">
 
 </details>
 
@@ -458,11 +401,11 @@ Screenshot of Mobile performance of Contact page in Google Lighthouse.
 
 Screenshot of Desktop performance of 404 page in Google Lighthouse.
 
-<img src="docs/performance/dekstop-404-performance.png">
+<img src="assets\readmemddocs\performance\404-mobile-perf.png">
 
 Screenshot of Mobile performance of 404 page in Google Lighthouse.
 
-<img src="docs/performance/mobile-404-performance.png">
+<img src="assets\readmemddocs\performance\home-mobile-perf.png">
 
 </details>
 
@@ -673,7 +616,7 @@ These steps were followed to deploy the website using GitHub Pages:
 1. Go to the Settings tab within the GitHub repository.
 2. Choose Pages from the menu located on the left hand side.
 3. Under "Build and deployment", under "Source", select GitHub Actions.
-4. After the webpage refreshes automaticaly you will see text: "Your site is live at https://gavriil1.github.io/CI_PP1_GR/"
+4. After the webpage refreshes automaticaly you will see text: "Your site is live at https://gavriil1.github.io/arcadegame/"
 
     Please check the following link for more information: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
