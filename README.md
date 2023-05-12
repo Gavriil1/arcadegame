@@ -102,13 +102,17 @@
 2. User needs to have choice to play a game on keyboard or mouse.
 3. User needs to have access on the game on desktop or mobile devices.
 4. User needs to have an option to leave feedback to help developer to improve the game.
-5. User needs to be sure that his feedback was sent.
+5. User needs to find review form easily
+7. User needs to be sure that his feedback was sent.
+8. User needs to find a game on web-page easily
 ####  Site Owner
   
-1. The owner needs to create easy and ituitive interface to help user to understand quickly the rules of the game.
-2. The owner needs to create a game which responsive, to help user to access it on all possible devices.
-3. 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
-4. Contact form should be added to the website for users to send feedback.
+9. The owner needs to create easy and ituitive web-interface of the web-site. 
+10. The owner needs to create a game which responsive, to help user to access it on all possible devices.
+11. 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
+12. Contact form should be added to the website for users to send feedback.
+13. The owner would like to show that his work is copyright protected.
+14. Interface to help user to understand quickly the rules of the game.
 
 
 ##  Design
@@ -132,9 +136,10 @@ During the design development, I used the the following font-family: Times New R
 
 <!--here is the last stop.-->
 
-The page is organized in a way that is familiar to the end user. When a user opens a landing page, they can see a classical arcade game in HTML cancas. We have quick tutorial in HTML cancas how to play a game. In addition to it we have 3 self explainatory buttons which will help user to play a game on small screens: left, right, fire.  Finaly we have footer, which give an option to a user to leave a feedback
+The page is built to be intuitive to the user, when it comes to game controls and page navgiation. When the user loads the main page,  he sees a tutorial in canvas window on how to play the game by using keyboard. He also can see three buttons wich helps him to play a game with mouse or on a mobile device like phone or tablet. Finally we added Feedback option in the footer, which helps user to find easily find option.
 
-The website is composed of four distinct pages:
+
+The website has 3 pages:
 
 -   A homepage containing a game.
 
@@ -188,107 +193,108 @@ The website is composed of four distinct pages:
 
 
 ##  Features
-<!-- the last save -->
+
 The website comprises three pages and number of  functionalities.
 
-###  Logo and Navigation Bar
+###  Header of a page
 
-- Displayed on each of the five pages.
+- On each page the header text is different. It help user to unnderstand the meanning of the page
 
 - The hyperlink for the current page the user is viewing is emphasized.
 
-![Logo and navbar](docs/features/logo-menu.png)
-![Logo and small navbar](docs/features/hamburger-menu.png)
+![Home Page Header](assets\readmemddocs\features\header\home-page-header.png)
+![Feedback Page header](assets\readmemddocs\features\header\feedback-Page-header.png)
+![404 page header](assets\readmemddocs\features\header\404-page-header.png)
+
+User stories: 7. The owner needs to create easy and ituitive interface to help user to understand quickly the rules of the game.
 
 ###  Footer
-
-- Displayed on each of the five pages.
-
-- Consists of four icons: Facebook, Twitter, YouTube, Instagram. Each icon is linked to a hyperlink.
-
-User story: 9
-
-![Footer](docs/features/footer.png)
-
 <!-- the last save -->
+Displayed on each page. It slightly differs on each page.
+- On main page and 404 page the footer has link to feedback page.
+- On feedback page the footer has link to homepage.
+
+On each page it has copyright message.
+
+
+User story: 5. User needs to find review form easily
+
+![Footer of Home and 404 Page](assets\readmemddocs\features\footer\home-404-footer.png)
+![Footer of Feedback page](assets\readmemddocs\features\footer\feedback-footer.png)
+
 
 ###  Home Page
 
-- Gives a description of the restaurant with a image of the dining area next to the sea. 
-
-User stories: 3, 11
-
-![Home Page](docs/features/home-page.png)
-
-###  Menu
-
-- The menu is divided into three sections: Starters, Main Courses, and Desserts.
-
-- Each showcasing a picture of one of the items on offer. 
-
-- Additionally, the menu includes pricing information for each item.
-
-User stories: 2, 7
-
-![Menu](docs/features/menu-of-the-restaurant.png)
-
-###  Image Gallery
-
-- Gallery section shows dishes, great view of the restaurant and user experience.
-
-- The pictures of the restaurant are presented in a grid layout.
-
-User Stories: 4
-
-![Gallery](docs/features/gallery-page.png)
+- Home page, have a game itself. Which give an easy access to the game and buttons of a game control. The gave has Feedback option in the footer
+7. The owner needs to create easy and ituitive interface to help user to understand quickly the rules of the game.
+8. User needs to find a game on web-page easily
+5. User needs to find review form easily
 
 
-###  Contact Page
 
-Contact page has three section:
+![Home Page](assets\readmemddocs\features\homepage\homepage.png)
 
-a) Info Box.
 
-b) Google Map.
+###  Feedback Page
 
-c) Contact Form.
+Contact page has two section
 
-User stories: 1, 5, 6, 8, 10, 12
+a) Feedback Form.
 
-###  Info Box
+b) Footer option with link to a homepage, where the game is located.
 
-The user is furnished with details about the restaurant such as its address, phone number, email, and the name of its proprietor.
+c) ALert window, which show up when a user click "Sent" option of the form
 
-User stories: 5, 6, 12
+User stories: 
+4. User needs to have an option to leave feedback to help developer to improve the game.
+5. User needs to find review form easily
+7. User needs to be sure that his feedback was sent.
+8. User needs to find a game on web-page easily
+9. The owner needs to create easy and ituitive web-interface of the web-site.
+12. Contact form should be added to the website for users to send feedback.
+13. The owner would like to show that his work is copyright protected.
 
-![Info Box](docs/features/info-box.png)
+###  Feedback Form
+
+Feedback form allows user to send feedback to the site owner.
+
+User stories: 
+4. User needs to have an option to leave feedback to help developer to improve the game.
+5. User needs to find review form easily
+12. Contact form should be added to the website for users to send feedback.
+
+![Feedback Form](assets\readmemddocs\features\feedback\feedbackform.png)
 
 
 
 
-###  Contact Form
+###  Footer option with link to a homepage, where the game is located.
 
-A way for users to send an email to a restaurant to book a table or leave feedback.
+Allows a user to return back to a home page, making navigation easy
 
-User stories: 8, 12
+User stories: 9. The owner needs to create easy and ituitive web-interface of the web-site.
 
-![Contact Form](docs/features/contact-form.png)
+![Feedback Form](assets\readmemddocs\features\feedback\link-home-page.png)
 
-###  Map
+###  ALert window, which show up when a user click "Sent" option of the form
 
-Displays the restaurant's location using an embedded Google Map.
+Alert window informs user that his feedback was sent.
 
-User stories: 1, 10
+User stories: 
+7. User needs to be sure that his feedback was sent.
 
-![Map](docs/features/map.png)
+
+![Alert Window](assets\readmemddocs\features\feedback\windowalert.png)
 
 ###  404 Page
 
 This page helps the user navigate to the home, menu, gallery, and contact pages when the user mistakenly enters the wrong URL.
 
-User story: 13
+Since the website is small, we added to it initial game, and added a link to Feedback option.
 
-![page404](docs/features/404page.png)
+User story: 1. 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
+
+![page404](assets\readmemddocs\features\404page\404-page.png)
 
 ##  Validation
 
