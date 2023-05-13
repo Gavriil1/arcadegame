@@ -571,27 +571,27 @@ The following browsers were used to test the website:
 
 </details>
 
-9. I want to find the restaurant on social media .
+9. A contact form should be added to the website for users to send feedback.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Footer  | On any page scroll to the bottom | Click on social media links | Works as expected |
+| Feedback Form  | Home Page->Feedback->Feedback Form | Find Feedback form to leave a review| Works as expected |
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-2-5.png">
+<img src="assets\readmemddocs\testuserstories\9th-user-story.png">
 
 </details>
 
-10. As a returning user, I want to get directions to the restaurant
+10. The owner would like to show that their work is copyright protected.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Map | Contact Page -> Google Map ->  click on directions link | View the restaurant's directions on Google Maps.| Works as expected |
+| Footer | HOme Page-> Footer -> Copyright | See copyright message| Works as expected |
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-2-6.png">
+<img src="assets\readmemddocs\testuserstories\10th-user-test.png">
 
 </details>
 
