@@ -151,7 +151,7 @@ The website has 3 pages:
 
 <details><summary>Home</summary>
 
-<img src="assets/readmemddocs/wireframes/home-spartan-invader.png">
+<img src="assets\readmemddocs\wireframes\home-spartan-invader.png">
 
 </details>
 
@@ -196,19 +196,13 @@ The website has 3 pages:
 
 The website comprises three pages and number of  functionalities.
 
-###  Header page
-
-<details><summary>test</summary>
-
-<img src="assets/readmemddocs/wireframes/home-spartan-invader.png">
-
-</details>
+###  Header of a page
 
 - On each page the header text is different. It help user to unnderstand the meanning of the page
 
 - The hyperlink for the current page the user is viewing is emphasized.
 
-![Home Page Header](assets/readmemddocs/features/header/home-page-header.png)
+![Home Page Header](assets\readmemddocs\features\header\home-page-header.png)
 ![Feedback Page header](assets\readmemddocs\features\header\feedback-Page-header.png)
 ![404 page header](assets\readmemddocs\features\header\404-page-header.png)
 
@@ -464,11 +458,10 @@ The following browsers were used to test the website:
 
 ###  Testing user stories
 
-1. The user needs to understand the rules of the game quickly.
+1. As a new visitor, I would like to easily find the restaurant's location.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| HTML Canvas | Navigate to the Contact Us page, locate the Google Map | Finding a map that displays the whereabouts of the restaurant. | Works as expected |
 | Map | Navigate to the Contact Us page, locate the Google Map | Finding a map that displays the whereabouts of the restaurant. | Works as expected |
 
 

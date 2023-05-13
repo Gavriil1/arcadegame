@@ -196,7 +196,13 @@ The website has 3 pages:
 
 The website comprises three pages and number of  functionalities.
 
-###  Header of a page
+###  Header  page
+
+<details><summary>test</summary>
+
+<img src="assets/readmemddocs/wireframes/404.png">
+
+</details>
 
 - On each page the header text is different. It help user to unnderstand the meanning of the page
 
