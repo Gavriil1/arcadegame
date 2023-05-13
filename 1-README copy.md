@@ -234,7 +234,7 @@ User story: 5. User needs to find review form easily
 
 User stories: 5, 7, 8
 
-d
+delete this after
 
 ![Home Page](assets/readmemddocs/features/homepagehomepage.png)
 
@@ -244,7 +244,7 @@ Game is located on Home Page, making it easily accessible for the user.
 
 User Stories: 7
 
-![Home Page](assets\readmemddocs\features\homepage\home-html-canvas.png)
+![Home Page](assets/readmemddocs/features/homepage/home-html-canvas.png)
 
 ###  Game play Manual
 
@@ -253,7 +253,7 @@ how to play a game.
 
 User Stories: 1, 8
 
-![Home Page](assets\readmemddocs\features\homepage\home-game-play-manual.png)
+![Home Page](assets/readmemddocs/features/homepage/home-game-play-manual.png)
 
 ###  Winning message
 When user wins the game, he sees a mesage which explains how to restart the game:
@@ -261,7 +261,7 @@ When user wins the game, he sees a mesage which explains how to restart the game
 User Stories: 
 1, 9
 
-![Home Page](assets\readmemddocs\features\homepage\youwonmessage.png)
+![Home Page](assets/readmemddocs/features/homepage/youwonmessage.png)
 
 ###  Game control buttons
 
@@ -269,7 +269,7 @@ On home page we have three buttons. This buttons allow the user to play the game
 
 User Stories: 2, 3
 
-![Home Page](assets\readmemddocs\features\homepage\home-page-control-buttons.png)
+![Home Page](assets/readmemddocs/features/homepage/home-page-control-buttons.png)
 
 ###  Feedback Page
 
@@ -291,7 +291,7 @@ Feedback form allows user to send feedback to the site owner.
 User stories: 
 4, 5 ,12
 
-![Feedback Form](assets\readmemddocs\features\feedback\feedbackform.png)
+![Feedback Form](assets/readmemddocs/features/feedback/feedbackform.png)
 
 ###  Footer option with link to a homepage, where the game is located.
 
@@ -299,7 +299,7 @@ Allows a user to return back to a home page, making navigation easy
 
 User stories: 8
 
-![Feedback Form](assets\readmemddocs\features\feedback\link-home-page.png)
+![Feedback Form](assets/readmemddocs/features/feedback/link-home-page.png)
 
 ###  ALert window, which show up when a user click "Sent" option of the form
 
@@ -308,7 +308,7 @@ Alert window informs user that his feedback was sent.
 User stories: 6
 
 
-![Alert Window](assets\readmemddocs\features\feedback\windowalert.png)
+![Alert Window](assets/readmemddocs/features/feedback/windowalert.png)
 
 ###  404 Page
 
@@ -318,7 +318,7 @@ Since the website is small, we added to it initial game, and added a link to Fee
 
 User story: 9.
 
-![page404](assets\readmemddocs\features\404page\404-page.png)
+![page404](assets/readmemddocs/features/404page/404-page.png)
 
 ##  Validation
 
