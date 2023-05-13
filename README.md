@@ -527,7 +527,7 @@ The following browsers were used to test the website:
 | Footer | Click on "Feedback" | User in redirected to Feedback page | Works as expected |
 | Feedback Form | Write a feedback, click "send" | User's feedback is sent to the game developer | Works as expected |
 
-<<details><summary>Screenshots</summary>
+<details><summary>Screenshots</summary>
 
 <img src="assets/readmemddocs/testuserstories/fourth-a-usert-story.png">
 
@@ -535,15 +535,15 @@ The following browsers were used to test the website:
 
 </details>
 
-6. As a returning user, I want to find a phone number to call for reservation
+6. The user needs to be sure that their feedback has been sent.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Info Box | Contact Page -> Info Box-> Search for Phone number | See phone number | Works as expected |
+| Alert Window | Write Feedback, Click Send | Alert Window should show up | Works as expected |
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-2-2.png">
+<img src="assets/readmemddocs/testuserstories/sixth-user-story.png">
 
 </details>
 
