@@ -227,7 +227,7 @@ User story: 5. User needs to find review form easily
 
 - Home page, have a game itself. Which give an easy access to the game and buttons of a game control. The gave has Feedback option in the footer
 
-User stories: 5, 7, 8
+User stories: 5, 7, 
 
 
 
@@ -246,7 +246,7 @@ User Stories: 7
 In the center of the canvas, we have game manual which explains to the user
 how to play a game.
 
-User Stories: 1, 8
+User Stories: 1
 
 ![Home Page](assets/readmemddocs/features/homepage/home-game-play-manual.png)
 
@@ -254,7 +254,7 @@ User Stories: 1, 8
 When user wins the game, he sees a mesage which explains how to restart the game:
 
 User Stories: 
-1, 9
+1, 8
 
 ![Home Page](assets/readmemddocs/features/homepage/youwonmessage.png)
 
@@ -277,14 +277,14 @@ b) Footer option with link to a homepage, where the game is located.
 c) ALert window, which show up when a user click "Sent" option of the form
 
 User stories: 
-4, 5, 6, 7, 8, 10, 11
+4, 5, 6, 7, 9, 10
 
 ###  Feedback Form
 
 Feedback form allows user to send feedback to the site owner.
 
 User stories: 
-4, 5 ,12
+4, 5 ,11
 
 ![Feedback Form](assets/readmemddocs/features/feedback/feedbackform.png)
 
@@ -292,7 +292,7 @@ User stories:
 
 Allows a user to return back to a home page, making navigation easy
 
-User stories: 8
+User stories: 5
 
 ![Feedback Form](assets/readmemddocs/features/feedback/link-home-page.png)
 
@@ -311,7 +311,7 @@ User stories: 6
 
 Since the website is small, we added to it initial game, and added a link to Feedback option.
 
-User story: 9.
+User story: .
 
 ![page404](assets/readmemddocs/features/404page/404-page.png)
 
@@ -559,15 +559,15 @@ The following browsers were used to test the website:
 
 </details>
 
-8. I want to provide feedback, suggestions, or a message to the restaurant's staff as a returning user.
+8. A 404 page should be created to help users navigate to the home page in case they entered the wrong URL.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact Form | Please go to the Contact Us Page and find the contact form. Complete the form with your information and send it.| Data submited via contact form | Works as expectd |
+| 404 page| Enter wrong url. | See 404 page with a link to home page | Works as expectd |
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-2-4.png">
+<img src="assets\readmemddocs\testuserstories\8th-404-page.png">
 
 </details>
 
