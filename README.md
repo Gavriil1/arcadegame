@@ -547,15 +547,15 @@ The following browsers were used to test the website:
 
 </details>
 
-7. As a returning user, I want to see the menu
+7. The user needs to find the game easily on the web page.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Menu | Navigate to the menu page | Read the menu | Works as expected |
+| Game in HTML canvas | Open Home page  | Find a game on Home page | Works as expected |
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-2-3.png">
+<img src="assets\readmemddocs\testuserstories\seventh-user-test.png">
 
 </details>
 
