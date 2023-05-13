@@ -202,6 +202,11 @@ The website comprises three pages and number of  functionalities.
 
 - The hyperlink for the current page the user is viewing is emphasized.
 
+<details><summary>404 Page</summary>
+
+<img src="assets/readmemddocs/features/header/home-page-header.png">
+</details>
+
 ![Home Page Header](assets/readmemddocs/features/header/home-page-header.png)
 ![Feedback Page header](assets/readmemddocs/features/header/feedback-Page-header.png)
 ![404 page header](assets/readmemddocs/features/header/404-page-header.png)
@@ -231,7 +236,7 @@ User stories: 5, 7, 8
 
 d
 
-![Home Page](assets\readmemddocs\features\homepage\homepage.png)
+![Home Page](assets/readmemddocs/features/homepagehomepage.png)
 
 ###  Game in HTML canvas.
 
