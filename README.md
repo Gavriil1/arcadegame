@@ -488,6 +488,8 @@ The following browsers were used to test the website:
 
 3. The user needs to have access to the game on both desktop and mobile devices.
 
+<!--- I stopped here --->
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Responsive design | Open Game in the desktop and mobile phone | Verify that a game and game controls gan be seen on both devices | Works as expected |
@@ -497,18 +499,22 @@ The following browsers were used to test the website:
 
 <img src="assets/readmemddocs/testuserstories/third-user-story.png">
 
+
 </details>
 
-4. As a first-time visitor, I want to have an idea of what to expect during my visit to the restaurant.
+4. The user needs to have an option to leave feedback to help the developer improve the game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Gallery | Navigate to the Gallery page | Find pictures of the food, beautiful panoramas, and customer experiences. | Works as expected |
+| Footer | Click on "Feedback" | User in redirected to Feedback page | Works as expected |
+| Feedback Form | Write a feedback, click "send" | User's feedback is sent to the game developer | Works as expected |
 
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-1-4.png">
+<img src="assets/readmemddocs/testuserstories/fourth-a-usert-story.png">
+
+<img src="assets/readmemddocs/testuserstories/fourth-b-user-story.png">
 
 </details>
 
