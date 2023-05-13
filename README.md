@@ -520,15 +520,18 @@ The following browsers were used to test the website:
 
 
 
-5. I want to be informed about the opening hours as a returning user.
+5. The user needs to find the review form easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Info Box| Contact page -> Infor Box -> Opening hours  | See opening hours | Works as expected |
+| Footer | Click on "Feedback" | User in redirected to Feedback page | Works as expected |
+| Feedback Form | Write a feedback, click "send" | User's feedback is sent to the game developer | Works as expected |
 
-<details><summary>Screenshots</summary>
+<<details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-2-1.png">
+<img src="assets/readmemddocs/testuserstories/fourth-a-usert-story.png">
+
+<img src="assets/readmemddocs/testuserstories/fourth-b-user-story.png">
 
 </details>
 
