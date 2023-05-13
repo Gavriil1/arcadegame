@@ -100,7 +100,8 @@
 
 1. User needs to understand the rule of the game quickly 
 2. User needs to have choice to play a game on keyboard or mouse.
-3. User needs to have access on the game on desktop or mobile devices.
+2. User needs to have choice to play a game on  mouse.
+3. User needss controls of the game for mobile devices.
 4. User needs to have an option to leave feedback to help developer to improve the game.
 5. User needs to find review form easily
 7. User needs to be sure that his feedback was sent.
@@ -234,6 +235,34 @@ User story: 5. User needs to find review form easily
 
 ![Home Page](assets\readmemddocs\features\homepage\homepage.png)
 
+###  Game in HTML canvas.
+
+Game is located on Home Page, making it easily accessible for the user.
+
+User Stories: 8. User needs to find a game on web-page easily
+
+![Home Page](assets\readmemddocs\features\homepage\home-html-canvas.png)
+
+###  Game play Manual
+
+In the center of the canvas, we have game manual which explains to the user
+how to play a game.
+
+User Stories:
+1. User needs to understand the rule of the game quickly 
+9. The owner needs to create easy and ituitive web-interface of the web-site.
+
+![Home Page](assets\readmemddocs\features\homepage\home-game-play-manual.png)
+
+###  Game control buttons
+
+On home page we have three buttons. This buttons allow the user to play the game on computers or mobile devices
+
+User Stories: 
+2. User needs to have choice to play a game on keyboard or mouse.
+3. User needs to have access on the game on desktop or mobile devices.
+
+![Home Page](assets\readmemddocs\features\homepage\home-page-control-buttons.png)
 
 ###  Feedback Page
 
