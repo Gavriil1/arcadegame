@@ -98,22 +98,21 @@
 
 ###  User Stories
 
-1. User needs to understand the rule of the game quickly 
-2. User needs to have choice to play a game on keyboard or mouse.
-2. User needs to have choice to play a game on  mouse.
-3. User needss controls of the game for mobile devices.
-4. User needs to have an option to leave feedback to help developer to improve the game.
-5. User needs to find review form easily
-7. User needs to be sure that his feedback was sent.
-8. User needs to find a game on web-page easily
+1. The user needs to understand the rules of the game quickly.
+2. The user needs to have a choice to play the game with a keyboard or a mouse.
+3. The user needs to have access to the game on both desktop and mobile devices.
+4. The user needs to have an option to leave feedback to help the developer improve the game.
+5. The user needs to find the review form easily.
+6. The user needs to be sure that their feedback has been sent.
+7. The user needs to find the game easily on the web page.
+
 ####  Site Owner
-  
-9. The owner needs to create easy and ituitive web-interface of the web-site. 
-10. The owner needs to create a game which responsive, to help user to access it on all possible devices.
-11. 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
-12. Contact form should be added to the website for users to send feedback.
-13. The owner would like to show that his work is copyright protected.
-14. Interface to help user to understand quickly the rules of the game.
+
+8. The owner needs to create an easy and intuitive web interface for the website.
+9. A 404 page should be created to help users navigate to the home page in case they entered the wrong URL.
+10. A contact form should be added to the website for users to send feedback.
+11. The owner would like to show that their work is copyright protected.
+12. An interface should be provided to help users understand the rules of the game quickly.
 
 
 ##  Design
@@ -227,9 +226,8 @@ User story: 5. User needs to find review form easily
 ###  Home Page
 
 - Home page, have a game itself. Which give an easy access to the game and buttons of a game control. The gave has Feedback option in the footer
-7. The owner needs to create easy and ituitive interface to help user to understand quickly the rules of the game.
-8. User needs to find a game on web-page easily
-5. User needs to find review form easily
+
+User stories: 5, 7, 8
 
 
 
@@ -239,7 +237,7 @@ User story: 5. User needs to find review form easily
 
 Game is located on Home Page, making it easily accessible for the user.
 
-User Stories: 8. User needs to find a game on web-page easily
+User Stories: 7
 
 ![Home Page](assets\readmemddocs\features\homepage\home-html-canvas.png)
 
@@ -248,19 +246,23 @@ User Stories: 8. User needs to find a game on web-page easily
 In the center of the canvas, we have game manual which explains to the user
 how to play a game.
 
-User Stories:
-1. User needs to understand the rule of the game quickly 
-9. The owner needs to create easy and ituitive web-interface of the web-site.
+User Stories: 1, 8
 
 ![Home Page](assets\readmemddocs\features\homepage\home-game-play-manual.png)
+
+###  Winning message
+When user wins the game, he sees a mesage which explains how to restart the game:
+
+User Stories: 
+1, 9
+
+![Home Page](assets\readmemddocs\features\homepage\youwonmessage.png)
 
 ###  Game control buttons
 
 On home page we have three buttons. This buttons allow the user to play the game on computers or mobile devices
 
-User Stories: 
-2. User needs to have choice to play a game on keyboard or mouse.
-3. User needs to have access on the game on desktop or mobile devices.
+User Stories: 2, 3
 
 ![Home Page](assets\readmemddocs\features\homepage\home-page-control-buttons.png)
 
@@ -275,33 +277,22 @@ b) Footer option with link to a homepage, where the game is located.
 c) ALert window, which show up when a user click "Sent" option of the form
 
 User stories: 
-4. User needs to have an option to leave feedback to help developer to improve the game.
-5. User needs to find review form easily
-7. User needs to be sure that his feedback was sent.
-8. User needs to find a game on web-page easily
-9. The owner needs to create easy and ituitive web-interface of the web-site.
-12. Contact form should be added to the website for users to send feedback.
-13. The owner would like to show that his work is copyright protected.
+4, 5, 6, 7, 8, 10, 11
 
 ###  Feedback Form
 
 Feedback form allows user to send feedback to the site owner.
 
 User stories: 
-4. User needs to have an option to leave feedback to help developer to improve the game.
-5. User needs to find review form easily
-12. Contact form should be added to the website for users to send feedback.
+4, 5 ,12
 
 ![Feedback Form](assets\readmemddocs\features\feedback\feedbackform.png)
-
-
-
 
 ###  Footer option with link to a homepage, where the game is located.
 
 Allows a user to return back to a home page, making navigation easy
 
-User stories: 9. The owner needs to create easy and ituitive web-interface of the web-site.
+User stories: 8
 
 ![Feedback Form](assets\readmemddocs\features\feedback\link-home-page.png)
 
@@ -309,19 +300,18 @@ User stories: 9. The owner needs to create easy and ituitive web-interface of th
 
 Alert window informs user that his feedback was sent.
 
-User stories: 
-7. User needs to be sure that his feedback was sent.
+User stories: 6
 
 
 ![Alert Window](assets\readmemddocs\features\feedback\windowalert.png)
 
 ###  404 Page
 
-This page helps the user navigate to the home, menu, gallery, and contact pages when the user mistakenly enters the wrong URL.
+ 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
 
 Since the website is small, we added to it initial game, and added a link to Feedback option.
 
-User story: 1. 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
+User story: 9.
 
 ![page404](assets\readmemddocs\features\404page\404-page.png)
 
