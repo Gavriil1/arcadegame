@@ -198,8 +198,6 @@ The website comprises three pages and number of  functionalities.
 
 ###  Page Header
 
-mpyjomh od i[fs]
-
 - On each page the header text is different. It help user to unnderstand the meanning of the page
 
 - The hyperlink for the current page the user is viewing is emphasized.
@@ -464,39 +462,40 @@ The following browsers were used to test the website:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| HTML Canvas | Navigate to the Contact Us page, locate the Google Map | Finding a map that displays the whereabouts of the restaurant. | Works as expected |
-| Map | Navigate to the Contact Us page, locate the Google Map | Finding a map that displays the whereabouts of the restaurant. | Works as expected |
+| HTML Canvas | Navigate to Home Page and find game instructions in the black box | See game instructions | Works as expected |
+| Game Control buttons | Navigate to contact page, find buttons, see text of them. | Finding "Left", "Right", File"  | Works as expected |
 
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-1-1.png">
+<img src="assets/readmemddocs/testuserstories/first-user-story.png">
 
 
 </details>
 
-2. As a first-time customer, I want to know the pricing options available at the restaurant.
+2. The user needs to have a choice to play the game with a keyboard or a mouse.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Menu | Navigate to the Menu page | See the prices for each menu option | Works as expected |
+| Game Control buttons | Navigate to homepage | Find buttons, which you can use on mobile phone, or on desktop with mouse | Works as expected |
+|  Game in Html Canvas | Navigate to home page| Verify that the archer moves while pressing "a", "s", "d" | Works as expected |
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-1-2.png">
+<img src="assets/readmemddocs/testuserstories/first-user-story.png">
 
 </details>
 
-3. As a first time user, I want to know more about the restaurant
+3. The user needs to have access to the game on both desktop and mobile devices.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Home | Navigate to the Home page and locate restaurant descprition | Find view of the restaurant and its description | Works as expected |
+| Responsive design | Open Game in the desktop and mobile phone | Verify that a game and game controls gan be seen on both devices | Works as expected |
 
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/user-story-testing/US-1-3.png">
+<img src="assets/readmemddocs/testuserstories/third-user-story.png">
 
 </details>
 
