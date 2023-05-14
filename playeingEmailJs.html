@@ -14,7 +14,7 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
+                //this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(function() {
@@ -37,6 +37,18 @@
         <textarea name="message"></textarea>
         <input type="submit" value="Send">
     </form>
+
+    <div class="container">
+        <form id="contact-form">
+          <label for="subject">Review Form</label>
+          <textarea id="subject" name="subject" placeholder="Leave feedback to help us make Spartan Invader better" style="height:200px"></textarea>
+      
+          <input type="submit" value="Send">
+        </form>
+      </div>
+
+
+
 
 </body>
 </html>
