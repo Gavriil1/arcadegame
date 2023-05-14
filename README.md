@@ -10,7 +10,7 @@
 
 1. [Project Goals](#project-goals)
 
-    1. [User Goals](#user-goals)
+    1. [Project Goals](#project-goals)
 
     2. [Site Owner Goals](#site-owner-goals)
 
@@ -20,19 +20,17 @@
 
     2. [User Stories](#user-stories)
 
-    3. [Site owner](#owner-stories)
+    3. [Owner Stories](#owner-stories)
 
 3. [Design](#design)
 
-    1. [Design Choices](#design-choices)
+    1. [Colours](#colours)
 
-    2. [Colour](#colours)
+    2. [Fonts](#fonts)
 
-    3. [Fonts](#fonts)
+    3. [Structure](#structure)
 
-    4. [Structure](#structure)
-
-    5. [Wireframes](#wireframes)
+    4. [Wireframes](#wireframes)
 
 4. [Technologies Used](#technologies-used)
 
@@ -115,7 +113,7 @@
 
 ##  Design
 
-###  Design Choices
+###  Colours
 
 
 -   Since the game is related to war, I selected red colors for Spartan Warior, Archer and arrow. 
@@ -132,7 +130,7 @@ During the design development, I used the the following font-family: Times New R
 
 ###  Structure
 
-<!--here is the last stop.-->
+
 
 The page is built to be intuitive to the user, when it comes to game controls and page navgiation. When the user loads the main page,  he sees a tutorial in canvas window on how to play the game by using keyboard. He also can see three buttons wich helps him to play a game with mouse or on a mobile device like phone or tablet. Finally we added Feedback option in the footer, which helps user to find easily find option.
 
