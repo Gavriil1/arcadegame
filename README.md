@@ -36,7 +36,7 @@
 
     1. [Languages](#languages)
 
-    2. [Frameworks & Tools](#frameworks-&-tools)
+    2. [Frameworks Tools](#frameworks-tools)
 
 5. [Features](#features)
 
@@ -173,7 +173,7 @@ The website has 3 pages:
 
 - JavaScript
 
-###  Frameworks & Tools
+###  Frameworks Tools
 
 - Git
 
