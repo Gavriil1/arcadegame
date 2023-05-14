@@ -1,4 +1,4 @@
-#  RHODES RESTAURANT
+#  Spartan Invader
 
 (Developer: Gabriel SP)
 
@@ -18,9 +18,9 @@
 
     1. [Target Audience](#target-audience)
 
-    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    2. [User Stories](#user-stories)
 
-    3. [User Stories](#user-stories)
+    3. [Site owner](#owner-stories)
 
 3. [Design](#design)
 
@@ -73,8 +73,6 @@
 
 ##  Project Goals
 
-###  User Goals
-
 -   To relax after stresfull day by playing the game.
 
 -   To challenage themselves and have fun.
@@ -106,7 +104,7 @@
 6. The user needs to be sure that their feedback has been sent.
 7. The user needs to find the game easily on the web page.
 
-####  Site Owner
+####  Owner Stories
 
 8. The owner needs to create an easy and intuitive web interface for the website.
 9. A 404 page should be created to help users navigate to the home page in case they entered the wrong URL.
@@ -284,7 +282,7 @@ User stories:
 Feedback form allows user to send feedback to the site owner.
 
 User stories: 
-4, 5 ,11
+4, 5 
 
 ![Feedback Form](assets/readmemddocs/features/feedback/feedbackform.png)
 
@@ -595,45 +593,6 @@ The following browsers were used to test the website:
 
 </details>
 
-
-11. As the site owner, I want users to access the site and learn more about the restaurant nt
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Home Page| Navigate to Home Page | View the restaurant's panorama and read its description. | Works as expected |
-
-<details><summary>Screenshots</summary>
-
-<img src="docs/user-story-testing/US-2-7.png">
-
-</details>
-
-12. As the site owner, I want users to find our contact details to contact us .
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Contact Form | Contact Page -> Contact Form -> Enter text -> Submit | Data submited via contact form | Works as expectd |
-| Info Box | Contact page -> Infor Box -> Find Phone and Email | Find the phone number, Email  | Works as expected |
-
-
-<details><summary>Screenshots</summary>
-
-<img src="docs/user-story-testing/US-2-8.png">
-
-<img src="docs/user-story-testing/US-2-9.png">
-</details>
-
-13. As the site owner, I want users to be redirected to the 404 page so that they can navigate back to the pages shown in the navigation bar
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| 404 Page | user Enters wrong URL | User sees 404 page. On it he sees navigation bar on website and select the page he needs. | Works as expectd |
-
-<details><summary>Screenshots</summary>
-
-<img src="docs/user-story-testing/US-2-10.png">
-
-</details>
 
 ## Bugs
 
