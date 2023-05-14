@@ -577,7 +577,7 @@ The following browsers were used to test the website:
 | Up/Down buttons did not work | Fixed by changing onClick to onmousedown |
 | After going to inspect screen, buttons stopped working again | Fixed by adding setTimeout function to unSendKey function |
 | Spartans were moving out of the screen. | Fixed the issue by adding a canvas width condition, "keycodes.a.pressed && archer.placement.x >= 0". |
-
+| EmailJs does not send feedback of the user | Fixed the issue by changing textara name to "message". |
 
 
 ##  Deployment
