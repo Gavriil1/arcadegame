@@ -71,45 +71,42 @@
 
 ##  Project Goals
 
--   To relax after stresfull day by playing the game.
+- To relax after a stressful day, one can play games.
 
--   To challenage themselves and have fun.
-
--   Do something interesting on their free time
+- Doing something interesting in their free time can be a great way to unwind and enjoy themselves.
 
 
 ###  Site Owner Goals
 
--   Create high quality game to atract new customers/players
+-  Create a high-quality game to attract new customers/players.
 
--   Create simple navigation around website to create great user experience
+- Create simple navigation around the website to provide a great user experience.
 
--   Create a game which can be played on all devices: computer, phone.
+- Create a game that can be played on all devices, including computers and phones.
 
 ##  User Experience
 
 ###  Target Audience
 
-- Main target audience is kids and teenagers age 8-23 years old.
+- Our main target audience comprises kids and teenagers between the ages of 8 and 23.
 
 ###  User Stories
 
-1. The user needs to understand the rules of the game quickly.
-2. The user needs to have a choice to play the game with a keyboard or a mouse.
-3. The user needs to have access to the game on both desktop and mobile devices.
-4. The user needs to have an option to leave feedback to help the developer improve the game.
-5. The user needs to find the review form easily.
-6. The user needs to be sure that their feedback has been sent.
-7. The user needs to find the game easily on the web page.
+1. The user needs to be able to understand the rules of the game quickly.
+2. The user needs to be given a choice to play the game with either a keyboard or a mouse.
+3. The user needs to be able to access the game on both desktop and mobile devices.
+4. The user needs to be provided with an option to leave feedback to help the developer improve the game.
+5. The user needs to be able to find the review form easily.
+6. The user needs to be certain that their feedback has been successfully sent.
+7. The user needs to be able to find the game easily on the webpage.
 
 ####  Owner Stories
 
-8. The owner needs to create an easy and intuitive web interface for the website.
-9. A 404 page should be created to help users navigate to the home page in case they entered the wrong URL.
-10. A contact form should be added to the website for users to send feedback.
-11. The owner would like to show that their work is copyright protected.
-12. An interface should be provided to help users understand the rules of the game quickly.
-
+8. The owner needs to create an easy-to-use and intuitive web interface for the website.
+9. A 404 page should be added to help users navigate back to the home page in case they entered the wrong URL.
+10. The website should have a contact form available for users to submit feedback.
+11. The owner would like to display that their work is protected by copyright.
+12. An interface should be provided to help users quickly understand the rules of the game.
 
 ##  Design
 
@@ -645,5 +642,4 @@ Both of them are downloaded from https://id.pngtree.com/
 In order of apearance:
 
 - Spartan Invader: [Udemy Course](https://www.udemy.com/course/space-invaders-with-javascript-and-html-canvas/)
-- Contact/Feedback Form: [w3schools](https://www.w3schools.com/howto/howto_css_contact_form.asp) 
 - API and JS function Sending Email from Contatct Form: [EmailJs](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
