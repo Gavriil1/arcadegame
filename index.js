@@ -242,6 +242,7 @@ window.addEventListener('keydown', ({ key }) => {
                 }
             }
             ))
+  
             break
     }
 })
