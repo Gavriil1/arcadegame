@@ -92,33 +92,28 @@
 
 ###  User Stories
 
-1. The user needs to be able to understand the rules of the game quickly.
-2. The user needs to be given a choice to play the game with either a keyboard or a mouse.
-3. The user needs to be able to access the game on both desktop and mobile devices.
-4. The user needs to be provided with an option to leave feedback to help the developer improve the game.
-5. The user needs to be able to find the review form easily.
-6. The user needs to be certain that their feedback has been successfully sent.
-7. The user needs to be able to find the game easily on the webpage.
+1. The user needs to understand the rules of the game quickly.
+2. The user needs to have a choice to play the game with a keyboard or a mouse.
+3. The user needs to have access to the game on both desktop and mobile devices.
+4. The user needs to have an option to leave feedback to help the developer improve the game.
+5. The user needs to find the review form easily.
+6. The user needs to be sure that their feedback has been sent.
+7. The user needs to find the game easily on the web page.
 
 ####  Owner Stories
 
-8. The owner needs to create an easy-to-use and intuitive web interface for the website.
-9. A 404 page should be added to help users navigate back to the home page in case they entered the wrong URL.
-10. The website should have a contact form available for users to submit feedback.
-11. The owner would like to display that their work is protected by copyright.
-12. An interface should be provided to help users quickly understand the rules of the game.
+8. A 404 page should be created to help users navigate to the home page in case they entered the wrong URL.
+9. A contact form should be added to the website for users to send feedback.
+10. The owner would like to show that their work is copyright protected.
+
 
 ##  Design
 
 ###  Colours
 
-
--   Since the game is related to war, I selected red colors for Spartan Warior, Archer and arrow. 
-
-- Selected black color for canvas because it is also heavy color related to war.
-
-
--   I selected calm backround colour outside of canvas, to balance red and black colour of a game.
+- To reflect the war theme of the game, I opted for red colors for the Spartan Warrior, Archer, and arrow.
+- I chose black as the color for the canvas, as it is a dark color that is often associated with war.
+- To balance out the dominant red and black colors used in the game, I selected a calm background color outside of the canvas.
 
 ###  Fonts
 
@@ -127,18 +122,13 @@ During the design development, I used the the following font-family: Times New R
 
 ###  Structure
 
+The page is designed to be intuitive for the user, both in terms of game controls and page navigation. When the user loads the main page, they will see a tutorial in the canvas window explaining how to play the game using a keyboard. Additionally, there are three buttons available to allow users to play the game using a mouse or on a mobile device such as a phone or tablet. Finally, we have added a feedback option in the footer, making it easily accessible to the user.
 
+The website consists of three pages:
 
-The page is built to be intuitive to the user, when it comes to game controls and page navgiation. When the user loads the main page,  he sees a tutorial in canvas window on how to play the game by using keyboard. He also can see three buttons wich helps him to play a game with mouse or on a mobile device like phone or tablet. Finally we added Feedback option in the footer, which helps user to find easily find option.
-
-
-The website has 3 pages:
-
--   A homepage containing a game.
-
--   Feedback page. This page has a form for a user to leave a feedback.
-
--  404 page, which helps user to navigate back to home page, in the case he entered the wrong url.
+A homepage containing the game.
+A feedback page that includes a form for users to provide feedback.
+A 404 page that helps users navigate back to the homepage in case they enter the wrong URL.
 
 ###  Wireframes
 
@@ -187,38 +177,30 @@ The website has 3 pages:
 
 ##  Features
 
-The website comprises three pages and number of  functionalities.
+The website has  three pages and number of  functionalities.
 
 ###  Page Header
 
-- On each page the header text is different. It help user to unnderstand the meanning of the page
-
-- The hyperlink for the current page the user is viewing is emphasized.
+- On each page, the header text is different, which helps the user to understand the purpose of the page.
 
 ![Home Page Header](assets/readmemddocs/features/header/home-page-header.png)
 ![Feedback Page header](assets/readmemddocs/features/header/feedback-Page-header.png)
 ![404 page header](assets/readmemddocs/features/header/404-page-header.png)
 
-User stories: 7. The owner needs to create easy and ituitive interface to help user to understand quickly the rules of the game.
+User stories: 7. 
 
 ###  Footer
-<!-- the last save -->
-Displayed on each page. It slightly differs on each page.
-- On main page and 404 page the footer has link to feedback page.
-- On feedback page the footer has link to homepage.
 
-On each page it has copyright message.
+Displayed on each page, it slightly differs on each page. On the main page and 404 page, the footer has a link to the feedback page. On the feedback page, the footer has a link to the homepage. Each page also includes a copyright message.
 
-
-User story: 5. User needs to find review form easily
-
+User story: 5. 
 ![Footer of Home and 404 Page](assets/readmemddocs/features/footer/home-404-footer.png)
 ![Footer of Feedback page](assets/readmemddocs/features/footer/feedback-footer.png)
 
 
 ###  Home Page
 
-- Home page, have a game itself. Which give an easy access to the game and buttons of a game control. The gave has Feedback option in the footer
+- The homepage features the game, providing easy access to game controls through buttons. The game also has a feedback option in the footer.
 
 User stories: 5, 7, 
 
@@ -228,7 +210,7 @@ User stories: 5, 7,
 
 ###  Game in HTML canvas.
 
-Game is located on Home Page, making it easily accessible for the user.
+The sentence is grammatically correct and there are no spelling errors.
 
 User Stories: 7
 
@@ -247,13 +229,14 @@ User Stories: 1
 When user wins the game, he sees a mesage which explains how to restart the game:
 
 User Stories: 
-1, 8
+1
 
 ![Home Page](assets/readmemddocs/features/homepage/youwonmessage.png)
 
 ###  Game control buttons
 
-On home page we have three buttons. This buttons allow the user to play the game on computers or mobile devices
+
+Check grammar and spelling: On the home page, we have three buttons that allow the user to play the game on computers or mobile devices.
 
 User Stories: 2, 3
 
@@ -263,11 +246,13 @@ User Stories: 2, 3
 
 Contact page has two section
 
+The contact page has three sections:
+
 a) Feedback Form.
 
-b) Footer option with link to a homepage, where the game is located.
+b) Footer option with a link to the homepage where the game is located.
 
-c) ALert window, which show up when a user click "Sent" option of the form
+c) Alert window that shows up when a user clicks the "Send" option of the form.
 
 User stories: 
 4, 5, 6, 7, 9, 10
@@ -283,7 +268,7 @@ User stories:
 
 ###  Footer option with link to a homepage, where the game is located.
 
-Allows a user to return back to a home page, making navigation easy
+This allows the user to easily navigate back to the home page.
 
 User stories: 5
 
@@ -291,7 +276,7 @@ User stories: 5
 
 ###  ALert window, which show up when a user click "Sent" option of the form
 
-Alert window informs user that his feedback was sent.
+The alert window informs the user that their feedback has been sent.
 
 User stories: 6
 
@@ -300,11 +285,11 @@ User stories: 6
 
 ###  404 Page
 
- 404 page should be created, to help user to navigate to home page in case wrong urls was entered.
+A 404 page should be created to help the user navigate to the home page in case they entered the wrong URL.
 
-Since the website is small, we added to it initial game, and added a link to Feedback option.
+Since the website is small, we added an initial game to it and a link to the feedback option.
 
-User story: .
+User story: 8
 
 ![page404](assets/readmemddocs/features/404page/404-page.png)
 
@@ -312,8 +297,7 @@ User story: .
 
 ###  HTML Validation
 
-We utilized the W3C Markup Validation Service to validate the HTML of our website. The Home and 404 pages passed validation with no errors. However, the
-feedback page shows a warning. Since this line of code  is taken from EmailJs API for a form to work, I leave everything as it is
+Check grammar and spelling: We utilized the W3C Markup Validation Service to validate the HTML of our website. The Home and 404 pages passed validation with no errors. However, the feedback page shows a warning. Since it's just a warning, I decided to leave everything as it is.
 
 <details><summary>Home</summary>
 
@@ -384,8 +368,7 @@ TOn this page, we have identified 0 errors and 3 alert.
 
 ###  Performance
 
-The performance of the website was tested using Google Lighthouse.
-The site received high score for Performance, Accessibility and Best Practices
+The performance of the website was tested using Google Lighthouse. The site received a high score for performance, accessibility, and best practices.
 
 <details><summary>Home</summary>
 
@@ -455,8 +438,8 @@ The following browsers were used to test the website:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| HTML Canvas | Navigate to Home Page and find game instructions in the black box | See game instructions | Works as expected |
-| Game Control buttons | Navigate to contact page, find buttons, see text of them. | Finding "Left", "Right", File"  | Works as expected |
+| HTML Canvas | Navigate to the Home Page and find game instructions in the black box | See game instructions | Works as expected |
+| Game Control buttons | Navigate to the contact page, find buttons, and see the text | Finding "Left", "Right", "File" | Works as expected |
 
 
 <details><summary>Screenshots</summary>
@@ -470,8 +453,8 @@ The following browsers were used to test the website:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game Control buttons | Navigate to homepage | Find buttons, which you can use on mobile phone, or on desktop with mouse | Works as expected |
-|  Game in Html Canvas | Navigate to home page| Verify that the archer moves while pressing "a", "s", "d" | Works as expected |
+| Game Control Buttons | Navigate to homepage | Find the buttons that can be used on mobile phones or with a mouse on a desktop | Works as expected |
+| Game in HTML Canvas | Navigate to homepage | Verify that the archer moves when pressing "a", "s", or "d" | Works as expected |
 
 <details><summary>Screenshots</summary>
 
@@ -481,7 +464,6 @@ The following browsers were used to test the website:
 
 3. The user needs to have access to the game on both desktop and mobile devices.
 
-<!--- I stopped here --->
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -499,9 +481,8 @@ The following browsers were used to test the website:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Footer | Click on "Feedback" | User in redirected to Feedback page | Works as expected |
-| Feedback Form | Write a feedback, click "send" | User's feedback is sent to the game developer | Works as expected |
-
+| Footer | Click on "Feedback" | User is redirected to Feedback page | Works as expected |
+| Feedback Form | Write feedback, click "send" | User's feedback is sent to the game developer | Works as expected |
 
 <details><summary>Screenshots</summary>
 
@@ -556,7 +537,7 @@ The following browsers were used to test the website:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| 404 page| Enter wrong url. | See 404 page with a link to home page | Works as expectd |
+| 404 page| Enter wrong url. | See 404 page with a link to home page | Works as expected |
 
 <details><summary>Screenshots</summary>
 
@@ -593,9 +574,9 @@ The following browsers were used to test the website:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| Up/Down buttoms did not work | Fixed it by changing onClick to onmousedown|
-| After going to inspect bottoms stopped working again | Fixed it, by adding settimeout function to unSendKey function |
-|  Spartans was moving out of the screen. |  Fixed the issue by adding Canvas width condiation keycodes.a.pressed && archer.placement.x >= 0 |
+| Up/Down buttons did not work | Fixed by changing onClick to onmousedown |
+| After going to inspect screen, buttons stopped working again | Fixed by adding setTimeout function to unSendKey function |
+| Spartans were moving out of the screen. | Fixed the issue by adding a canvas width condition, "keycodes.a.pressed && archer.placement.x >= 0". |
 
 
 
