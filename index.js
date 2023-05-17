@@ -16,7 +16,7 @@ class Archer {
         };
         //Properties of archer: picture, width, height, initial placement on the screen
         const picture = new Image();
-        picture.src = "assets/images/cartoon-martial-arts-character-archery_4042629.png";
+        picture.src = "assets\images\character-archer.png";
         picture.onload = () => {
             const scale = 0.05;
             this.picture = picture;
@@ -74,7 +74,7 @@ class Spartan {
       
       // Defining properties of Spartans: picture, width, gheight, initial placement etc
       const picture = new Image();
-      picture.src = "assets/images/ancient-greek-spartan-warrior-6839912.png";
+      picture.src = "assets\images\ancient-greek-spartan.png";
       picture.onload = () => {
         const scale = 0.1;
         this.picture = picture;
