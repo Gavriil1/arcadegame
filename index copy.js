@@ -16,7 +16,7 @@ class Archer {
         }
         //Properties of archer: picture, width, height, initial placement on the screen
         const picture = new Image()
-        picture.src = "assets\images\character-archer.png"
+        picture.src = "assets/images/character-archer.png"
         picture.onload = () => {
             const scale = 0.05
             this.picture = picture
@@ -74,7 +74,7 @@ class Spartan {
       
       // Defining properties of Spartans: picture, width, gheight, initial placement etc
       const picture = new Image();
-      picture.src = "assets\images\ancient-greek-spartan.png";
+      picture.src = "assets/images/ancient-greek-spartan.png";
       picture.onload = () => {
         const scale = 0.1;
         this.picture = picture;
