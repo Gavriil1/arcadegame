@@ -341,7 +341,7 @@ Upon examination, no CSS errors were detected in the CSS.style document.
 
 ###  JS Validation
 
-The CSS of the website was validated using the https://jshint.com/ Validation Service. T
+The JS of the website was validated using the https://jshint.com/ Validation Service. T
 
 <details><summary>indxex.js validation test</summary>
 
