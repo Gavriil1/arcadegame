@@ -343,13 +343,24 @@ Upon examination, no CSS errors were detected in the CSS.style document.
 
 The JS of the website was validated using the https://jshint.com/ Validation Service. T
 
-<details><summary>indxex.js validation test</summary>
+<details><summary>indxex.js</summary>
 
 https://jshint.com/  has shown "One Undefined variables" and "Four unused variables" for index.js. These are false positive alerts, because if I delete undefined and unsed variables the code will stop working
 
 
 
 <img src="assets\readmemddocs\js-validator\index-js-validator.png">
+
+</details>
+
+</details>
+
+
+<details><summary>form.js</summary>
+
+https://jshint.com/  has shown "One Undefined variables". This is a false postive alert since the function is defined and if deleted the script will stop working
+
+<img src="assets\readmemddocs\js-validator\form.js-valiation.png">
 
 </details>
 
