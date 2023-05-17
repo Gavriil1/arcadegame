@@ -183,9 +183,9 @@ The website has  three pages and number of  functionalities.
 
 - On each page, the header text is different, which helps the user to understand the purpose of the page.
 
-![Home Page Header](assets/readmemddocs/features/header/home-page-header.png)
-![Feedback Page header](assets/readmemddocs/features/header/feedback-Page-header.png)
-![404 page header](assets/readmemddocs/features/header/404-page-header.png)
+![Home Page Header](docs/features/header/home-page-header.png)
+![Feedback Page header](docs/features/header/feedback-Page-header.png)
+![404 page header](docs/features/header/404-page-header.png)
 
 User stories: 7. 
 
@@ -194,8 +194,8 @@ User stories: 7.
 Displayed on each page, it slightly differs on each page. On the main page and 404 page, the footer has a link to the feedback page. On the feedback page, the footer has a link to the homepage. Each page also includes a copyright message.
 
 User story: 5. 
-![Footer of Home and 404 Page](assets/readmemddocs/features/footer/home-404-footer.png)
-![Footer of Feedback page](assets/readmemddocs/features/footer/feedback-footer.png)
+![Footer of Home and 404 Page](docs/features/footer/home-404-footer.png)
+![Footer of Feedback page](docs/features/footer/feedback-footer.png)
 
 
 ###  Home Page
@@ -206,7 +206,7 @@ User stories: 5, 7,
 
 
 
-![Home Page](assets/readmemddocs/features/homepage/homepage.png)
+![Home Page](docs/features/homepage/homepage.png)
 
 ###  Game in HTML canvas.
 
@@ -214,7 +214,7 @@ The sentence is grammatically correct and there are no spelling errors.
 
 User Stories: 7
 
-![Home Page](assets/readmemddocs/features/homepage/home-html-canvas.png)
+![Home Page](docs/features/homepage/home-html-canvas.png)
 
 ###  Game play Manual
 
@@ -223,7 +223,7 @@ how to play a game.
 
 User Stories: 1
 
-![Home Page](assets/readmemddocs/features/homepage/home-game-play-manual.png)
+![Home Page](docs/features/homepage/home-game-play-manual.png)
 
 ###  Winning message
 When user wins the game, he sees a mesage which explains how to restart the game:
@@ -231,7 +231,7 @@ When user wins the game, he sees a mesage which explains how to restart the game
 User Stories: 
 1
 
-![Home Page](assets/readmemddocs/features/homepage/youwonmessage.png)
+![Home Page](docs/features/homepage/youwonmessage.png)
 
 ###  Game control buttons
 
@@ -240,7 +240,7 @@ Check grammar and spelling: On the home page, we have three buttons that allow t
 
 User Stories: 2, 3
 
-![Home Page](assets/readmemddocs/features/homepage/home-page-control-buttons.png)
+![Home Page](docs/features/homepage/home-page-control-buttons.png)
 
 ###  Feedback Page
 
@@ -264,7 +264,7 @@ Feedback form allows user to send feedback to the site owner.
 User stories: 
 4, 5 
 
-![Feedback Form](assets/readmemddocs/features/feedback/feedbackform.png)
+![Feedback Form](docs/features/feedback/feedbackform.png)
 
 ###  Footer option with link to a homepage, where the game is located.
 
@@ -272,7 +272,7 @@ This allows the user to easily navigate back to the home page.
 
 User stories: 5
 
-![Feedback Form](assets/readmemddocs/features/feedback/link-home-page.png)
+![Feedback Form](docs/features/feedback/link-home-page.png)
 
 ###  ALert window, which show up when a user click "Sent" option of the form
 
@@ -281,7 +281,7 @@ The alert window informs the user that their feedback has been sent.
 User stories: 6
 
 
-![Alert Window](assets/readmemddocs/features/feedback/windowalert.png)
+![Alert Window](docs/features/feedback/windowalert.png)
 
 ###  404 Page
 
@@ -291,7 +291,7 @@ Since the website is small, we added an initial game to it and a link to the fee
 
 User story: 8
 
-![page404](assets/readmemddocs/features/404page/404-page.png)
+![page404](docs/features/404page/404-page.png)
 
 ##  Validation
 
@@ -301,13 +301,13 @@ Check grammar and spelling: We utilized the W3C Markup Validation Service to val
 
 <details><summary>Home</summary>
 
-<img src="assets\readmemddocs\html-validator\html-validation-home-page.png">
+<img src="docs\html-validator\html-validation-home-page.png">
 
 </details>
 
 <details><summary>Feedback</summary>
 
-<img src="assets\readmemddocs\html-validator\html-feedback-validator.png">
+<img src="docs\html-validator\html-feedback-validator.png">
 
 </details>
 
@@ -315,7 +315,7 @@ Check grammar and spelling: We utilized the W3C Markup Validation Service to val
 <details><summary>404-Page</summary>
 
 
-<img src="assets\readmemddocs\html-validator\html-404-validator.png">
+<img src="docs\html-validator\html-404-validator.png">
 
 </details>
 
@@ -326,7 +326,7 @@ The CSS of the website was validated using the W3C Jigsaw CSS Validation Service
 <details><summary>whole page</summary>
 
 CSS Home page validation: No Errors
-<img src="assets\readmemddocs\css-validation\css-validation-home-page.png">
+<img src="docs\css-validation\css-validation-home-page.png">
 
 </details>
 
@@ -334,7 +334,7 @@ CSS Home page validation: No Errors
 
 Upon examination, no CSS errors were detected in the CSS.style document.
 
-<img src="assets\readmemddocs\css-validation\css-validation-style.css.png">
+<img src="docs\css-validation\css-validation-style.css.png">
 
 </details>
 
@@ -349,7 +349,7 @@ https://jshint.com/  has shown "One Undefined variables" and "Four unused variab
 
 
 
-<img src="assets\readmemddocs\js-validator\index-js-validator.png">
+<img src="docs\js-validator\index-js-validator.png">
 
 </details>
 
@@ -360,7 +360,7 @@ https://jshint.com/  has shown "One Undefined variables" and "Four unused variab
 
 https://jshint.com/  has shown "One Undefined variables". This is a false postive alert since the function is defined and if deleted the script will stop working
 
-<img src="assets\readmemddocs\js-validator\form.js-valiation.png">
+<img src="docs\js-validator\form.js-valiation.png">
 
 </details>
 
@@ -374,14 +374,14 @@ To ensure the website met high accessibility standards, the WAVE WebAIM web acce
 
 On this page, we have identified 0 errors and 1 alert. 
 
-<img src="assets\readmemddocs\accessiblity-validation\home-page-accessibility-evaluation.png">
+<img src="docs\accessiblity-validation\home-page-accessibility-evaluation.png">
 </details>
 
 <details><summary>Feedback</summary>
 
 On this page, we have identified 0 errors and 1 alert. 
 
-<img src="assets\readmemddocs\accessiblity-validation\feedback-pabe-accessiblity-eval.png">
+<img src="docs\accessiblity-validation\feedback-pabe-accessiblity-eval.png">
 
 </details>
 
@@ -389,7 +389,7 @@ On this page, we have identified 0 errors and 1 alert.
 
 TOn this page, we have identified 0 errors and 3 alert. 
 
-<img src="assets\readmemddocs\accessiblity-validation\404-accessiblity-validation.png">
+<img src="docs\accessiblity-validation\404-accessiblity-validation.png">
 
 </details>
 
@@ -404,7 +404,7 @@ The performance of the website was tested using Google Lighthouse. The site rece
 
 Screenshot of Desktop performance of Home page in Google Lighthouse.
 
-<img src="assets\readmemddocs\performance\home-desktop-Perfm.png">
+<img src="docs\performance\home-desktop-Perfm.png">
 
 Screenshot of Mobile performance of Home page in Google Lighthouse.
 
@@ -418,11 +418,11 @@ Screenshot of Mobile performance of Home page in Google Lighthouse.
 
 Screenshot of Desktop performance of Contact page in Google Lighthouse.
 
-<img src="assets\readmemddocs\performance\feedback-desktop-perf.png">
+<img src="docs\performance\feedback-desktop-perf.png">
 
 Screenshot of Mobile performance of Contact page in Google Lighthouse.
 
-<img src="assets\readmemddocs\performance\feedback-mobile-perf.png">
+<img src="docs\performance\feedback-mobile-perf.png">
 
 </details>
 
@@ -430,11 +430,11 @@ Screenshot of Mobile performance of Contact page in Google Lighthouse.
 
 Screenshot of Desktop performance of 404 page in Google Lighthouse.
 
-<img src="assets\readmemddocs\performance\404-mobile-perf.png">
+<img src="docs\performance\404-mobile-perf.png">
 
 Screenshot of Mobile performance of 404 page in Google Lighthouse.
 
-<img src="assets\readmemddocs\performance\home-mobile-perf.png">
+<img src="docs\performance\home-mobile-perf.png">
 
 </details>
 
@@ -472,7 +472,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets/readmemddocs/testuserstories/first-user-story.png">
+<img src="docs/testuserstories/first-user-story.png">
 
 
 </details>
@@ -486,7 +486,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets/readmemddocs/testuserstories/first-user-story.png">
+<img src="docs/testuserstories/first-user-story.png">
 
 </details>
 
@@ -500,7 +500,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets/readmemddocs/testuserstories/third-user-story.png">
+<img src="docs/testuserstories/third-user-story.png">
 
 
 </details>
@@ -514,9 +514,9 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets/readmemddocs/testuserstories/fourth-a-usert-story.png">
+<img src="docs/testuserstories/fourth-a-usert-story.png">
 
-<img src="assets/readmemddocs/testuserstories/fourth-b-user-story.png">
+<img src="docs/testuserstories/fourth-b-user-story.png">
 
 </details>
 
@@ -531,9 +531,9 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets/readmemddocs/testuserstories/fourth-a-usert-story.png">
+<img src="docs/testuserstories/fourth-a-usert-story.png">
 
-<img src="assets/readmemddocs/testuserstories/fourth-b-user-story.png">
+<img src="docs/testuserstories/fourth-b-user-story.png">
 
 </details>
 
@@ -545,7 +545,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets/readmemddocs/testuserstories/sixth-user-story.png">
+<img src="docs/testuserstories/sixth-user-story.png">
 
 </details>
 
@@ -557,7 +557,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets\readmemddocs\testuserstories\seventh-user-test.png">
+<img src="docs\testuserstories\seventh-user-test.png">
 
 </details>
 
@@ -569,7 +569,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets\readmemddocs\testuserstories\8th-404-page.png">
+<img src="docs\testuserstories\8th-404-page.png">
 
 </details>
 
@@ -581,7 +581,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets\readmemddocs\testuserstories\9th-user-story.png">
+<img src="docs\testuserstories\9th-user-story.png">
 
 </details>
 
@@ -593,7 +593,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="assets\readmemddocs\testuserstories\10th-user-test.png">
+<img src="docs\testuserstories\10th-user-test.png">
 
 </details>
 
