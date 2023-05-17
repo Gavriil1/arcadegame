@@ -2,7 +2,7 @@
 
 (Developer: Gabriel SP)
 
-![Mockup image](assets/readmemddocs/amIresponsive/amiresponsive.png)
+![Mockup image](docs/amIresponsive/amiresponsive.png)
 
 [Live webpage](https://gavriil1.github.io/arcadegame/index.html)
 
