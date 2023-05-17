@@ -338,6 +338,20 @@ Upon examination, no CSS errors were detected in the CSS.style document.
 
 </details>
 
+
+###  JS Validation
+
+The CSS of the website was validated using the https://jshint.com/ Validation Service, which has shown "One Undefined variables" and "Four unused variables". THis is false positive, because if I delete defined and not unused variables the code will stop working
+
+<details><summary>whole page</summary>
+
+CSS Home page validation: No Errors
+<img src="assets\readmemddocs\js-validator\index-js-validator.png">
+
+</details>
+
+</details>
+
 ###  Accessibility
 
 To ensure the website met high accessibility standards, the WAVE WebAIM web accessibility evaluation tool was utilized.
