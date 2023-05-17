@@ -341,11 +341,14 @@ Upon examination, no CSS errors were detected in the CSS.style document.
 
 ###  JS Validation
 
-The CSS of the website was validated using the https://jshint.com/ Validation Service, which has shown "One Undefined variables" and "Four unused variables". THis is false positive, because if I delete defined and not unused variables the code will stop working
+The CSS of the website was validated using the https://jshint.com/ Validation Service. T
 
-<details><summary>whole page</summary>
+<details><summary>indxex.js validation test</summary>
 
-CSS Home page validation: No Errors
+https://jshint.com/  has shown "One Undefined variables" and "Four unused variables" for index.js. These are false positive alerts, because if I delete undefined and unsed variables the code will stop working
+
+
+
 <img src="assets\readmemddocs\js-validator\index-js-validator.png">
 
 </details>
