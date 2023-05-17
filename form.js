@@ -11,7 +11,7 @@ window.onload = function() {
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function() {
                 console.log('SUCCESS!');
-                document.location.href="/";
+                window.location.href="/";
                 window.alert("Your Feedback was received. Thank you")
             }, function(error) {
                 console.log('FAILED...', error);
