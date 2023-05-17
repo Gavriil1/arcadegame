@@ -134,19 +134,19 @@ A 404 page that helps users navigate back to the homepage in case they enter the
 
 <details><summary>Home</summary>
 
-<img src="assets/readmemddocs/wireframes/home-spartan-invader.png">
+<img src="docs/wireframes/home-spartan-invader.png">
 
 </details>
 
 <details><summary>Feedback</summary>
 
-<img src="assets\readmemddocs\wireframes\feedback.png">
+<img src="docs\wireframes\feedback.png">
 
 </details>
 
 <details><summary>404 Page</summary>
 
-<img src="assets\readmemddocs\wireframes\404.png">
+<img src="docs\wireframes\404.png">
 
 </details>
 
