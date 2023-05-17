@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 (function() {
     // https://dashboard.emailjs.com/admin/account
     emailjs.init('ZeVrVpnrISRsAcECy');

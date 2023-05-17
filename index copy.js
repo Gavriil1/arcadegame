@@ -1,3 +1,5 @@
+
+/*jshint esversion: 6 */
 // The inspiration for this code was taken from: https://www.udemy.com/course/space-invaders-with-javascript-and-html-canvas/
 // HTML Canvas
 const kanhtml = document.querySelector('canvas');
@@ -240,8 +242,9 @@ window.addEventListener('keydown', ({ key }) => {
                     x:0,
                     y:-10
                 }
-            }
+            }        
             ))
+  
             break
     }
 })
