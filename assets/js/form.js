@@ -1,11 +1,16 @@
+// This script was published for emailJs application on  https://www.emailjs.com/docs/tutorial/creating-contact-form/
+// I added to it if condition which checks if textarea is empty.
+// In addition, I added command to move the user to the home page after feedback is submitted.
+
 /*jshint esversion: 6 */
+// we initialize the SDK with our public key
 (function() {
     // https://dashboard.emailjs.com/admin/account
     emailjs.init('ZeVrVpnrISRsAcECy');
 })();
 
-
-
+//We get the textarea value from the form. If it is  empty we stop execution
+//If value has a message I send it to my email with emailJs
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -21,10 +26,10 @@ window.onload = function() {
             .then(function() {
                 console.log('SUCCESS!');
                 window.location.href="/arcadegame/index.html";
-                window.alert("Your Feedback was received. Thank you")
+                window.alert("Your Feedback was received. Thank you");
             }, function(error) {
                 console.log('FAILED...', error);
-                window.alert( "Unfortunately, your feedback was not submitted successfully. Please try again later.")
+                window.alert( "Unfortunately, your feedback was not submitted successfully. Please try again later.");
             });
     });
-}
+};
