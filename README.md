@@ -46,17 +46,17 @@
 
     2. [CSS Validation](#CSS-validation)
 
-    2. [JS Validation](#JS-Validation)
+    3. [JS Validation](#JS-Validation)
 
-    3. [Accessibility](#accessibility)
+    4. [Accessibility](#accessibility)
 
-    4. [Performance](#performance)
+    5. [Performance](#performance)
 
-    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Device testing](#performing-tests-on-various-devices)
 
-    6. [Browser compatibility](#browser-compatability)
+    7. [Browser compatibility](#browser-compatability)
 
-    7. [Testing user stories](#testing-user-stories)
+    8. [Testing user stories](#testing-user-stories)
 
 7. [Bugs](#Bugs)
 
