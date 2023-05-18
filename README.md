@@ -196,6 +196,7 @@ User stories: 7.
 Displayed on each page, it slightly differs on each page. On the main page and 404 page, the footer has a link to the feedback page. On the feedback page, the footer has a link to the homepage. Each page also includes a copyright message.
 
 User story: 5. 
+
 ![Footer of Home and 404 Page](docs/features/footer/home-404-footer.png)
 ![Footer of Feedback page](docs/features/footer/feedback-footer.png)
 
@@ -289,7 +290,7 @@ User stories: 6
 
 A 404 page should be created to help the user navigate to the home page in case they entered the wrong URL.
 
-Since the website is small, we added an initial game to it and a link to the feedback option.
+Since the website is small, we added an initial game to it and a link to the homepage
 
 User story: 8
 
