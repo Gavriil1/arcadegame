@@ -6,53 +6,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css"> 
 	<title>Spartan Invader</title>
-  <style>
-    header h1 {
-    font-size: 70px;
-    font-weight: 600;
-    background-image: linear-gradient( #ad3a94 45%, #5a3ae6);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
- } 
- </style>
 </head>
-
 <body>
-	<header>
-		
-		<h1>Rate Spartan Invader</h1>
+  <!-- Header  -->
+	<header>		
+		<h1 id="headerfeedback">Rate Spartan Invader</h1>
 	</header>
+  <!-- Feedback Form  -->
 	<main>
-
-
-<div class="container">
-  <form id="contact-form">
-    <label for="subject">Review Form</label>
-    <textarea id="subject" name="message" placeholder="Leave feedback to help us make Spartan Invader better" style="height:200px"></textarea>
-
-    <input type="submit" value="Send">
-  </form>
-</div>
+    <div class="container">
+      <form id="contact-form">
+        <label for="subject">Review Form</label>
+        <textarea id="subject" name="message" placeholder="Leave feedback to help us make Spartan Invader better" style="height:200px"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
 	</main>
+  <!-- footer. It contains copyright and font awesome symbols -->
 	<footer>
       <div class="left-box">
         <p>© 2023 Gabriel Js</p>
       </div>
       <div class="right-box">
         <br>
-        <!-- font awesome script -->
         <a href="index.html" aria-label="Feedback"><i class="fas fa-home"></i></a>
         <a href="https://github.com/Gavriil1/arcadegame" target="_blank" rel="noopener" aria-label="Projectct's GitHub page"><i class="fab fa-github"></i></a>
       </div>
   </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="assets/js/form.js"></script>
-      <!-- font awesome script -->
-	  <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
-    <script>
-      document.body.style.backgroundImage = "url('assets/background/feedbackbackground.jpg')";
-    </script>
+
+  
+  <!-- emailJs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- jd  file of the page -->
+  <script src="assets/js/form.js"></script>
+  <!-- font awesome script -->
+	<script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 </body>
 </html>
 

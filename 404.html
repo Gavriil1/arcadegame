@@ -8,36 +8,37 @@
 	<title>Spartan Invader</title>
 </head>
 <body class="bodyfof">
+	<!-- 404 headeer -->
 	<header>
 		<h1 class="hfof">404 Error</h1>
         <h3 class="pfof">The page you entered does not exist but you still may play your game. Yay! <a href="index.html">Click here</a> to visit homepage</h3>
 	</header>
 	<main>
+		<!-- Game Canvas -->
 		<div>
 			<canvas id="myCanvas"></canvas>
 		</div>
+		<!-- Control buttons -->
 		 <div>
 			<button id="leftBtn" onclick="sendKey('a')" onmouseup="unSendKey('a')">Left</button>
 			<button id="rightBtn" onclick="sendKey('d')" onmouseup="unSendKey('d')">Right</button>
 			<button id="fireBtn" onclick="sendKey('s')" onmouseup="unSendKey('s')">Fire</button>
 		</div> 
 	</main>
+	<!-- Footer: copyright and font awesome -->
 	<footer>
 		<div class="left-box">
 		  <p>© 2023 Gabriel Js</p>
 		</div>
 		<div class="right-box">
 			<br>
-
 			<a href="index.html" aria-label="Feedback"><i class="fas fa-home"></i></a>
             <a href="https://github.com/Gavriil1/arcadegame" target="_blank" rel="noopener" aria-label="Projectct's GitHub page"><i class="fab fa-github"></i></a>
 		</div>
 	  </footer>
+	  <!-- js script of the page -->
 	  <script src="assets/js/index.js"></script>
 	  <!-- font awesome script -->
 	  <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
-	  <script>
-		document.body.style.backgroundImage = "url('assets/background/fofbackground.jpg')";
-	  </script>
 </body>
 </html>

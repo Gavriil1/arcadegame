@@ -1,8 +1,12 @@
+/*jshint esversion: 6 */
+//Background image:
+document.body.style.backgroundImage = "url('assets/background/feedbackbackground.jpg')";
+
 // This script was published for emailJs application on  https://www.emailjs.com/docs/tutorial/creating-contact-form/
 // I added to it if condition which checks if textarea is empty.
 // In addition, I added command to move the user to the home page after feedback is submitted.
 
-/*jshint esversion: 6 */
+
 // we initialize the SDK with our public key
 (function() {
     // https://dashboard.emailjs.com/admin/account
@@ -21,7 +25,6 @@ window.onload = function() {
         window.alert('Please leave a feedback message');
         process.exit(0);
         }
-        // these IDs from the previous steps
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function() {
                 console.log('SUCCESS!');

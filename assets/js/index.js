@@ -1,5 +1,8 @@
 
 /*jshint esversion: 6 */
+
+//background picture:
+document.body.style.backgroundImage = "url('assets/background/fofbackground.jpg')";
 // The inspiration for this code was taken from: https://www.udemy.com/course/space-invaders-with-javascript-and-html-canvas/
 // HTML Canvas
 const kanhtml = document.querySelector('canvas');
