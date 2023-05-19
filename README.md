@@ -105,7 +105,7 @@
 ####  Owner Stories
 
 8. A 404 page should be created to help users navigate to the home page in case they entered the wrong URL.
-9. A contact form should be added to the website for users to send feedback.
+9. The owner would like to inform user that feedback form is empty, if user tries to submit an empty form.
 10. The owner would like to show that their work is copyright protected.
 
 
@@ -293,8 +293,6 @@ The alert window informs the user that their feedback has been sent.
 User stories: 9
 
 ![Alert Window](docs/testuserstories/9th-user-story.png)
-
-
 
 
 
