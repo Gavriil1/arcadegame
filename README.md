@@ -283,8 +283,22 @@ The alert window informs the user that their feedback has been sent.
 
 User stories: 6
 
-
 ![Alert Window](docs/features/feedback/windowalert.png)
+
+
+###  ALert window, which show up when a user submit an empty form.
+
+The alert window informs the user that their feedback has been sent.
+
+User stories: 9
+
+![Alert Window](docs/testuserstories/9th-user-story.png)
+
+
+
+
+
+docs/testuserstories/9th-user-story.png
 
 ###  404 Page
 
@@ -463,7 +477,7 @@ The following browsers were used to test the website:
 
 ###  Testing user stories
 
-1. The user needs to understand the rules of the game quickly.
+1. The user needs to understand the rules of the game easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -570,11 +584,13 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="docs\testuserstories\8th-404-page.png">
+<img src="docs/testuserstories/fourth-a-usert-story.png">
+
+<img src="docs/testuserstories/fourth-b-user-story.png">
 
 </details>
 
-9. A contact form should be added to the website for users to send feedback.
+9. The owner would like to inform user that feedback form is empty, if user tries to submit an empty form.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -582,7 +598,7 @@ The following browsers were used to test the website:
 
 <details><summary>Screenshots</summary>
 
-<img src="docs\testuserstories\9th-user-story.png">
+<img src="docs/testuserstories/9th-user-story.png">
 
 </details>
 
