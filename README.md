@@ -417,7 +417,7 @@ test
 
 Screenshot of Desktop performance of Home page in Google Lighthouse.
 
-<img src="docs/performance/home-desktop-perfm.png">
+<img src="docs/performance/home-desktop-Perfm.png>
 
 Screenshot of Mobile performance of Home page in Google Lighthouse.
 
