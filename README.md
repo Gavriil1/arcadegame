@@ -216,7 +216,7 @@ User stories: 5, 7,
 
 ###  Game in HTML canvas.
 
-The sentence is grammatically correct and there are no spelling errors.
+The game was developed in html canvas. The HTML Canvas is located on home page of the website.
 
 User Stories: 7
 
@@ -242,7 +242,7 @@ User Stories:
 ###  Game control buttons
 
 
-Check grammar and spelling: On the home page, we have three buttons that allow the user to play the game on computers or mobile devices.
+ On the home page, we have three buttons that allow the user to play the game on computers or mobile devices.
 
 User Stories: 2, 3
 
@@ -298,9 +298,6 @@ User stories: 9
 ![Alert Window](docs/testuserstories/9th-user-story.png)
 
 
-
-docs/testuserstories/9th-user-story.png
-
 ###  404 Page
 
 A 404 page should be created to help the user navigate to the home page in case they entered the wrong URL.
@@ -315,7 +312,7 @@ User story: 8
 
 ###  HTML Validation
 
-Check grammar and spelling: We utilized the W3C Markup Validation Service to validate the HTML of our website. The Home and 404 pages passed validation with no errors. However, the feedback page shows a warning. Since it's just a warning, I decided to leave everything as it is.
+ We utilized the W3C Markup Validation Service to validate the HTML of our website. The Home and 404 pages passed validation with no errors. However, the feedback page shows a warning. Since it's just a warning, I decided to leave everything as it is.
 
 <details><summary>Home</summary>
 
@@ -420,11 +417,11 @@ The performance of the website was tested using Google Lighthouse. The site rece
 
 Screenshot of Desktop performance of Home page in Google Lighthouse.
 
-<img src="docs\performance\home-desktop-Perfm.png">
+<img src="docs/performance/home-desktop-perfm.png">
 
 Screenshot of Mobile performance of Home page in Google Lighthouse.
 
-<img src="assets\readmemddocs\performance\home-mobile-perf.png">
+<img src="docs/performance/home-mobile-perf.png">
 
 </details>
 
