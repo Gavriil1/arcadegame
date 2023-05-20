@@ -413,7 +413,7 @@ The performance of the website was tested using Google Lighthouse. The site rece
 
 <details><summary>Home</summary>
 
-
+test
 
 Screenshot of Desktop performance of Home page in Google Lighthouse.
 
