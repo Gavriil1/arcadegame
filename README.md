@@ -72,6 +72,9 @@
 
 
 ##  Project Goals
+The objective of this project was to develop a version of the popular "Space Invader" game that is interactive and user-friendly.
+
+###  User Goals
 
 - To relax after a stressful day, one can play games.
 
