@@ -196,7 +196,7 @@ User stories: 7.
 
 ###  Footer
 
-Displayed on each page, it slightly differs on each page. On the main page and 404 page, the footer has a link to the feedback page. On the feedback page, the footer has a link to the homepage. Each page also includes a copyright message.
+The footer is displayed on each page, it slightly differs on each page. On the feedback page and 404 page, the footer has a link to the home page and github link of thsi project. On the home page, the footer has a link to the feedback form and github link of the page. Each page also includes a copyright message.
 
 User story: 5. 
 
@@ -658,11 +658,13 @@ Follow these steps to clone the repository:
 
 ###  Media
 
-I have two images: 
+Images: 
 1. ancient-greek-spartan-warrior-6839912.png
 2. cartoon-martial-arts-character-archery_4042629.png
-
 Both of them are downloaded from https://id.pngtree.com/
+
+
+Background pictures were downloaded from Google Search Images.
 
 ###  Code
 
