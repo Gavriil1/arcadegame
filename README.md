@@ -366,6 +366,18 @@ I have to js files: index.js and form.js. The script shows undefined or not used
 
 <img src="docs\js-validator\index-js-validator.png">
 
+All alerts are false positive.
+1. Sendkey and unSendKey are not variables but functions defined in index.js I used them to press buttons on home page to play the game
+2. invaderFound and projectileFound are defined variables and you can find them in index.js:
+const invaderFound = spartanArray.find(
+    (invader2) => invader2 === invad
+);
+const projectileFound = arrows.find(
+    (projectile2) => projectile2 === projectile
+);
+3. keyboardEvent is not a variable but object: https://www.w3schools.com/jsref/obj_keyboardevent.asp
+
+
 </details>
 
 </details>
@@ -374,6 +386,11 @@ I have to js files: index.js and form.js. The script shows undefined or not used
 <details><summary>form.js</summary>
 
 <img src="docs\js-validator\form.js-valiation.png">
+
+1. emailjs is a variable of emailJS API, the code was taken from oficial EmailJS site. The function should be defined in emailjs library.
+2. process is not a variable but a command to stop the code execution
+ process.exit(0) 
+https://node.readthedocs.io/en/latest/api/process/
 
 </details>
 
@@ -413,7 +430,7 @@ The performance of the website was tested using Google Lighthouse. The site rece
 
 <details><summary>Home</summary>
 
-test
+
 
 Screenshot of Desktop performance of Home page in Google Lighthouse.
 
